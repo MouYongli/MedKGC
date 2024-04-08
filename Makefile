@@ -1,7 +1,7 @@
 # Makefile will include make test make clean make build make run 
 
 # specify desired location for adpy python binary 
-VENV:= /home/$(USER)/anaconda3/envs/medar
+VENV:= /home/$(USER)/anaconda3/envs/medkgc
 PYTHON:= ${VENV}/bin/python
 
 # clean automatic generated files
