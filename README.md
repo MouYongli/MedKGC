@@ -35,3 +35,7 @@ exit and reopen a session (conda env medkgc)
 jupyter lab --no-browser --port=8888
 ```
 
+3. enviroment variables
+```
+export HF_HOME=~/Data/huggingface
+```
