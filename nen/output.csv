@@ -1,128 +1,128 @@
-name,ui,definition,semanticTypes,normalized_name
-Lungs,C0024109,"Lobular organ the parenchyma of which consists of air-filled alveoli which communicate with the tracheobronchial tree. Examples: There are only two instances, right lung and left lung.","Body Part, Organ, or Organ Component",Lungs
-clear,C2963144,No results,No results,clear
-Normal,C0205307,"In pathology, a term that is used to describe a tissue specimen that has a normal appearance.",Qualitative Concept,Normal
+name,ui,normalized_name,semanticTypes,definition
+Lungs,C0024109,Lungs,"Body Part, Organ, or Organ Component","Lobular organ the parenchyma of which consists of air-filled alveoli which communicate with the tracheobronchial tree. Examples: There are only two instances, right lung and left lung."
+clear,C2963144,clear,No results,No results
+Normal,C0205307,Normal,Qualitative Concept,"In pathology, a term that is used to describe a tissue specimen that has a normal appearance."
 cardiomediastinal,,,,
-hilar,C0205150,Refers to the area associated with the hilum.,Spatial Concept,hilar
+hilar,C0205150,hilar,Spatial Concept,Refers to the area associated with the hilum.
 silhouettes,,,,
-pleural,C1522720,Of or pertaining to the pleura.,Spatial Concept,pleural
+pleural,C1522720,pleural,Spatial Concept,Of or pertaining to the pleura.
 surfaces,,,,
-Endotracheal,C0599554,Within the trachea.,Spatial Concept,Endotracheal
-tube,C1561954,"A hollow cylinder, especially one for holding or conveying liquids; anything shaped like such a hollow cylinder, e.g. an organic structure having the shape or function of a tube such as channel within a plant or animal body (e.g. fallopian tube).",Spatial Concept,tube
-tip,C3282898,The pointed end of a linear structure.,Spatial Concept,tip
+Endotracheal,C0599554,Endotracheal,Spatial Concept,Within the trachea.
+tube,C1561954,tube,Spatial Concept,"A hollow cylinder, especially one for holding or conveying liquids; anything shaped like such a hollow cylinder, e.g. an organic structure having the shape or function of a tube such as channel within a plant or animal body (e.g. fallopian tube)."
+tip,C3282898,tip,Spatial Concept,The pointed end of a linear structure.
 approximately a 4.6 cm,,,,
 carina,,,,
-Enteric,C1304890,An intended site for a dose form that is for administration to the gastrointestinal tract.,Spatial Concept,Enteric
+Enteric,C1304890,Enteric,Spatial Concept,An intended site for a dose form that is for administration to the gastrointestinal tract.
 distal,,,,
-esophagus,C0014876,digestive tube connecting the throat to the stomach,"Body Part, Organ, or Organ Component",esophagus
+esophagus,C0014876,esophagus,"Body Part, Organ, or Organ Component",digestive tube connecting the throat to the stomach
 advanced by at least 11 cm,,,,
-Heart,C0018787,"Det hule, muskulære organet som opprettholder blodsirkulasjonen.","Body Part, Organ, or Organ Component",Heart
-size,C0456389,Relative physical dimensions of objects or stimuli.,Spatial Concept,size
-normal,C0205307,"In pathology, a term that is used to describe a tissue specimen that has a normal appearance.",Qualitative Concept,normal
-mediastinal,C1522718,Related to the mediastinum.,Spatial Concept,mediastinal
+Heart,C0018787,Heart,"Body Part, Organ, or Organ Component","Det hule, muskulære organet som opprettholder blodsirkulasjonen."
+size,C0456389,size,Spatial Concept,Relative physical dimensions of objects or stimuli.
+normal,C0205307,normal,Qualitative Concept,"In pathology, a term that is used to describe a tissue specimen that has a normal appearance."
+mediastinal,C1522718,mediastinal,Spatial Concept,Related to the mediastinum.
 contours,,,,
 grossly,,,,
 unremarkable,,,,
 Pulmonary,,,,
-vasculature,C3714653,"Organ region cluster which consists of regions of arterial, venous and lymphatic trees and the capillary beds that connect them. Examples: Vasculature of head, vasculature of brain.",Anatomical Structure,vasculature
-engorged,C0700140,No results,No results,engorged
-minimal,C0547040,"<b>Description:</b>Provides more than identified, but not as much as universal. There are not expected to be many of these.",Qualitative Concept,minimal
-atelectasis,C0004144,"Ausência de ar no pulmão inteiro ou em parte dele, como no pulmão incompletamente inflado do recém-nascido ou num pulmão adulto colapsado. Atelectasia pulmonar pode ser causada obstrução das vias respiratórias, compressão pulmonar, contração fibrótica ou outros fatores.",Pathologic Function,atelectasis
-lung,C0024109,"Lobular organ the parenchyma of which consists of air-filled alveoli which communicate with the tracheobronchial tree. Examples: There are only two instances, right lung and left lung.","Body Part, Organ, or Organ Component",lung
-bases,C0178499,opposite of acid,Chemical Viewed Functionally,bases
-lungs,C0024109,"Lobular organ the parenchyma of which consists of air-filled alveoli which communicate with the tracheobronchial tree. Examples: There are only two instances, right lung and left lung.","Body Part, Organ, or Organ Component",lungs
-large,C0549177,"Of considerable or relatively great size, extent, or capacity.",Quantitative Concept,large
-effusion,C0013687,a collection of fluid in a body cavity,Pathologic Function,effusion
-pneumothorax,C0032326,Accumulation of air in the pleural cavity leading to a partially or completely collapsed lung. [https://orcid.org/0000-0002-0736-9199],Disease or Syndrome,pneumothorax
-extreme,C0205403,The highest degree of severity.,Qualitative Concept,extreme
-right,C0205090,Being or located on or directed toward the side of the body to the east when facing north.,Spatial Concept,right
+vasculature,C3714653,vasculature,Anatomical Structure,"Organ region cluster which consists of regions of arterial, venous and lymphatic trees and the capillary beds that connect them. Examples: Vasculature of head, vasculature of brain."
+engorged,C0700140,engorged,No results,No results
+minimal,C0547040,minimal,Qualitative Concept,"<b>Description:</b>Provides more than identified, but not as much as universal. There are not expected to be many of these."
+atelectasis,C0004144,atelectasis,Pathologic Function,"Ausência de ar no pulmão inteiro ou em parte dele, como no pulmão incompletamente inflado do recém-nascido ou num pulmão adulto colapsado. Atelectasia pulmonar pode ser causada obstrução das vias respiratórias, compressão pulmonar, contração fibrótica ou outros fatores."
+lung,C0024109,lung,"Body Part, Organ, or Organ Component","Lobular organ the parenchyma of which consists of air-filled alveoli which communicate with the tracheobronchial tree. Examples: There are only two instances, right lung and left lung."
+bases,C0178499,bases,Chemical Viewed Functionally,opposite of acid
+lungs,C0024109,lungs,"Body Part, Organ, or Organ Component","Lobular organ the parenchyma of which consists of air-filled alveoli which communicate with the tracheobronchial tree. Examples: There are only two instances, right lung and left lung."
+large,C0549177,large,Quantitative Concept,"Of considerable or relatively great size, extent, or capacity."
+effusion,C0013687,effusion,Pathologic Function,a collection of fluid in a body cavity
+pneumothorax,C0032326,pneumothorax,Disease or Syndrome,Accumulation of air in the pleural cavity leading to a partially or completely collapsed lung. [https://orcid.org/0000-0002-0736-9199]
+extreme,C0205403,extreme,Qualitative Concept,The highest degree of severity.
+right,C0205090,right,Spatial Concept,Being or located on or directed toward the side of the body to the east when facing north.
 apex,,,,
 slightly,,,,
-obscured,C4727091,Make less clear or visible.,Activity,obscured
+obscured,C4727091,obscured,Activity,Make less clear or visible.
 patient 's chin,,,,
 displaced,,,,
-fractures,C0016658,A partial or complete breakage of the continuity of a bone. [],Injury or Poisoning,fractures
-acute,C0205178,Having a severe and rapid onset of symptoms with short duration.,Temporal Concept,acute
+fractures,C0016658,fractures,Injury or Poisoning,A partial or complete breakage of the continuity of a bone. []
+acute,C0205178,acute,Temporal Concept,Having a severe and rapid onset of symptoms with short duration.
 osseous,,,,
-abnormality,C1704258,A condition that differs from the usual physical or mental state.,Finding,abnormality
-Gaseous,C0017110,"Plyn neboli plynná látka je jedno ze skupenství látek, při kterém jsou částice relativně daleko od sebe, pohybují se v celém objemu a nepůsobí na sebe přitažlivou silou. V chemických rovnicích se označuje písmenem g (gas). Plynná tělesa nemají svůj tvar, ale jejich tvar odpovídá tvaru nádoby; nemají vlastní objem, ale vyplňují vždy celý objem nádoby; plynná tělesa nemají volný povrch (hladinu); plyny jsou stlačitelné; vedou elektrický proud jen za určitých speciálních podmínek; teplo se v plynech může šířit prouděním. Celkový tlak plynu ve směsi vzájemně chemicky neinteragujících plynů je dán Daltonovým zákonem. (upraveno podle Wikipedie 2022 http://www.cs.wikipedia.org/)",Chemical Viewed Structurally,Gaseous
-distension,C3714614,The condition of being stretched beyond normal dimensions.,Finding,distension
-stomach,C0038351,An organ of digestion situated in the left upper quadrant of the abdomen between the termination of the ESOPHAGUS and the beginning of the DUODENUM.,"Body Part, Organ, or Organ Component",stomach
+abnormality,C1704258,abnormality,Finding,A condition that differs from the usual physical or mental state.
+Gaseous,C0017110,Gaseous,Chemical Viewed Structurally,"Plyn neboli plynná látka je jedno ze skupenství látek, při kterém jsou částice relativně daleko od sebe, pohybují se v celém objemu a nepůsobí na sebe přitažlivou silou. V chemických rovnicích se označuje písmenem g (gas). Plynná tělesa nemají svůj tvar, ale jejich tvar odpovídá tvaru nádoby; nemají vlastní objem, ale vyplňují vždy celý objem nádoby; plynná tělesa nemají volný povrch (hladinu); plyny jsou stlačitelné; vedou elektrický proud jen za určitých speciálních podmínek; teplo se v plynech může šířit prouděním. Celkový tlak plynu ve směsi vzájemně chemicky neinteragujících plynů je dán Daltonovým zákonem. (upraveno podle Wikipedie 2022 http://www.cs.wikipedia.org/)"
+distension,C3714614,distension,Finding,The condition of being stretched beyond normal dimensions.
+stomach,C0038351,stomach,"Body Part, Organ, or Organ Component",An organ of digestion situated in the left upper quadrant of the abdomen between the termination of the ESOPHAGUS and the beginning of the DUODENUM.
 Standard,,,,
 positioning,,,,
-endotracheal,C0599554,Within the trachea.,Spatial Concept,endotracheal
-distention,C3714614,The condition of being stretched beyond normal dimensions.,Finding,distention
-focal,C0205234,Limited to a specific area.,Spatial Concept,focal
-consolidation,C0702116,No results,No results,consolidation
-nasogastric,C3282907,No results,No results,nasogastric
+endotracheal,C0599554,endotracheal,Spatial Concept,Within the trachea.
+distention,C3714614,distention,Finding,The condition of being stretched beyond normal dimensions.
+focal,C0205234,focal,Spatial Concept,Limited to a specific area.
+consolidation,C0702116,consolidation,No results,No results
+nasogastric,C3282907,nasogastric,No results,No results
 mid,,,,
 portion,,,,
 body,,,,
 The side - port,,,,
-esophagogastric,C0475468,No results,No results,esophagogastric
+esophagogastric,C0475468,esophagogastric,No results,No results
 junction,,,,
 Otherwise,,,,
-little,C1440917,No results,No results,little
+little,C1440917,little,No results,No results
 change,,,,
-volumes,C0449468,The amount of three dimensional space occupied by an object or the capacity of a space or container.,Quantitative Concept,volumes
+volumes,C0449468,volumes,Quantitative Concept,The amount of three dimensional space occupied by an object or the capacity of a space or container.
 stable,,,,
 ET,,,,
 4.3 cm,,,,
 NG,,,,
 malpositioned,,,,
-near,C1706276,Not far distant in time or space or degree or circumstances.,Qualitative Concept,near
-appropriate,C1548787,No results,No results,appropriate
+near,C1706276,near,Qualitative Concept,Not far distant in time or space or degree or circumstances.
+appropriate,C1548787,appropriate,No results,No results
 position,,,,
 enteric,,,,
-cardiopulmonary,C0553534,Pertaining to both the heart and the lungs.,Body Location or Region,cardiopulmonary
-disease,C0012634,"Definovaný patologický proces s charakteristickými příznaky a symptomy. Nemoc může postihnout celé tělo nebo jeho část a její etiologie, patologie a prognóza mohou být známé nebo neznámé.",Disease or Syndrome,disease
-pneumonia,C0032285,"Infekce plic, často doprovázená zánětem.",Disease or Syndrome,pneumonia
-vascular,C1801960,Relating to or containing blood vessels.,Qualitative Concept,vascular
-congestion,C0700148,No results,No results,congestion
+cardiopulmonary,C0553534,cardiopulmonary,Body Location or Region,Pertaining to both the heart and the lungs.
+disease,C0012634,disease,Disease or Syndrome,"Definovaný patologický proces s charakteristickými příznaky a symptomy. Nemoc může postihnout celé tělo nebo jeho část a její etiologie, patologie a prognóza mohou být známé nebo neznámé."
+pneumonia,C0032285,pneumonia,Disease or Syndrome,"Infekce plic, často doprovázená zánětem."
+vascular,C1801960,vascular,Qualitative Concept,Relating to or containing blood vessels.
+congestion,C0700148,congestion,No results,No results
 approximately 1.8 cm,,,,
 barely,,,,
-proximal,C0205107,Localized close to the central point of the body. [https://orcid.org/0000-0002-0736-9199],Spatial Concept,proximal
+proximal,C0205107,proximal,Spatial Concept,Localized close to the central point of the body. [https://orcid.org/0000-0002-0736-9199]
 side ports,,,,
 approximately 12 cm,,,,
 approximately 2 cm,,,,
-Lung,C0024109,"Lobular organ the parenchyma of which consists of air-filled alveoli which communicate with the tracheobronchial tree. Examples: There are only two instances, right lung and left lung.","Body Part, Organ, or Organ Component",Lung
-low,C0205251,"A minimum level or position or degree; less than normal in degree, intensity or amount.",Qualitative Concept,low
+Lung,C0024109,Lung,"Body Part, Organ, or Organ Component","Lobular organ the parenchyma of which consists of air-filled alveoli which communicate with the tracheobronchial tree. Examples: There are only two instances, right lung and left lung."
+low,C0205251,low,Qualitative Concept,"A minimum level or position or degree; less than normal in degree, intensity or amount."
 overt,,,,
 CHF,,,,
 silhouette,,,,
-structures,C0678594,The components and their relationship and manner of arrangement in constituting a whole.,Spatial Concept,structures
-intact,C0205266,Undamaged in any way; whole.,Qualitative Concept,intact
+structures,C0678594,structures,Spatial Concept,The components and their relationship and manner of arrangement in constituting a whole.
+intact,C0205266,intact,Qualitative Concept,Undamaged in any way; whole.
 Limited,,,,
-negative,C0205160,"<p>An absence finding of the specified component / analyte, organism or clinical sign based on the established threshold of the performed test or procedure.</p><p>\[Note: Negative does not necessarily imply the complete absence of the specified item.\]</p>",Finding,negative
-Low,C0205251,"A minimum level or position or degree; less than normal in degree, intensity or amount.",Qualitative Concept,Low
+negative,C0205160,negative,Finding,"<p>An absence finding of the specified component / analyte, organism or clinical sign based on the established threshold of the performed test or procedure.</p><p>\[Note: Negative does not necessarily imply the complete absence of the specified item.\]</p>"
+Low,C0205251,Low,Qualitative Concept,"A minimum level or position or degree; less than normal in degree, intensity or amount."
 This,,,,
 cardiac,,,,
 mildly,,,,
-enlarged,C0442800,No results,No results,enlarged
+enlarged,C0442800,enlarged,No results,No results
 unchanged,,,,
-crowding,C0010383,"Número excessivo de indivíduos, humanos ou animais, em relação ao espaço disponível.",Social Behavior,crowding
+crowding,C0010383,crowding,Social Behavior,"Número excessivo de indivíduos, humanos ou animais, em relação ao espaço disponível."
 bronchovascular,,,,
 pulmonary,,,,
-edema,C0013604,Abnormal fluid accumulation in TISSUES or body cavities. Most cases of edema are present under the SKIN in SUBCUTANEOUS TISSUE.,Pathologic Function,edema
-Minimal,C0547040,"<b>Description:</b>Provides more than identified, but not as much as universal. There are not expected to be many of these.",Qualitative Concept,Minimal
+edema,C0013604,edema,Pathologic Function,Abnormal fluid accumulation in TISSUES or body cavities. Most cases of edema are present under the SKIN in SUBCUTANEOUS TISSUE.
+Minimal,C0547040,Minimal,Qualitative Concept,"<b>Description:</b>Provides more than identified, but not as much as universal. There are not expected to be many of these."
 patchy,,,,
 bibasilar,,,,
 opacities,,,,
-infection,C3714514,"Nákaza. Proniknutí choroboplodných zárodků (bakterií, virů, chlamydií, ricketsií, plísní) do organismu. Příslušné mikroorganismy vnikají do těla různými způsoby. V těle se pomnoží a po určité době nutné k rozvoji onemocnění (inkubační době) se objevují příznaky více či méně typické pro danou infekci. Někdy nakažený jedinec choroboplodné zárodky vylučuje a může tak nakazit jiné osoby. Výrazný vliv na vznik a průběh i. má imunitní systém. (cit. Velký lékařský slovník online, 2013 http://lekarske.slovniky.cz/ )",Pathologic Function,infection
+infection,C3714514,infection,Pathologic Function,"Nákaza. Proniknutí choroboplodných zárodků (bakterií, virů, chlamydií, ricketsií, plísní) do organismu. Příslušné mikroorganismy vnikají do těla různými způsoby. V těle se pomnoží a po určité době nutné k rozvoji onemocnění (inkubační době) se objevují příznaky více či méně typické pro danou infekci. Někdy nakažený jedinec choroboplodné zárodky vylučuje a může tak nakazit jiné osoby. Výrazný vliv na vznik a průběh i. má imunitní systém. (cit. Velký lékařský slovník online, 2013 http://lekarske.slovniky.cz/ )"
 abnormalities,,,,
 Patchy,,,,
-Borderline,C0205189,"Having a minor degree of severity that is considered to be on the boundary between the normal and the abnormal ranges. For quantitative traits, a deviation of that is less than two standard deviations from the appropriate population mean. [https://orcid.org/0000-0002-0736-9199]",Qualitative Concept,Borderline
-effusions,C0013687,a collection of fluid in a body cavity,Pathologic Function,effusions
-left,C0205091,Being or located on or directed toward the side of the body to the west when facing north.,Spatial Concept,left
-basal,C0205112,The lowest layer of a structure.,Spatial Concept,basal
+Borderline,C0205189,Borderline,Qualitative Concept,"Having a minor degree of severity that is considered to be on the boundary between the normal and the abnormal ranges. For quantitative traits, a deviation of that is less than two standard deviations from the appropriate population mean. [https://orcid.org/0000-0002-0736-9199]"
+effusions,C0013687,effusions,Pathologic Function,a collection of fluid in a body cavity
+left,C0205091,left,Spatial Concept,Being or located on or directed toward the side of the body to the west when facing north.
+basal,C0205112,basal,Spatial Concept,The lowest layer of a structure.
 parenchymal,,,,
 opacity,,,,
-remnant,C4554476,No results,No results,remnant
-complications,C0009566,"additional, secondary problem that arises during or following a procedure, treatment or illness.",Pathologic Function,complications
+remnant,C4554476,remnant,No results,No results
+complications,C0009566,complications,Pathologic Function,"additional, secondary problem that arises during or following a procedure, treatment or illness."
 frontal,,,,
-lateral,C0205093,Applies to an abnormality that is located farther from the median plane or midline of the body or of the referenced structure. [],Spatial Concept,lateral
+lateral,C0205093,lateral,Spatial Concept,Applies to an abnormality that is located farther from the median plane or midline of the body or of the referenced structure. []
 radiograph,,,,
-Moderate,C5201148,Disease activity score: 30 to 44,Finding,Moderate
+Moderate,C5201148,Moderate,Finding,Disease activity score: 30 to 44
 scoliosis,,,,
 asymmetry,,,,
 ribcage,,,,
@@ -132,202 +132,202 @@ largely,,,,
 Osseous,,,,
 The lateral view is limited,,,,
 patient 's arms,,,,
-increased,C0205217,No results,No results,increased
+increased,C0205217,increased,No results,No results
 lower,,,,
 They,,,,
-more,C0205172,"Greater in size, amount, extent, or degree.",Quantitative Concept,more
+more,C0205172,more,Quantitative Concept,"Greater in size, amount, extent, or degree."
 conspicuous,,,,
 recent exam from ___,,,,
 similar,,,,
 previous exams from ___,,,,
-Old,C0580836,"Not new, of an earlier time.",Temporal Concept,Old
+Old,C0580836,Old,Temporal Concept,"Not new, of an earlier time."
 rib,,,,
-Left,C0205091,Being or located on or directed toward the side of the body to the west when facing north.,Spatial Concept,Left
+Left,C0205091,Left,Spatial Concept,Being or located on or directed toward the side of the body to the west when facing north.
 aspiration,,,,
-mediastinum,C0025066,"A membrane in the midline of the THORAX of mammals. It separates the lungs between the STERNUM in front and the VERTEBRAL COLUMN behind. It also surrounds the HEART, TRACHEA, ESOPHAGUS, THYMUS, and LYMPH NODES.",Body Location or Region,mediastinum
+mediastinum,C0025066,mediastinum,Body Location or Region,"A membrane in the midline of the THORAX of mammals. It separates the lungs between the STERNUM in front and the VERTEBRAL COLUMN behind. It also surrounds the HEART, TRACHEA, ESOPHAGUS, THYMUS, and LYMPH NODES."
 difficult to assess,,,,
-overall,C1561607,Including everything.,Qualitative Concept,overall
-appearance,C0700364,The outward or visible aspect of a person or thing.,Qualitative Concept,appearance
+overall,C1561607,overall,Qualitative Concept,Including everything.
+appearance,C0700364,appearance,Qualitative Concept,The outward or visible aspect of a person or thing.
 potentially,,,,
 obscuring,,,,
-upper,C1282910,"In anatomy, indicating higher than a given reference point.",Spatial Concept,upper
-chest,C0817096,"Subdivision of the trunk, which is demarcated from the neck by the plane of the superior thoracic aperture and from the abdomen internally by the inferior surface of the diaphragm and externally by the costal margin; together with the abdomen, pelvis and perineum, it constitutes the trunk. Examples: There is only one thorax.",Body Location or Region,chest
+upper,C1282910,upper,Spatial Concept,"In anatomy, indicating higher than a given reference point."
+chest,C0817096,chest,Body Location or Region,"Subdivision of the trunk, which is demarcated from the neck by the plane of the superior thoracic aperture and from the abdomen internally by the inferior surface of the diaphragm and externally by the costal margin; together with the abdomen, pelvis and perineum, it constitutes the trunk. Examples: There is only one thorax."
 cannot be assessed,,,,
-Overall,C1561607,Including everything.,Qualitative Concept,Overall
+Overall,C1561607,Overall,Qualitative Concept,Including everything.
 findings,,,,
-lobe,C0796494,"A portion of an organ, such as the liver, lung, breast, or brain.","Body Part, Organ, or Organ Component",lobe
-New,C0205314,Having no previous example or precedent or parallel; of a kind not seen before.,Qualitative Concept,New
-Mediastinal,C1522718,Related to the mediastinum.,Spatial Concept,Mediastinal
-significant,C0750502,"A term applied to differences, correlations, cause-and-effect relationships, etc., to indicate that they are noticeable, probably too closely correlated to be attributed to chance and therefore indicating a systematic relation: substantial, fairly large; also having consequence or import, important in effect or meaning. In statistics significant ordinarily indicates a probability of not less than 95 percent, while highly significant indicates a probability of not less than 99 percent.",Idea or Concept,significant
+lobe,C0796494,lobe,"Body Part, Organ, or Organ Component","A portion of an organ, such as the liver, lung, breast, or brain."
+New,C0205314,New,Qualitative Concept,Having no previous example or precedent or parallel; of a kind not seen before.
+Mediastinal,C1522718,Mediastinal,Spatial Concept,Related to the mediastinum.
+significant,C0750502,significant,Idea or Concept,"A term applied to differences, correlations, cause-and-effect relationships, etc., to indicate that they are noticeable, probably too closely correlated to be attributed to chance and therefore indicating a systematic relation: substantial, fairly large; also having consequence or import, important in effect or meaning. In statistics significant ordinarily indicates a probability of not less than 95 percent, while highly significant indicates a probability of not less than 99 percent."
 Evaluation is limited,,,,
 patient 's head,,,,
 apices,,,,
 visualized,,,,
-heart,C0018787,"Det hule, muskulære organet som opprettholder blodsirkulasjonen.","Body Part, Organ, or Organ Component",heart
-volume,C0449468,The amount of three dimensional space occupied by an object or the capacity of a space or container.,Quantitative Concept,volume
+heart,C0018787,heart,"Body Part, Organ, or Organ Component","Det hule, muskulære organet som opprettholder blodsirkulasjonen."
+volume,C0449468,volume,Quantitative Concept,The amount of three dimensional space occupied by an object or the capacity of a space or container.
 increasing,,,,
 substantial,,,,
 layering,,,,
 compressive,,,,
-Bilateral,C0238767,Being present on both sides of the body. [https://orcid.org/0000-0002-0736-9199],Spatial Concept,Bilateral
-worse,C1457868,In an declined condition.,Finding,worse
+Bilateral,C0238767,Bilateral,Spatial Concept,Being present on both sides of the body. [https://orcid.org/0000-0002-0736-9199]
+worse,C1457868,worse,Finding,In an declined condition.
 loculation,,,,
-new,C0205314,Having no previous example or precedent or parallel; of a kind not seen before.,Qualitative Concept,new
+new,C0205314,new,Qualitative Concept,Having no previous example or precedent or parallel; of a kind not seen before.
 Cardiomediastinal,,,,
-device,C0699733,"<p>A subtype of ManufacturedMaterial used in an activity, without being substantially changed through that activity. The kind of device is identified by the code attribute inherited from Entity.</p><i>Usage:</i>This includes durable (reusable) medical equipment as well as disposable equipment.",Manufactured Object,device
+device,C0699733,device,Manufactured Object,"<p>A subtype of ManufacturedMaterial used in an activity, without being substantially changed through that activity. The kind of device is identified by the code attribute inherited from Entity.</p><i>Usage:</i>This includes durable (reusable) medical equipment as well as disposable equipment."
 border,,,,
 right - sided,,,,
-loculated,C0205277,No results,No results,loculated
-bilateral,C0238767,Being present on both sides of the body. [https://orcid.org/0000-0002-0736-9199],Spatial Concept,bilateral
+loculated,C0205277,loculated,No results,No results
+bilateral,C0238767,bilateral,Spatial Concept,Being present on both sides of the body. [https://orcid.org/0000-0002-0736-9199]
 subjacent,,,,
 well,,,,
 aerated,,,,
-Bony,C0443157,No results,No results,Bony
+Bony,C0443157,Bony,No results,No results
 TIPS,,,,
-quadrant,C1631280,"One quarter of a circle. In anatomy, one part of an area divided into quarters for descriptive purposes.",Spatial Concept,quadrant
-consolidations,C0702116,No results,No results,consolidations
-areas,C0205146,The extent of a 2-dimensional surface enclosed within a boundary.,Spatial Concept,areas
+quadrant,C1631280,quadrant,Spatial Concept,"One quarter of a circle. In anatomy, one part of an area divided into quarters for descriptive purposes."
+consolidations,C0702116,consolidations,No results,No results
+areas,C0205146,areas,Spatial Concept,The extent of a 2-dimensional surface enclosed within a boundary.
 round,,,,
-larger,C0549177,"Of considerable or relatively great size, extent, or capacity.",Quantitative Concept,larger
-Small,C0700321,"Limited in number, quantity, magnitude or extent.",Quantitative Concept,Small
+larger,C0549177,larger,Quantitative Concept,"Of considerable or relatively great size, extent, or capacity."
+Small,C0700321,Small,Quantitative Concept,"Limited in number, quantity, magnitude or extent."
 relevant,,,,
 Unchanged,,,,
 Superimposed,,,,
-within,C0332285,On the inside; contained in.,Spatial Concept,within
+within,C0332285,within,Spatial Concept,On the inside; contained in.
 limits,,,,
-aorta,C0003483,"Srdečnice. Největší tepna organismu, která vystupuje přímo z levé srdeční komory. Probíhá hrudníkem a břišní dutinou (před páteří) až do bederní oblasti, kde se dělí (bifurkace) na dvě kyčelní tepny (aa. ilicae). Vystupuje z ní v různých částech řada větví, které zásobují okysličenou krví všechny orgány těla. A. ascendens - vzestupná a., počáteční úsek a. přecházející v aortální oblouk (arcus aortae). Navazuje a. descendens, která má část hrudní (a. thoracica) a břišní (a. abdominalis). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)","Body Part, Organ, or Organ Component",aorta
+aorta,C0003483,aorta,"Body Part, Organ, or Organ Component","Srdečnice. Největší tepna organismu, která vystupuje přímo z levé srdeční komory. Probíhá hrudníkem a břišní dutinou (před páteří) až do bederní oblasti, kde se dělí (bifurkace) na dvě kyčelní tepny (aa. ilicae). Vystupuje z ní v různých částech řada větví, které zásobují okysličenou krví všechny orgány těla. A. ascendens - vzestupná a., počáteční úsek a. přecházející v aortální oblouk (arcus aortae). Navazuje a. descendens, která má část hrudní (a. thoracica) a břišní (a. abdominalis). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
 unfolded,,,,
-vascularity,C4068833,No results,No results,vascularity
-small,C0700321,"Limited in number, quantity, magnitude or extent.",Quantitative Concept,small
-moderate,C5201148,Disease activity score: 30 to 44,Finding,moderate
+vascularity,C4068833,vascularity,No results,No results
+small,C0700321,small,Quantitative Concept,"Limited in number, quantity, magnitude or extent."
+moderate,C5201148,moderate,Finding,Disease activity score: 30 to 44
 partially,,,,
 Bibasilar,,,,
 airspace,,,,
 costophrenic,,,,
-angle,C0231760,No results,No results,angle
+angle,C0231760,angle,No results,No results
 overlying,,,,
 wires,,,,
-increase,C0442805,"A process of becoming larger, more numerous, more important, or more likely.",Functional Concept,increase
-component,C5690167,No results,No results,component
+increase,C0442805,increase,Functional Concept,"A process of becoming larger, more numerous, more important, or more likely."
+component,C5690167,component,No results,No results
 laterally,,,,
 not well assessed,,,,
 monitoring,,,,
 support,,,,
-devices,C0699733,"<p>A subtype of ManufacturedMaterial used in an activity, without being substantially changed through that activity. The kind of device is identified by the code attribute inherited from Entity.</p><i>Usage:</i>This includes durable (reusable) medical equipment as well as disposable equipment.",Manufactured Object,devices
+devices,C0699733,devices,Manufactured Object,"<p>A subtype of ManufacturedMaterial used in an activity, without being substantially changed through that activity. The kind of device is identified by the code attribute inherited from Entity.</p><i>Usage:</i>This includes durable (reusable) medical equipment as well as disposable equipment."
 mild,,,,
 post - operative,,,,
-alignment,C1706765,The act of adjusting or aligning objects in relation to each other; the result of this activity.,Spatial Concept,alignment
+alignment,C1706765,alignment,Spatial Concept,The act of adjusting or aligning objects in relation to each other; the result of this activity.
 sternal,,,,
 Mild,,,,
 retrocardiac,,,,
 Stable,,,,
-cardiomegaly,C0018800,Abnormal enlargement of the heart.,Finding,cardiomegaly
+cardiomegaly,C0018800,cardiomegaly,Finding,Abnormal enlargement of the heart.
 artery,,,,
 enlargement,,,,
-main,C1542147,Most important; principal.,Qualitative Concept,main
+main,C1542147,main,Qualitative Concept,Most important; principal.
 subclavian,,,,
 PICC,,,,
-line,C0230719,"Platelike region of a muscle sarcomere to which the plus ends of actin filaments are attached. [GOC:mtg_muscle, ISBN:0815316194]",Cell Component,line
+line,C0230719,line,Cell Component,"Platelike region of a muscle sarcomere to which the plus ends of actin filaments are attached. [GOC:mtg_muscle, ISBN:0815316194]"
 SVC,,,,
-elevated,C3163633,Raised or increased above normal levels or limits.,Qualitative Concept,elevated
-venous,C0348013,"Of, or pertaining to, or contained in, or performing the function of the veins.",Spatial Concept,venous
+elevated,C3163633,elevated,Qualitative Concept,Raised or increased above normal levels or limits.
+venous,C0348013,venous,Spatial Concept,"Of, or pertaining to, or contained in, or performing the function of the veins."
 pressure,,,,
 sharply,,,,
 hemidiaphragm,,,,
-decrease,C0547047,No results,No results,decrease
-opacification,C0449584,No results,No results,opacification
-base,C0178499,opposite of acid,Chemical Viewed Functionally,base
+decrease,C0547047,decrease,No results,No results
+opacification,C0449584,opacification,No results,No results
+base,C0178499,base,Chemical Viewed Functionally,opposite of acid
 an,,,,
-prominent,C0205402,No results,No results,prominent
-underlying,C4722602,"Situated beneath, or the basic or root cause of something.",Finding,underlying
+prominent,C0205402,prominent,No results,No results
+underlying,C4722602,underlying,Finding,"Situated beneath, or the basic or root cause of something."
 Cardiac,,,,
-adjacent,C0205117,Next to or adjoining.,Spatial Concept,adjacent
+adjacent,C0205117,adjacent,Spatial Concept,Next to or adjoining.
 top - normal,,,,
 hypertension,,,,
-Enlarged,C0442800,No results,No results,Enlarged
+Enlarged,C0442800,Enlarged,No results,No results
 prominence,,,,
 atrium,,,,
-mitral,C0746591,a valve that controls blood flow between heart chambers,Qualitative Concept,mitral
+mitral,C0746591,mitral,Qualitative Concept,a valve that controls blood flow between heart chambers
 valve,,,,
 origin,,,,
 infectious,,,,
-process,C1522240,A sequence of events which produces some outcome.,Phenomenon or Process,process
+process,C1522240,process,Phenomenon or Process,A sequence of events which produces some outcome.
 engorgement,,,,
-failure,C5200924,A lack of occurrence or performance.,Idea or Concept,failure
+failure,C5200924,failure,Idea or Concept,A lack of occurrence or performance.
 layer,,,,
 dependently,,,,
 peculiar,,,,
-shape,C0332479,The spatial arrangement of something as distinct from its substance.,Spatial Concept,shape
+shape,C0332479,shape,Spatial Concept,The spatial arrangement of something as distinct from its substance.
 pericardial,,,,
 relatively,,,,
-Aortic,C0003483,"Srdečnice. Největší tepna organismu, která vystupuje přímo z levé srdeční komory. Probíhá hrudníkem a břišní dutinou (před páteří) až do bederní oblasti, kde se dělí (bifurkace) na dvě kyčelní tepny (aa. ilicae). Vystupuje z ní v různých částech řada větví, které zásobují okysličenou krví všechny orgány těla. A. ascendens - vzestupná a., počáteční úsek a. přecházející v aortální oblouk (arcus aortae). Navazuje a. descendens, která má část hrudní (a. thoracica) a břišní (a. abdominalis). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)","Body Part, Organ, or Organ Component",Aortic
+Aortic,C0003483,Aortic,"Body Part, Organ, or Organ Component","Srdečnice. Největší tepna organismu, která vystupuje přímo z levé srdeční komory. Probíhá hrudníkem a břišní dutinou (před páteří) až do bederní oblasti, kde se dělí (bifurkace) na dvě kyčelní tepny (aa. ilicae). Vystupuje z ní v různých částech řada větví, které zásobují okysličenou krví všechny orgány těla. A. ascendens - vzestupná a., počáteční úsek a. přecházející v aortální oblouk (arcus aortae). Navazuje a. descendens, která má část hrudní (a. thoracica) a břišní (a. abdominalis). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
 contour,,,,
 changed,,,,
 hilus,,,,
 not less distinct,,,,
-interstitial,C0596790,"Relating to or situated in the small, narrow spaces between tissues or parts of an organ.",Body Location or Region,interstitial
+interstitial,C0596790,interstitial,Body Location or Region,"Relating to or situated in the small, narrow spaces between tissues or parts of an organ."
 overload,,,,
-Nasogastric,C3282907,No results,No results,Nasogastric
+Nasogastric,C3282907,Nasogastric,No results,No results
 out of review,,,,
 Multiple,,,,
-right sided,C0444532,Pertaining to the physical area of an object that is located to the right of its center.,Spatial Concept,right sided
-fracture,C0016658,A partial or complete breakage of the continuity of a bone. [],Injury or Poisoning,fracture
+right sided,C0444532,right sided,Spatial Concept,Pertaining to the physical area of an object that is located to the right of its center.
+fracture,C0016658,fracture,Injury or Poisoning,A partial or complete breakage of the continuity of a bone. []
 multiple,,,,
-posttraumatic,C5453015,No results,No results,posttraumatic
+posttraumatic,C5453015,posttraumatic,No results,No results
 deformities,,,,
-Massive,C0522501,No results,No results,Massive
-nearly,C3828842,Not quite or just short of.,Qualitative Concept,nearly
-resolved,C3714811,No results,No results,resolved
-Nonspecific,C0750540,No results,No results,Nonspecific
+Massive,C0522501,Massive,No results,No results
+nearly,C3828842,nearly,Qualitative Concept,Not quite or just short of.
+resolved,C3714811,resolved,No results,No results
+Nonspecific,C0750540,Nonspecific,No results,No results
 thoracic,,,,
-convex,C0521163,No results,No results,convex
-old,C0580836,"Not new, of an earlier time.",Temporal Concept,old
+convex,C0521163,convex,No results,No results
+old,C0580836,old,Temporal Concept,"Not new, of an earlier time."
 ribs,,,,
-second,C0457385,"A unit of time, one of the seven base units of the International System of Units (Systeme International d'Unites, SI). The second is the duration of 919 263 177 0 periods of the specified light radiation corresponding to the transition between the two hyperfine levels of the caesium 133 atom in its ground state at 0 K. According to the convention, 60 seconds constitute one minute; 3,600 seconds constitute one hour.",Temporal Concept,second
+second,C0457385,second,Temporal Concept,"A unit of time, one of the seven base units of the International System of Units (Systeme International d'Unites, SI). The second is the duration of 919 263 177 0 periods of the specified light radiation corresponding to the transition between the two hyperfine levels of the caesium 133 atom in its ground state at 0 K. According to the convention, 60 seconds constitute one minute; 3,600 seconds constitute one hour."
 fifith,,,,
 Slight,,,,
 posterior,,,,
-fourth,C0205438,Following the third position in an ordering or series; coming next after the third and just before the fifth in position.,Quantitative Concept,fourth
+fourth,C0205438,fourth,Quantitative Concept,Following the third position in an ordering or series; coming next after the third and just before the fifth in position.
 calcified,,,,
 Severe,,,,
 standard,,,,
 below,,,,
 diaphragm,,,,
-Interval,C1272706,"A time period, or other type of interval, during which something may be achieved, obtained or observed.",Temporal Concept,Interval
-improved,C0184511,Condition changed and/or recovered,Finding,improved
-aeration,C2215609,No results,No results,aeration
-resolution,C2699488,"A means of finding a solution to a problem, or a means of finding agreement or harmony.",Conceptual Entity,resolution
-Right,C0205090,Being or located on or directed toward the side of the body to the east when facing north.,Spatial Concept,Right
-confluent,C0205200,No results,No results,confluent
+Interval,C1272706,Interval,Temporal Concept,"A time period, or other type of interval, during which something may be achieved, obtained or observed."
+improved,C0184511,improved,Finding,Condition changed and/or recovered
+aeration,C2215609,aeration,No results,No results
+resolution,C2699488,resolution,Conceptual Entity,"A means of finding a solution to a problem, or a means of finding agreement or harmony."
+Right,C0205090,Right,Spatial Concept,Being or located on or directed toward the side of the body to the east when facing north.
+confluent,C0205200,confluent,No results,No results
 margin,,,,
-chronic,C0205191,"Condition lasting for more than 3-6 months, or persisting beyond the course of an acute disease, or after tissue healing is complete.",Temporal Concept,chronic
+chronic,C0205191,chronic,Temporal Concept,"Condition lasting for more than 3-6 months, or persisting beyond the course of an acute disease, or after tissue healing is complete."
 thickening,,,,
 S type,,,,
-ventricular,C1522565,Of or relating to a ventricle (of the heart or brain).,Spatial Concept,ventricular
+ventricular,C1522565,ventricular,Spatial Concept,Of or relating to a ventricle (of the heart or brain).
 configuration,,,,
 similar to prior,,,,
-tortuosity,C0333076,No results,No results,tortuosity
-Elevation,C0702240,The condition of being elevated.,Spatial Concept,Elevation
-basilar,C1184146,No results,No results,basilar
-linear,C0205132,A mark that is long relative to its width; a length (straight or curved) without breadth or thickness; the trace of a moving point.,Spatial Concept,linear
+tortuosity,C0333076,tortuosity,No results,No results
+Elevation,C0702240,Elevation,Spatial Concept,The condition of being elevated.
+basilar,C1184146,basilar,No results,No results
+linear,C0205132,linear,Spatial Concept,A mark that is long relative to its width; a length (straight or curved) without breadth or thickness; the trace of a moving point.
 scarring,,,,
-elevation,C0702240,The condition of being elevated.,Spatial Concept,elevation
+elevation,C0702240,elevation,Spatial Concept,The condition of being elevated.
 streaky,,,,
 superimposed,,,,
 top,,,,
-Air,C3536832,No results,No results,Air
+Air,C3536832,Air,No results,No results
 wall,,,,
 surgery,,,,
-skin,C1123023,The outer covering of the body that protects it from the environment. It is composed of the DERMIS and the EPIDERMIS.,Body System,skin
+skin,C1123023,skin,Body System,The outer covering of the body that protects it from the environment. It is composed of the DERMIS and the EPIDERMIS.
 slight,,,,
-interval,C1272706,"A time period, or other type of interval, during which something may be achieved, obtained or observed.",Temporal Concept,interval
+interval,C1272706,interval,Temporal Concept,"A time period, or other type of interval, during which something may be achieved, obtained or observed."
 hyperinflated,,,,
-greater,C1704243,"Notable in size, number, measure, magnitude, degree, or effectiveness.",Quantitative Concept,greater
+greater,C1704243,greater,Quantitative Concept,"Notable in size, number, measure, magnitude, degree, or effectiveness."
 Sternotomy,,,,
-extensive,C0205231,"Large in quantity, range, or spatial extent.",Qualitative Concept,extensive
-clips,C0175722,"Devices designed for attachment or occlusion of anatomic structures (e.g., blood vessels, fallopian tubes) and small objects and accessories (e.g., towels, drapes, bandages) used in surgical procedures without intentionally piercing them (i.e., atraumatic); some clips are intended for use as permanent implants or for temporary occlusion of external (e.g., nose, umbilical cord) anatomic structures. Surgical temporary clips usually permit only a small jaw opening, have a normally closed resting state, and are frequently applied manually; dedicated implantable clips include a variety of atraumatic small metallic or plastic devices in different shapes and sizes that are typically delivered using clip appliers.",Medical Device,clips
-status,C0449438,Designation of a concept's state. Normally is not populated unless the state is retired..,Qualitative Concept,status
-post,C0687676,Happening at a time subsequent to a reference time; later in time or order.,Temporal Concept,post
+extensive,C0205231,extensive,Qualitative Concept,"Large in quantity, range, or spatial extent."
+clips,C0175722,clips,Medical Device,"Devices designed for attachment or occlusion of anatomic structures (e.g., blood vessels, fallopian tubes) and small objects and accessories (e.g., towels, drapes, bandages) used in surgical procedures without intentionally piercing them (i.e., atraumatic); some clips are intended for use as permanent implants or for temporary occlusion of external (e.g., nose, umbilical cord) anatomic structures. Surgical temporary clips usually permit only a small jaw opening, have a normally closed resting state, and are frequently applied manually; dedicated implantable clips include a variety of atraumatic small metallic or plastic devices in different shapes and sizes that are typically delivered using clip appliers."
+status,C0449438,status,Qualitative Concept,Designation of a concept's state. Normally is not populated unless the state is retired..
+post,C0687676,post,Temporal Concept,Happening at a time subsequent to a reference time; later in time or order.
 median,,,,
 sternotomy,,,,
 CABG,,,,
@@ -339,120 +339,120 @@ spine,,,,
 COPD,,,,
 blunting,,,,
 trace,,,,
-borderline,C0205189,"Having a minor degree of severity that is considered to be on the boundary between the normal and the abnormal ranges. For quantitative traits, a deviation of that is less than two standard deviations from the appropriate population mean. [https://orcid.org/0000-0002-0736-9199]",Qualitative Concept,borderline
+borderline,C0205189,borderline,Qualitative Concept,"Having a minor degree of severity that is considered to be on the boundary between the normal and the abnormal ranges. For quantitative traits, a deviation of that is less than two standard deviations from the appropriate population mean. [https://orcid.org/0000-0002-0736-9199]"
 knob,,,,
 calcifications,,,,
 multilevel,,,,
 degenerative,,,,
 airway,,,,
-obstruction,C0028778,Blockage of the normal flow of the contents of an anatomical passageway.,Finding,obstruction
+obstruction,C0028778,obstruction,Finding,Blockage of the normal flow of the contents of an anatomical passageway.
 post CABG,,,,
 appropriately,,,,
 aligned,,,,
-Vascular,C1801960,Relating to or containing blood vessels.,Qualitative Concept,Vascular
+Vascular,C1801960,Vascular,Qualitative Concept,Relating to or containing blood vessels.
 diaphragms,,,,
-flattened,C0016203,No results,No results,flattened
+flattened,C0016203,flattened,No results,No results
 markings,,,,
-early,C1279919,At or near the beginning of a period of time or course of events.,Temporal Concept,early
+early,C1279919,early,Temporal Concept,At or near the beginning of a period of time or course of events.
 institial,,,,
 infiltrate,,,,
 frank,,,,
-atypical,C0205182,Varying from the norm; not conformable to the type.,Qualitative Concept,atypical
-lobar,C1522010,Of or relating to or affecting a lobe.,Qualitative Concept,lobar
+atypical,C0205182,atypical,Qualitative Concept,Varying from the norm; not conformable to the type.
+lobar,C1522010,lobar,Qualitative Concept,Of or relating to or affecting a lobe.
 subtle,,,,
 9 mm,,,,
 otherwise,,,,
 aspect,,,,
 elongation,,,,
-descending,C0205386,To travel downward.,Qualitative Concept,descending
+descending,C0205386,descending,Qualitative Concept,To travel downward.
 flattening,,,,
 hemidiaphragms,,,,
-diffuse,C0205219,Widely spread; not localized or confined.,Spatial Concept,diffuse
+diffuse,C0205219,diffuse,Spatial Concept,Widely spread; not localized or confined.
 resolving,,,,
-Mediastinum,C0025066,"A membrane in the midline of the THORAX of mammals. It separates the lungs between the STERNUM in front and the VERTEBRAL COLUMN behind. It also surrounds the HEART, TRACHEA, ESOPHAGUS, THYMUS, and LYMPH NODES.",Body Location or Region,Mediastinum
+Mediastinum,C0025066,Mediastinum,Body Location or Region,"A membrane in the midline of the THORAX of mammals. It separates the lungs between the STERNUM in front and the VERTEBRAL COLUMN behind. It also surrounds the HEART, TRACHEA, ESOPHAGUS, THYMUS, and LYMPH NODES."
 hila,,,,
 Improving,,,,
-Diffuse,C0205219,Widely spread; not localized or confined.,Spatial Concept,Diffuse
+Diffuse,C0205219,Diffuse,Spatial Concept,Widely spread; not localized or confined.
 moderately,,,,
 AP,,,,
 diameter,,,,
-Scattered,C0439742,No results,No results,Scattered
-nodules,C0028259,A 1 to 5 cm firm lesion raised above the surface of the surrounding skin; differs from a papule only in size,Acquired Abnormality,nodules
+Scattered,C0439742,Scattered,No results,No results
+nodules,C0028259,nodules,Acquired Abnormality,A 1 to 5 cm firm lesion raised above the surface of the surrounding skin; differs from a papule only in size
 Lower,,,,
 secondary,,,,
 accentuation,,,,
-Tortuosity,C0333076,No results,No results,Tortuosity
-Cardiomegaly,C0018800,Abnormal enlargement of the heart.,Finding,Cardiomegaly
+Tortuosity,C0333076,Tortuosity,No results,No results
+Cardiomegaly,C0018800,Cardiomegaly,Finding,Abnormal enlargement of the heart.
 Ovoid,,,,
 bilaterally,,,,
 infiltrates,,,,
 free,,,,
-air,C3536832,No results,No results,air
+air,C3536832,air,No results,No results
 Supportive,,,,
 Continued,,,,
-loss,C1517945,A gradual decline in amount or activity.,Quantitative Concept,loss
+loss,C1517945,loss,Quantitative Concept,A gradual decline in amount or activity.
 fully,,,,
 expanded,,,,
-dense,C0439794,Having high relative density or specific gravity; permitting little if any light to pass through.,Qualitative Concept,dense
+dense,C0439794,dense,Qualitative Concept,Having high relative density or specific gravity; permitting little if any light to pass through.
 midline,,,,
 IJ,,,,
 fluid,,,,
-major,C0205164,"Greater or bigger in amount, extent, or size.",Qualitative Concept,major
-fissure,C0332469,A long narrow slit or groove that divides an organ into lobes.,Anatomical Structure,fissure
-both,C1706086,One and the other; relating to or being two in conjunction.,Qualitative Concept,both
-Left - sided,C0443246,An abnormal transposition to the left side.,Spatial Concept,Left - sided
-Opacification,C0449584,No results,No results,Opacification
+major,C0205164,major,Qualitative Concept,"Greater or bigger in amount, extent, or size."
+fissure,C0332469,fissure,Anatomical Structure,A long narrow slit or groove that divides an organ into lobes.
+both,C1706086,both,Qualitative Concept,One and the other; relating to or being two in conjunction.
+Left - sided,C0443246,Left - sided,Spatial Concept,An abnormal transposition to the left side.
+Opacification,C0449584,Opacification,No results,No results
 Monitoring,,,,
 port,,,,
 catheter,,,,
-abdomen,C0000726,Porción del cuerpo que se encuentra entre el TÓRAX y la PELVIS.,Body Location or Region,abdomen
+abdomen,C0000726,abdomen,Body Location or Region,Porción del cuerpo que se encuentra entre el TÓRAX y la PELVIS.
 Hyperinflated,,,,
-widening,C0332464,"Having a width, or side to side dimension, that is greater than is normally expected.",Spatial Concept,widening
-lesion,C0221198,"A localized pathological or traumatic structural change, damage, deformity, or discontinuity of tissue, organ, or body part.",Finding,lesion
+widening,C0332464,widening,Spatial Concept,"Having a width, or side to side dimension, that is greater than is normally expected."
+lesion,C0221198,lesion,Finding,"A localized pathological or traumatic structural change, damage, deformity, or discontinuity of tissue, organ, or body part."
 over,,,,
 superior vena cava,,,,
 intrathoracic,,,,
-internal,C0205102,Inside or closer to the inside of the body or object.,Spatial Concept,internal
+internal,C0205102,internal,Spatial Concept,Inside or closer to the inside of the body or object.
 jugular,,,,
-trachea,C0040578,The cartilaginous and membranous tube descending from the larynx and branching into the right and left main bronchi.,"Body Part, Organ, or Organ Component",trachea
-central,C0205099,Applies to an abnormality that is located close to the median plane or midline of the body or of the referenced structure. [],Spatial Concept,central
+trachea,C0040578,trachea,"Body Part, Organ, or Organ Component",The cartilaginous and membranous tube descending from the larynx and branching into the right and left main bronchi.
+central,C0205099,central,Spatial Concept,Applies to an abnormality that is located close to the median plane or midline of the body or of the referenced structure. []
 superior,,,,
-Right - sided,C0444532,Pertaining to the physical area of an object that is located to the right of its center.,Spatial Concept,Right - sided
+Right - sided,C0444532,Right - sided,Spatial Concept,Pertaining to the physical area of an object that is located to the right of its center.
 cavoatrial,,,,
-in position,C1550045,"<p>Used by one system to inform another that the container is in position for specimen transfer (e.g., container removal from track, pipetting, etc.).</p>",Spatial Concept,in position
-Increase,C0442805,"A process of becoming larger, more numerous, more important, or more likely.",Functional Concept,Increase
+in position,C1550045,in position,Spatial Concept,"<p>Used by one system to inform another that the container is in position for specimen transfer (e.g., container removal from track, pipetting, etc.).</p>"
+Increase,C0442805,Increase,Functional Concept,"A process of becoming larger, more numerous, more important, or more likely."
 caliber,,,,
-veins,C0042449,"Subdivision of venous tree (organ) which consists of branching sets of veins that form a tree; together with other venous trees (organ part), it constitutes a venous tree (organ). Examples: subclavian venous tree, jugular tree, extrahepatic portal tree, common iliac venous tree.","Body Part, Organ, or Organ Component",veins
-intravascular,C0442123,No results,No results,intravascular
+veins,C0042449,veins,"Body Part, Organ, or Organ Component","Subdivision of venous tree (organ) which consists of branching sets of veins that form a tree; together with other venous trees (organ part), it constitutes a venous tree (organ). Examples: subclavian venous tree, jugular tree, extrahepatic portal tree, common iliac venous tree."
+intravascular,C0442123,intravascular,No results,No results
 Port - A - Cath,,,,
 cavoatrial junction,,,,
 essentially,,,,
 inflated,,,,
-hemothorax,C0019123,"Přítomnost krve v pohrudniční (pleurální) dutině, nejč. po úrazu. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz)",Pathologic Function,hemothorax
+hemothorax,C0019123,hemothorax,Pathologic Function,"Přítomnost krve v pohrudniční (pleurální) dutině, nejč. po úrazu. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz)"
 aortic,,,,
 knuckle,,,,
-calcification,C1533591,No results,No results,calcification
+calcification,C1533591,calcification,No results,No results
 demineralization,,,,
 Well,,,,
-fifth,C0205439,Following the fourth position in an ordering or series; coming next after the fourth and just before the sixth in position.,Quantitative Concept,fifth
-anterior,C0205094,Denoting the front surface of the body; often used to indicate the position of one structure relative to another.,Spatial Concept,anterior
-Linear,C0205132,A mark that is long relative to its width; a length (straight or curved) without breadth or thickness; the trace of a moving point.,Spatial Concept,Linear
+fifth,C0205439,fifth,Quantitative Concept,Following the fourth position in an ordering or series; coming next after the fourth and just before the sixth in position.
+anterior,C0205094,anterior,Spatial Concept,Denoting the front surface of the body; often used to indicate the position of one structure relative to another.
+Linear,C0205132,Linear,Spatial Concept,A mark that is long relative to its width; a length (straight or curved) without breadth or thickness; the trace of a moving point.
 focus,,,,
-redistribution,C0332620,No results,No results,redistribution
+redistribution,C0332620,redistribution,No results,No results
 hazy,,,,
 ill - defined,,,,
-Increased,C0205217,No results,No results,Increased
+Increased,C0205217,Increased,No results,No results
 lingular,,,,
 faint,,,,
 perihilar,,,,
-Multifocal,C0205292,"Arising from, pertaining to, or having many locations.",Spatial Concept,Multifocal
-decreased,C0205216,A subjective response indicating that something is or has decreased.,Quantitative Concept,decreased
+Multifocal,C0205292,Multifocal,Spatial Concept,"Arising from, pertaining to, or having many locations."
+decreased,C0205216,decreased,Quantitative Concept,A subjective response indicating that something is or has decreased.
 in extent,,,,
 severity,,,,
 Retrocardiac,,,,
 valvular,,,,
-replacement,C0559956,The act of removing one thing and putting another thing in its place.,Functional Concept,replacement
-right internal jugular vein,C0501117,No results,No results,right internal jugular vein
+replacement,C0559956,replacement,Functional Concept,The act of removing one thing and putting another thing in its place.
+right internal jugular vein,C0501117,right internal jugular vein,No results,No results
 Discrete,,,,
 worsened,,,,
 infrahilar,,,,
@@ -464,40 +464,40 @@ drains,,,,
 in place,,,,
 Swan - Ganz,,,,
 pulmonic,,,,
-placement,C1524072,"Position or arrangement, as of the teeth; the state of being placed or arranged, as the assignment of a person to a appropriate clinical study.",Qualitative Concept,placement
+placement,C1524072,placement,Qualitative Concept,"Position or arrangement, as of the teeth; the state of being placed or arranged, as the assignment of a person to a appropriate clinical study."
 nondistended,,,,
 5 cm above,,,,
 Median,,,,
-migrated,C0232902,No results,No results,migrated
+migrated,C0232902,migrated,No results,No results
 proximally,,,,
 cardia,,,,
 blurring,,,,
-horizontal,C0205126,Parallel to or in the plane of the horizon.,Spatial Concept,horizontal
+horizontal,C0205126,horizontal,Spatial Concept,Parallel to or in the plane of the horizon.
 side port,,,,
 the Swan - Ganz,,,,
-other,C0205394,Different than the one(s) previously specified or mentioned.,Qualitative Concept,other
+other,C0205394,other,Qualitative Concept,Different than the one(s) previously specified or mentioned.
 homogeneous,,,,
 worrisome,,,,
 Trace,,,,
-constant,C1547014,No results,No results,constant
+constant,C1547014,constant,No results,No results
 Biapical,,,,
 Surgical,,,,
-neck,C0027530,La parte del cuerpo humano u otro animal que conecta la CABEZA con el resto del cuerpo,Body Location or Region,neck
+neck,C0027530,neck,Body Location or Region,La parte del cuerpo humano u otro animal que conecta la CABEZA con el resto del cuerpo
 pneumomediastinum,,,,
-symmetrical,C0332516,No results,No results,symmetrical
-apical,C0205111,"Applies to an abnormality whose distribution and appearance are located at the apex of an organ. For instance, apical refers to the superior portion of the lung. []",Spatial Concept,apical
-parenchyma,C0933845,"The tissue that constitutes the essential part of an organ as contrasted with e.g., connective tissue and blood vessels.","Body Part, Organ, or Organ Component",parenchyma
+symmetrical,C0332516,symmetrical,No results,No results
+apical,C0205111,apical,Spatial Concept,"Applies to an abnormality whose distribution and appearance are located at the apex of an organ. For instance, apical refers to the superior portion of the lung. []"
+parenchyma,C0933845,parenchyma,"Body Part, Organ, or Organ Component","The tissue that constitutes the essential part of an organ as contrasted with e.g., connective tissue and blood vessels."
 biapical,,,,
-Upper,C1282910,"In anatomy, indicating higher than a given reference point.",Spatial Concept,Upper
-paratracheal,C0442143,Regions near to the trachea.,Spatial Concept,paratracheal
+Upper,C1282910,Upper,Spatial Concept,"In anatomy, indicating higher than a given reference point."
+paratracheal,C0442143,paratracheal,Spatial Concept,Regions near to the trachea.
 surgical,,,,
 deviation,,,,
 thyroid,,,,
 vessel on end,,,,
-thyroidectomy,C0040145,Surgery to remover part or all of the thyroid gland.,Therapeutic or Preventive Procedure,thyroidectomy
+thyroidectomy,C0040145,thyroidectomy,Therapeutic or Preventive Procedure,Surgery to remover part or all of the thyroid gland.
 malignancy,,,,
 Thoracic,,,,
-Consolidative,C0702116,No results,No results,Consolidative
+Consolidative,C0702116,Consolidative,No results,No results
 RELEVANT,,,,
 CHANGE,,,,
 PARENCHYMAL,,,,
@@ -518,46 +518,46 @@ STRUCTURES,,,,
 AZYGOS,,,,
 LOBE,,,,
 remainder,,,,
-accessory,C2963249,Something added to extend a whole and to make an addition.,Manufactured Object,accessory
+accessory,C2963249,accessory,Manufactured Object,Something added to extend a whole and to make an addition.
 azygos,,,,
-Aorta,C0003483,"Srdečnice. Největší tepna organismu, která vystupuje přímo z levé srdeční komory. Probíhá hrudníkem a břišní dutinou (před páteří) až do bederní oblasti, kde se dělí (bifurkace) na dvě kyčelní tepny (aa. ilicae). Vystupuje z ní v různých částech řada větví, které zásobují okysličenou krví všechny orgány těla. A. ascendens - vzestupná a., počáteční úsek a. přecházející v aortální oblouk (arcus aortae). Navazuje a. descendens, která má část hrudní (a. thoracica) a břišní (a. abdominalis). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)","Body Part, Organ, or Organ Component",Aorta
-tortuous,C4068863,No results,No results,tortuous
-atherosclerotic,C0333482,status similar or related to atherosclerosis,Functional Concept,atherosclerotic
+Aorta,C0003483,Aorta,"Body Part, Organ, or Organ Component","Srdečnice. Největší tepna organismu, která vystupuje přímo z levé srdeční komory. Probíhá hrudníkem a břišní dutinou (před páteří) až do bederní oblasti, kde se dělí (bifurkace) na dvě kyčelní tepny (aa. ilicae). Vystupuje z ní v různých částech řada větví, které zásobují okysličenou krví všechny orgány těla. A. ascendens - vzestupná a., počáteční úsek a. přecházející v aortální oblouk (arcus aortae). Navazuje a. descendens, která má část hrudní (a. thoracica) a břišní (a. abdominalis). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+tortuous,C4068863,tortuous,No results,No results
+atherosclerotic,C0333482,atherosclerotic,Functional Concept,status similar or related to atherosclerosis
 arch,,,,
-Crowding,C0010383,"Número excessivo de indivíduos, humanos ou animais, em relação ao espaço disponível.",Social Behavior,Crowding
-decompensated,C0205434,No results,No results,decompensated
-obvious,C5706969,Easily recognized or understood. Clearly apparent.,Qualitative Concept,obvious
+Crowding,C0010383,Crowding,Social Behavior,"Número excessivo de indivíduos, humanos ou animais, em relação ao espaço disponível."
+decompensated,C0205434,decompensated,No results,No results
+obvious,C5706969,obvious,Qualitative Concept,Easily recognized or understood. Clearly apparent.
 midlung,,,,
 Calcific,,,,
 densities,,,,
-gallbladder,C0016976,"storage reservoir for bile secretion; allows the delivery of bile acids at a high concentration and in a controlled manner, via the cystic duct to the duodenum, for degradation of dietary lipid.","Body Part, Organ, or Organ Component",gallbladder
+gallbladder,C0016976,gallbladder,"Body Part, Organ, or Organ Component","storage reservoir for bile secretion; allows the delivery of bile acids at a high concentration and in a controlled manner, via the cystic duct to the duodenum, for degradation of dietary lipid."
 crowding of,,,,
 minimally,,,,
 crowd,,,,
 Hemidiaphragm,,,,
-better,C0332272,In an improved condition.,Qualitative Concept,better
+better,C0332272,better,Qualitative Concept,In an improved condition.
 some,,,,
 Blunting,,,,
 in standard position,,,,
 side holes,,,,
-GE,C4534553,No results,No results,GE
+GE,C4534553,GE,No results,No results
 axillary,,,,
-dual,C1554184,<p>Dual purpose. Defined purposes based on species and breed</p>,Intellectual Product,dual
-lead,C0023175,"A soft, grayish metal with poisonous salts; atomic number 82, atomic weight 207.2, symbol Pb.",Hazardous or Poisonous Substance,lead
-pacemaker,C0810633,"Stimulators used to regulate or substitute the normal rate at which a biologic center establishes the regular intervals of activity (rhythm) of an organ (e.g., heart, lungs). These stimulators control the pace by means of some artificial (e.g., electric generator) stimuli. Pacemakers can be designed either for continuous use (usually implantable devices) or for temporary external use.",Medical Device,pacemaker
+dual,C1554184,dual,Intellectual Product,<p>Dual purpose. Defined purposes based on species and breed</p>
+lead,C0023175,lead,Hazardous or Poisonous Substance,"A soft, grayish metal with poisonous salts; atomic number 82, atomic weight 207.2, symbol Pb."
+pacemaker,C0810633,pacemaker,Medical Device,"Stimulators used to regulate or substitute the normal rate at which a biologic center establishes the regular intervals of activity (rhythm) of an organ (e.g., heart, lungs). These stimulators control the pace by means of some artificial (e.g., electric generator) stimuli. Pacemakers can be designed either for continuous use (usually implantable devices) or for temporary external use."
 tips,,,,
-ventricle,C2355627,"General anatomical term which refers to a chamber of an organ with cavitated organ parts. Examples: right ventricle of heart, lateral ventricle of brain.","Body Part, Organ, or Organ Component",ventricle
+ventricle,C2355627,ventricle,"Body Part, Organ, or Organ Component","General anatomical term which refers to a chamber of an organ with cavitated organ parts. Examples: right ventricle of heart, lateral ventricle of brain."
 3.5 cm,,,,
-metallic,C2986473,No results,No results,metallic
-foreign,C1517294,Not belonging to that in which it is contained; introduced from an outside source.,Qualitative Concept,foreign
+metallic,C2986473,metallic,No results,No results
+foreign,C1517294,foreign,Qualitative Concept,Not belonging to that in which it is contained; introduced from an outside source.
 object,,,,
-two,C0205448,A natural number greater than 1 and less than 3 and the quantity that it denotes: the sum of one and one.,Quantitative Concept,two
+two,C0205448,two,Quantitative Concept,A natural number greater than 1 and less than 3 and the quantity that it denotes: the sum of one and one.
 components,,,,
 curvilinear,,,,
 beneath,,,,
 mainstem,,,,
 bronchus,,,,
-iatrogenic,C0439669,No results,No results,iatrogenic
+iatrogenic,C0439669,iatrogenic,No results,No results
 related,,,,
 well - expanded,,,,
 in acceptable position,,,,
@@ -565,24 +565,24 @@ advanced,,,,
 by several centimeters,,,,
 implement,,,,
 medially,,,,
-not seen,C0332252,No results,No results,not seen
+not seen,C0332252,not seen,No results,No results
 less,,,,
 a change in patient position,,,,
 not well seen,,,,
 Pacer,,,,
 leads,,,,
-improvement,C2986411,A condition superior to an earlier condition.,Conceptual Entity,improvement
+improvement,C2986411,improvement,Conceptual Entity,A condition superior to an earlier condition.
 less prominent,,,,
 upright position,,,,
-atelectatic,C0439688,No results,No results,atelectatic
+atelectatic,C0439688,atelectatic,No results,No results
 on waterseal,,,,
 amount,,,,
 Rib,,,,
 partially assessed,,,,
 tiny,,,,
-residual,C1609982,Remaining or left behind.,Qualitative Concept,residual
+residual,C1609982,residual,Qualitative Concept,Remaining or left behind.
 appreciable,,,,
-Atelectatic,C0439688,No results,No results,Atelectatic
+Atelectatic,C0439688,Atelectatic,No results,No results
 existing,,,,
 thickenings,,,,
 injury,,,,
@@ -592,53 +592,53 @@ malalignment,,,,
 lateral structures,,,,
 thorax,,,,
 elevate,,,,
-left arm,C5779993,The portion of the upper extremity between the shoulder and the wrist and located on the left side of the body.,"Body Part, Organ, or Organ Component",left arm
+left arm,C5779993,left arm,"Body Part, Organ, or Organ Component",The portion of the upper extremity between the shoulder and the wrist and located on the left side of the body.
 injuries,,,,
 transverse,,,,
 L 2 through L 4,,,,
 first,,,,
-medial,C0205098,Toward the middle or inside (as opposed to lateral).,Spatial Concept,medial
+medial,C0205098,medial,Spatial Concept,Toward the middle or inside (as opposed to lateral).
 portions,,,,
-third,C0205437,Following the second position in an ordering or series; coming next after the second and just before the fourth in position.,Quantitative Concept,third
+third,C0205437,third,Quantitative Concept,Following the second position in an ordering or series; coming next after the second and just before the fourth in position.
 comminuted,,,,
 posteriorly,,,,
-eighth,C0205442,Following the seventh position in an ordering or series; coming next after the seventh and just before the ninth in position.,Intellectual Product,eighth
-ninth,C0205443,No results,No results,ninth
+eighth,C0205442,eighth,Intellectual Product,Following the seventh position in an ordering or series; coming next after the seventh and just before the ninth in position.
+ninth,C0205443,ninth,No results,No results
 displacement,,,,
 scapula,,,,
 hemithorax,,,,
-blood,C0005767,Body substance which consists of plasma and blood cells,Body Substance,blood
-contents,C0456205,"Everything that is included in a collection, container, or communication.",Conceptual Entity,contents
+blood,C0005767,blood,Body Substance,Body substance which consists of plasma and blood cells
+contents,C0456205,contents,Conceptual Entity,"Everything that is included in a collection, container, or communication."
 to the right,,,,
 obliquity of the patient,,,,
-true,C0205238,"Conforming to facts, reality or definitive criteria.",Qualitative Concept,true
+true,C0205238,true,Qualitative Concept,"Conforming to facts, reality or definitive criteria."
 shift,,,,
-several,C0443302,An indefinite small quantity that is more than two but less than many.,Quantitative Concept,several
+several,C0443302,several,Quantitative Concept,An indefinite small quantity that is more than two but less than many.
 Poor definition,,,,
 clavicle,,,,
 not as well seen on this study,,,,
 4 cm above,,,,
 lucency,,,,
-Subcutaneous,C0443315,No results,No results,Subcutaneous
-Apical,C0205111,"Applies to an abnormality whose distribution and appearance are located at the apex of an organ. For instance, apical refers to the superior portion of the lung. []",Spatial Concept,Apical
-Extensive,C0205231,"Large in quantity, range, or spatial extent.",Qualitative Concept,Extensive
-subcutaneous,C0443315,No results,No results,subcutaneous
+Subcutaneous,C0443315,Subcutaneous,No results,No results
+Apical,C0205111,Apical,Spatial Concept,"Applies to an abnormality whose distribution and appearance are located at the apex of an organ. For instance, apical refers to the superior portion of the lung. []"
+Extensive,C0205231,Extensive,Qualitative Concept,"Large in quantity, range, or spatial extent."
+subcutaneous,C0443315,subcutaneous,No results,No results
 emphysema,,,,
-tension,C0233494,A feeling of mental or emotional strain or suspense.,Mental or Behavioral Dysfunction,tension
-left sided,C0443246,An abnormal transposition to the left side.,Spatial Concept,left sided
-hemorrhage,C0019080,Bleeding or escape of blood from a vessel.,Pathologic Function,hemorrhage
+tension,C0233494,tension,Mental or Behavioral Dysfunction,A feeling of mental or emotional strain or suspense.
+left sided,C0443246,left sided,Spatial Concept,An abnormal transposition to the left side.
+hemorrhage,C0019080,hemorrhage,Pathologic Function,Bleeding or escape of blood from a vessel.
 left - sided,,,,
 Pneumomediastinum,,,,
-pneumopericardium,C0032319,"The presence of air in the pericardial cavity. Causes include chest injury in adults, and respiratory distress syndrome in infants.",Disease or Syndrome,pneumopericardium
+pneumopericardium,C0032319,pneumopericardium,Disease or Syndrome,"The presence of air in the pericardial cavity. Causes include chest injury in adults, and respiratory distress syndrome in infants."
 severely,,,,
-fractured,C4554413,No results,No results,fractured
+fractured,C4554413,fractured,No results,No results
 hemorrahge,,,,
-inferior,C0542339,In anatomy indicating lower than a given reference point.,Spatial Concept,inferior
-field,C1521738,"An area of database record, or graphical user interface form, into which a particular item of data is entered.",Conceptual Entity,field
+inferior,C0542339,inferior,Spatial Concept,In anatomy indicating lower than a given reference point.
+field,C1521738,field,Conceptual Entity,"An area of database record, or graphical user interface form, into which a particular item of data is entered."
 assessment,,,,
 limited,,,,
-rightward,C5570774,No results,No results,rightward
-Focal,C0205234,Limited to a specific area.,Spatial Concept,Focal
+rightward,C5570774,rightward,No results,No results
+Focal,C0205234,Focal,Spatial Concept,Limited to a specific area.
 higher,,,,
 opacified,,,,
 alongside,,,,
@@ -646,9 +646,9 @@ elongated,,,,
 aortosclerosis,,,,
 increse,,,,
 collections,,,,
-soft tissues,C0225317,A system of diagnosis and treatment directed toward tissues other than skeletal or arthrodial elements.,Tissue,soft tissues
+soft tissues,C0225317,soft tissues,Tissue,A system of diagnosis and treatment directed toward tissues other than skeletal or arthrodial elements.
 bleeding,,,,
-very,C0442824,Existing to a great degree.,Qualitative Concept,very
+very,C0442824,very,Qualitative Concept,Existing to a great degree.
 sharp,,,,
 severe,,,,
 subcutaneus,,,,
@@ -656,82 +656,82 @@ deeper,,,,
 pneumo mediastinum,,,,
 1-2 mm,,,,
 Unremarkable,,,,
-examination,C4321457,A formal or careful inspection of an object or subject.,Activity,examination
-clip,C0175722,"Devices designed for attachment or occlusion of anatomic structures (e.g., blood vessels, fallopian tubes) and small objects and accessories (e.g., towels, drapes, bandages) used in surgical procedures without intentionally piercing them (i.e., atraumatic); some clips are intended for use as permanent implants or for temporary occlusion of external (e.g., nose, umbilical cord) anatomic structures. Surgical temporary clips usually permit only a small jaw opening, have a normally closed resting state, and are frequently applied manually; dedicated implantable clips include a variety of atraumatic small metallic or plastic devices in different shapes and sizes that are typically delivered using clip appliers.",Medical Device,clip
-Clear,C2963144,No results,No results,Clear
-nipple,C0028109,The pigmented protuberance on the surface of the breast through which milk is drawn from the breast.,"Body Part, Organ, or Organ Component",nipple
-shadows,C0332554,No results,No results,shadows
-active,C0205177,Exerting influence or producing an effect.,Qualitative Concept,active
+examination,C4321457,examination,Activity,A formal or careful inspection of an object or subject.
+clip,C0175722,clip,Medical Device,"Devices designed for attachment or occlusion of anatomic structures (e.g., blood vessels, fallopian tubes) and small objects and accessories (e.g., towels, drapes, bandages) used in surgical procedures without intentionally piercing them (i.e., atraumatic); some clips are intended for use as permanent implants or for temporary occlusion of external (e.g., nose, umbilical cord) anatomic structures. Surgical temporary clips usually permit only a small jaw opening, have a normally closed resting state, and are frequently applied manually; dedicated implantable clips include a variety of atraumatic small metallic or plastic devices in different shapes and sizes that are typically delivered using clip appliers."
+Clear,C2963144,Clear,No results,No results
+nipple,C0028109,nipple,"Body Part, Organ, or Organ Component",The pigmented protuberance on the surface of the breast through which milk is drawn from the breast.
+shadows,C0332554,shadows,No results,No results
+active,C0205177,active,Qualitative Concept,Exerting influence or producing an effect.
 tuberculous,,,,
 A,,,,
 rod,,,,
 overlies,,,,
 T 5 through T 9,,,,
-area,C0205146,The extent of a 2-dimensional surface enclosed within a boundary.,Spatial Concept,area
+area,C0205146,area,Spatial Concept,The extent of a 2-dimensional surface enclosed within a boundary.
 of T 5 through T 9,,,,
 intrafissural,,,,
 1.5 cm,,,,
-non - displaced,C0746928,No results,No results,non - displaced
-pectus,C4231117,No results,No results,pectus
-deformity,C0302142,An anatomic abnormality that is either present at birth or appears later in life.,Anatomical Abnormality,deformity
+non - displaced,C0746928,non - displaced,No results,No results
+pectus,C4231117,pectus,No results,No results
+deformity,C0302142,deformity,Anatomical Abnormality,An anatomic abnormality that is either present at birth or appears later in life.
 aforementioned,,,,
 excavatum,,,,
-Clips,C0175722,"Devices designed for attachment or occlusion of anatomic structures (e.g., blood vessels, fallopian tubes) and small objects and accessories (e.g., towels, drapes, bandages) used in surgical procedures without intentionally piercing them (i.e., atraumatic); some clips are intended for use as permanent implants or for temporary occlusion of external (e.g., nose, umbilical cord) anatomic structures. Surgical temporary clips usually permit only a small jaw opening, have a normally closed resting state, and are frequently applied manually; dedicated implantable clips include a variety of atraumatic small metallic or plastic devices in different shapes and sizes that are typically delivered using clip appliers.",Medical Device,Clips
-Pectus,C4231117,No results,No results,Pectus
+Clips,C0175722,Clips,Medical Device,"Devices designed for attachment or occlusion of anatomic structures (e.g., blood vessels, fallopian tubes) and small objects and accessories (e.g., towels, drapes, bandages) used in surgical procedures without intentionally piercing them (i.e., atraumatic); some clips are intended for use as permanent implants or for temporary occlusion of external (e.g., nose, umbilical cord) anatomic structures. Surgical temporary clips usually permit only a small jaw opening, have a normally closed resting state, and are frequently applied manually; dedicated implantable clips include a variety of atraumatic small metallic or plastic devices in different shapes and sizes that are typically delivered using clip appliers."
+Pectus,C4231117,Pectus,No results,No results
 feeding,,,,
 tubes,,,,
 pneumothoraces,,,,
-newly,C0750546,No results,No results,newly
-apparent,C0750489,No results,No results,apparent
-Left sided,C0443246,An abnormal transposition to the left side.,Spatial Concept,Left sided
+newly,C0750546,newly,No results,No results
+apparent,C0750489,apparent,No results,No results
+Left sided,C0443246,Left sided,Spatial Concept,An abnormal transposition to the left side.
 Swan,,,,
 sheath,,,,
 positions,,,,
 lines,,,,
-distance,C0012751,The space separating two objects or points.,Quantitative Concept,distance
+distance,C0012751,distance,Quantitative Concept,The space separating two objects or points.
 bubble,,,,
 subpulmonic,,,,
-Lines,C0205132,A mark that is long relative to its width; a length (straight or curved) without breadth or thickness; the trace of a moving point.,Spatial Concept,Lines
+Lines,C0205132,Lines,Spatial Concept,A mark that is long relative to its width; a length (straight or curved) without breadth or thickness; the trace of a moving point.
 Post - operative,,,,
-structure,C0678594,The components and their relationship and manner of arrangement in constituting a whole.,Spatial Concept,structure
+structure,C0678594,structure,Spatial Concept,The components and their relationship and manner of arrangement in constituting a whole.
 predominance,,,,
 markedly,,,,
 Calcified,,,,
-granulomas,C0018188,"relatively small nodular inflammatory lesion containing grouped mononuclear phagocytes, caused by infectious and noninfectious agents.",Pathologic Function,granulomas
+granulomas,C0018188,granulomas,Pathologic Function,"relatively small nodular inflammatory lesion containing grouped mononuclear phagocytes, caused by infectious and noninfectious agents."
 Streaky,,,,
 diffusely,,,,
 demineralized,,,,
-compression,C0728907,"The act, process, or result of pressing together, flattening, or condensing, particularly, increasing an external physical pressure on a body structure. Also refers to the reduction in the volume of a body or substance and augmentation of its density due to pressure.",Natural Phenomenon or Process,compression
+compression,C0728907,compression,Natural Phenomenon or Process,"The act, process, or result of pressing together, flattening, or condensing, particularly, increasing an external physical pressure on a body structure. Also refers to the reduction in the volume of a body or substance and augmentation of its density due to pressure."
 vertebral,,,,
 bodies,,,,
-thoracolumbar,C0450219,No results,No results,thoracolumbar
-Soft tissue,C0225317,A system of diagnosis and treatment directed toward tissues other than skeletal or arthrodial elements.,Tissue,Soft tissue
+thoracolumbar,C0450219,thoracolumbar,No results,No results
+Soft tissue,C0225317,Soft tissue,Tissue,A system of diagnosis and treatment directed toward tissues other than skeletal or arthrodial elements.
 humeral,,,,
-head,C0018670,"The anterior and superior part of a human bearing the mouth, the brain and sensory organs.",Body Location or Region,head
+head,C0018670,head,Body Location or Region,"The anterior and superior part of a human bearing the mouth, the brain and sensory organs."
 calcific,,,,
-tendinopathy,C1568272,"Klinisk syndrom som beskriver skader (degenerative endringer i senevev) etter overbelastning av sener og senefester. Det manifesterer seg som en kombinasjon av smerter, diffus eller lokal hevelse og nedsatt yteevne. Å skille tendinose fra tendinitt er klinisk vanskelig og kan bare gjøres etter histopatologisk undersøkelse.",Disease or Syndrome,tendinopathy
-Deformity,C0302142,An anatomic abnormality that is either present at birth or appears later in life.,Anatomical Abnormality,Deformity
+tendinopathy,C1568272,tendinopathy,Disease or Syndrome,"Klinisk syndrom som beskriver skader (degenerative endringer i senevev) etter overbelastning av sener og senefester. Det manifesterer seg som en kombinasjon av smerter, diffus eller lokal hevelse og nedsatt yteevne. Å skille tendinose fra tendinitt er klinisk vanskelig og kan bare gjøres etter histopatologisk undersøkelse."
+Deformity,C0302142,Deformity,Anatomical Abnormality,An anatomic abnormality that is either present at birth or appears later in life.
 indistinctness,,,,
-progression,C0449258,No results,No results,progression
+progression,C0449258,progression,No results,No results
 worsening,,,,
 vessels,,,,
-region,C0205147,Of or belonging to a broader area or region of the body.,Spatial Concept,region
-reticular,C0439739,Applies to an abnormality whose distribution and appearance resembles a net or network-like structure. [],Spatial Concept,reticular
+region,C0205147,region,Spatial Concept,Of or belonging to a broader area or region of the body.
+reticular,C0439739,reticular,Spatial Concept,Applies to an abnormality whose distribution and appearance resembles a net or network-like structure. []
 sinus,,,,
-previous,C0205156,Occurring prior to something else.,Temporal Concept,previous
+previous,C0205156,previous,Temporal Concept,Occurring prior to something else.
 moderate - sized,,,,
-cluster,C1704332,A grouping of a number of similar things.,Quantitative Concept,cluster
+cluster,C1704332,cluster,Quantitative Concept,A grouping of a number of similar things.
 peribronchial,,,,
-infiltration,C0332448,morphologic abnormality,Pathologic Function,infiltration
+infiltration,C0332448,infiltration,Pathologic Function,morphologic abnormality
 interspace,,,,
 non - tuberculous,,,,
-mycobacterial,C0521015,No results,No results,mycobacterial
-tuberculosis,C0041296,Any of the infectious diseases of man and other animals caused by species of MYCOBACTERIUM TUBERCULOSIS.,Disease or Syndrome,tuberculosis
-granulomatous,C0439667,Relating to or characterized by granulomas.,Qualitative Concept,granulomatous
-lymph node,C0024204,"Lymfatická uzlina je orgán kulovitého či oválného tvaru (o průměru 1 - 30 mm). Nachází se v oběhu lymfatických cév a slouží jako biologický filtr lymfy. Lymfatické uzliny nalezneme zejména v podpažní jámě, v tříslech, v blízkosti velkých krčních cév, v hrudníku či dutině břišní. Hrají podstatnou roli v obraně organizmu proti mikrobům i nádorovým buňkám. (upraveno podle Wikiskripta 2018 http://www.wikiskripta.eu/)","Body Part, Organ, or Organ Component",lymph node
-Study,C2603343,"A detailed examination, analysis, or critical inspection of a subject designed to discover facts about it.",Research Activity,Study
+mycobacterial,C0521015,mycobacterial,No results,No results
+tuberculosis,C0041296,tuberculosis,Disease or Syndrome,Any of the infectious diseases of man and other animals caused by species of MYCOBACTERIUM TUBERCULOSIS.
+granulomatous,C0439667,granulomatous,Qualitative Concept,Relating to or characterized by granulomas.
+lymph node,C0024204,lymph node,"Body Part, Organ, or Organ Component","Lymfatická uzlina je orgán kulovitého či oválného tvaru (o průměru 1 - 30 mm). Nachází se v oběhu lymfatických cév a slouží jako biologický filtr lymfy. Lymfatické uzliny nalezneme zejména v podpažní jámě, v tříslech, v blízkosti velkých krčních cév, v hrudníku či dutině břišní. Hrají podstatnou roli v obraně organizmu proti mikrobům i nádorovým buňkám. (upraveno podle Wikiskripta 2018 http://www.wikiskripta.eu/)"
+Study,C2603343,Study,Research Activity,"A detailed examination, analysis, or critical inspection of a subject designed to discover facts about it."
 poor,,,,
-penetration,C0205321,The act of entering into or through something.,Functional Concept,penetration
+penetration,C0205321,penetration,Functional Concept,The act of entering into or through something.
 reexpansion,,,,
 thoracocentesis,,,,
 pre - existing,,,,
@@ -739,115 +739,115 @@ substantially,,,,
 post - procedural,,,,
 prior,,,,
 bibasal,,,,
-obscures,C4727091,Make less clear or visible.,Activity,obscures
-empyema,C0014009,"Tělesná dutina vyplněná hnisem. E. appendixu jako součást jeho zánětu (appendicitidy), e. pohrudniční dutiny, e. vejcovodu atd. E. obvykle vyžaduje léčbu antibiotiky a často též chirurgický zákrok či jiný způsob vypuštění hnisu. (cit. Velký lékařský slovník online, 2015 http://lekarske.slovniky.cz)",Disease or Syndrome,empyema
-granuloma,C0018188,"relatively small nodular inflammatory lesion containing grouped mononuclear phagocytes, caused by infectious and noninfectious agents.",Pathologic Function,granuloma
-Size,C0456389,Relative physical dimensions of objects or stimuli.,Spatial Concept,Size
+obscures,C4727091,obscures,Activity,Make less clear or visible.
+empyema,C0014009,empyema,Disease or Syndrome,"Tělesná dutina vyplněná hnisem. E. appendixu jako součást jeho zánětu (appendicitidy), e. pohrudniční dutiny, e. vejcovodu atd. E. obvykle vyžaduje léčbu antibiotiky a často též chirurgický zákrok či jiný způsob vypuštění hnisu. (cit. Velký lékařský slovník online, 2015 http://lekarske.slovniky.cz)"
+granuloma,C0018188,granuloma,Pathologic Function,"relatively small nodular inflammatory lesion containing grouped mononuclear phagocytes, caused by infectious and noninfectious agents."
+Size,C0456389,Size,Spatial Concept,Relative physical dimensions of objects or stimuli.
 in size,,,,
-Decreased,C0205216,A subjective response indicating that something is or has decreased.,Quantitative Concept,Decreased
-Vasculature,C3714653,"Organ region cluster which consists of regions of arterial, venous and lymphatic trees and the capillary beds that connect them. Examples: Vasculature of head, vasculature of brain.",Anatomical Structure,Vasculature
+Decreased,C0205216,Decreased,Quantitative Concept,A subjective response indicating that something is or has decreased.
+Vasculature,C3714653,Vasculature,Anatomical Structure,"Organ region cluster which consists of regions of arterial, venous and lymphatic trees and the capillary beds that connect them. Examples: Vasculature of head, vasculature of brain."
 Degree,,,,
-zone,C1710706,An area or region distinguished from adjacent parts by a distinctive feature or characteristic.,Spatial Concept,zone
+zone,C1710706,zone,Spatial Concept,An area or region distinguished from adjacent parts by a distinctive feature or characteristic.
 lumbar,,,,
 Enlarging,,,,
 Perihilar,,,,
 haziness,,,,
-alveolar,C1440080,Of or relating to the alveoli.,"Body Part, Organ, or Organ Component",alveolar
-Large,C0549177,"Of considerable or relatively great size, extent, or capacity.",Quantitative Concept,Large
+alveolar,C1440080,alveolar,"Body Part, Organ, or Organ Component",Of or relating to the alveoli.
+Large,C0549177,Large,Quantitative Concept,"Of considerable or relatively great size, extent, or capacity."
 retracted 4.5 cm,,,,
 pulled back about 5 cm,,,,
 collapse,,,,
 Feeding,,,,
-wire,C1268545,No results,No results,wire
+wire,C1268545,wire,No results,No results
 stylet,,,,
-pylorus,C0034196,The passage at the lower end of the stomach that opens into the duodenum,"Body Part, Organ, or Organ Component",pylorus
+pylorus,C0034196,pylorus,"Body Part, Organ, or Organ Component",The passage at the lower end of the stomach that opens into the duodenum
 superior cavoatrial junction,,,,
 Subtle,,,,
 minor,,,,
-Improved,C0184511,Condition changed and/or recovered,Finding,Improved
+Improved,C0184511,Improved,Finding,Condition changed and/or recovered
 internal jugular central venous,,,,
 associated exudate,,,,
 reasonably,,,,
-well defined,C0442825,Having a clean and distinct outline as if precisely cut along the edges.,Qualitative Concept,well defined
+well defined,C0442825,well defined,Qualitative Concept,Having a clean and distinct outline as if precisely cut along the edges.
 fluid level,,,,
-composite,C0205199,Consisting of separate interconnected parts.,Qualitative Concept,composite
-shadow,C0332554,No results,No results,shadow
-cavitation,C1510420,No results,No results,cavitation
-vein,C0042449,"Subdivision of venous tree (organ) which consists of branching sets of veins that form a tree; together with other venous trees (organ part), it constitutes a venous tree (organ). Examples: subclavian venous tree, jugular tree, extrahepatic portal tree, common iliac venous tree.","Body Part, Organ, or Organ Component",vein
+composite,C0205199,composite,Qualitative Concept,Consisting of separate interconnected parts.
+shadow,C0332554,shadow,No results,No results
+cavitation,C1510420,cavitation,No results,No results
+vein,C0042449,vein,"Body Part, Organ, or Organ Component","Subdivision of venous tree (organ) which consists of branching sets of veins that form a tree; together with other venous trees (organ part), it constitutes a venous tree (organ). Examples: subclavian venous tree, jugular tree, extrahepatic portal tree, common iliac venous tree."
 Cephalization,,,,
 Comminuted,,,,
-hypoventilation,C3203358,A reduction in the amount of air entering the pulmonary alveoli.,Pathologic Function,hypoventilation
+hypoventilation,C3203358,hypoventilation,Pathologic Function,A reduction in the amount of air entering the pulmonary alveoli.
 setting of splinting,,,,
 Partially imaged,,,,
-spinal,C0521329,Of or relating to the spine or spinal cord.,Spatial Concept,spinal
+spinal,C0521329,spinal,Spatial Concept,Of or relating to the spine or spinal cord.
 fusion,,,,
 hardware,,,,
-persistently,C0750508,No results,No results,persistently
+persistently,C0750508,persistently,No results,No results
 subsegmental,,,,
 Displaced,,,,
-healed,C0205249,"Recovered, restored to healthy condition by natural processes, e.g. by scar formation; freed from illness or injury.",Functional Concept,healed
+healed,C0205249,healed,Functional Concept,"Recovered, restored to healthy condition by natural processes, e.g. by scar formation; freed from illness or injury."
 similar compared to the previous exams,,,,
 especially,,,,
-orientation,C5237365,"The position or alignment of something relative to points of the compass, other specific directions, or some other indexing system.",Spatial Concept,orientation
+orientation,C5237365,orientation,Spatial Concept,"The position or alignment of something relative to points of the compass, other specific directions, or some other indexing system."
 fixation,,,,
-Sternal,C0038293,"Flat bone, each instance of which is some flat bone forming the middle of the anterior part of some rib cage.","Body Part, Organ, or Organ Component",Sternal
+Sternal,C0038293,Sternal,"Body Part, Organ, or Organ Component","Flat bone, each instance of which is some flat bone forming the middle of the anterior part of some rib cage."
 3 cm above,,,,
 transesophageal,,,,
 developing,,,,
 Developing,,,,
-development,C1527148,The act of improving by expanding or enlarging or refining.,Functional Concept,development
-widespread,C0205391,Spread throughout a structure or area.,Spatial Concept,widespread
+development,C1527148,development,Functional Concept,The act of improving by expanding or enlarging or refining.
+widespread,C0205391,widespread,Spatial Concept,Spread throughout a structure or area.
 Support,,,,
 in,,,,
-multifocal,C0205292,"Arising from, pertaining to, or having many locations.",Spatial Concept,multifocal
+multifocal,C0205292,multifocal,Spatial Concept,"Arising from, pertaining to, or having many locations."
 noncardiogenic,,,,
-osteopenia,C0029453,"decreased calcification, bone density, or bone mass due to inadequate osteoid synthesis.",Disease or Syndrome,osteopenia
+osteopenia,C0029453,osteopenia,Disease or Syndrome,"decreased calcification, bone density, or bone mass due to inadequate osteoid synthesis."
 sparing,,,,
 periphery,,,,
-massive,C0522501,No results,No results,massive
-Previous,C0205156,Occurring prior to something else.,Temporal Concept,Previous
+massive,C0522501,massive,No results,No results
+Previous,C0205156,Previous,Temporal Concept,Occurring prior to something else.
 significantly,,,,
 Findings,,,,
 stably,,,,
-Status,C0449438,Designation of a concept's state. Normally is not populated unless the state is retired..,Qualitative Concept,Status
+Status,C0449438,Status,Qualitative Concept,Designation of a concept's state. Normally is not populated unless the state is retired..
 predominantly,,,,
-fissural,C1517198,Relating to or resembling a fissure.,Qualitative Concept,fissural
-Atelectasis,C0004144,"Ausência de ar no pulmão inteiro ou em parte dele, como no pulmão incompletamente inflado do recém-nascido ou num pulmão adulto colapsado. Atelectasia pulmonar pode ser causada obstrução das vias respiratórias, compressão pulmonar, contração fibrótica ou outros fatores.",Pathologic Function,Atelectasis
-chronicity,C0547045,A description or characterization of the duration of a biological process.,Temporal Concept,chronicity
-Loops,C0181687,No results,No results,Loops
-Moderately,C5201148,Disease activity score: 30 to 44,Finding,Moderately
-Improvement,C2986411,A condition superior to an earlier condition.,Conceptual Entity,Improvement
+fissural,C1517198,fissural,Qualitative Concept,Relating to or resembling a fissure.
+Atelectasis,C0004144,Atelectasis,Pathologic Function,"Ausência de ar no pulmão inteiro ou em parte dele, como no pulmão incompletamente inflado do recém-nascido ou num pulmão adulto colapsado. Atelectasia pulmonar pode ser causada obstrução das vias respiratórias, compressão pulmonar, contração fibrótica ou outros fatores."
+chronicity,C0547045,chronicity,Temporal Concept,A description or characterization of the duration of a biological process.
+Loops,C0181687,Loops,No results,No results
+Moderately,C5201148,Moderately,Finding,Disease activity score: 30 to 44
+Improvement,C2986411,Improvement,Conceptual Entity,A condition superior to an earlier condition.
 plate - like,,,,
 bones,,,,
-lingula,C1561517,No results,No results,lingula
-middle,C0444598,An intermediate part or section; an area that is approximately central within some larger region.,Spatial Concept,middle
+lingula,C1561517,lingula,No results,No results
+middle,C0444598,middle,Spatial Concept,An intermediate part or section; an area that is approximately central within some larger region.
 platelike,,,,
 a,,,,
-persistent,C0205322,Retained; never-ceasing.,Temporal Concept,persistent
-duodenum,C0013303,"Nejkratší a nejširší část STŘEVA TENKÉHO přilehlého k pyloru v žaludku. Duodenum je pojmenováné podle přibližné velikosti dvanácti prstů spojených na šířku. duodenum - dvanáctník. Počáteční a nejkratší část tenkého střeva, do které ústí žaludek a vývody slinivky břišní a žlučníku (jater). Místo častého výskytu peptického vředu. Klasický je podkovovitý tvar, přičemž v okénku podkovy je umístěn pankreas. Žlučový vývod (choledochus) a ductus pancreaticus vyúsťují na Vaterově papile (papilla duodeni major). Ve sliznici a submukóze jsou Brunnerovy žlázky (glandulae duodenales). Název vychází z přibližné délky 12 palců, (lat. duodenum), starší název dvanácterník. (cit. Velký lékařský slovník online 2012, http://lekarske.slovniky.cz/ )","Body Part, Organ, or Organ Component",duodenum
+persistent,C0205322,persistent,Temporal Concept,Retained; never-ceasing.
+duodenum,C0013303,duodenum,"Body Part, Organ, or Organ Component","Nejkratší a nejširší část STŘEVA TENKÉHO přilehlého k pyloru v žaludku. Duodenum je pojmenováné podle přibližné velikosti dvanácti prstů spojených na šířku. duodenum - dvanáctník. Počáteční a nejkratší část tenkého střeva, do které ústí žaludek a vývody slinivky břišní a žlučníku (jater). Místo častého výskytu peptického vředu. Klasický je podkovovitý tvar, přičemž v okénku podkovy je umístěn pankreas. Žlučový vývod (choledochus) a ductus pancreaticus vyúsťují na Vaterově papile (papilla duodeni major). Ve sliznici a submukóze jsou Brunnerovy žlázky (glandulae duodenales). Název vychází z přibližné délky 12 palců, (lat. duodenum), starší název dvanácterník. (cit. Velký lékařský slovník online 2012, http://lekarske.slovniky.cz/ )"
 Plate - like,,,,
-Pleural,C1522720,Of or pertaining to the pleura.,Spatial Concept,Pleural
-patient,C0030705,"A person who receives medical attention, care, or treatment, or who is registered with medical professional or institution with the purpose to receive medical care when necessary.",Patient or Disabled Group,patient
+Pleural,C1522720,Pleural,Spatial Concept,Of or pertaining to the pleura.
+patient,C0030705,patient,Patient or Disabled Group,"A person who receives medical attention, care, or treatment, or who is registered with medical professional or institution with the purpose to receive medical care when necessary."
 extubated,,,,
 1,,,,
-removed,C0849355,"Taken out of, separated from, or eliminated.",Qualitative Concept,removed
-radiodensity,C3272911,The transparency of a material to the passage of X-rays and other forms of radiation.,Quantitative Concept,radiodensity
+removed,C0849355,removed,Qualitative Concept,"Taken out of, separated from, or eliminated."
+radiodensity,C3272911,radiodensity,Quantitative Concept,The transparency of a material to the passage of X-rays and other forms of radiation.
 mucous,,,,
 plug,,,,
 lying,,,,
 approximately 2.3 cm,,,,
-Two,C0205448,A natural number greater than 1 and less than 3 and the quantity that it denotes: the sum of one and one.,Quantitative Concept,Two
+Two,C0205448,Two,Quantitative Concept,A natural number greater than 1 and less than 3 and the quantity that it denotes: the sum of one and one.
 2,,,,
 3.5 cm above,,,,
 ARDS,,,,
 air bronchograms,,,,
-Underlying,C4722602,"Situated beneath, or the basic or root cause of something.",Finding,Underlying
+Underlying,C4722602,Underlying,Finding,"Situated beneath, or the basic or root cause of something."
 4.7 cm above,,,,
 curled,,,,
-fundus,C0740422,the bottom or base of an organ,"Body Part, Organ, or Organ Component",fundus
+fundus,C0740422,fundus,"Body Part, Organ, or Organ Component",the bottom or base of an organ
 catheters,,,,
 satisfactory,,,,
-dysfunction,C3887504,"Disturbance, impairment or abnormality of function.",Conceptual Entity,dysfunction
+dysfunction,C3887504,dysfunction,Conceptual Entity,"Disturbance, impairment or abnormality of function."
 2.8 cm above,,,,
 small - to - moderate,,,,
 haze,,,,
@@ -856,18 +856,18 @@ moderate - to - severe,,,,
 Indistinct,,,,
 segment,,,,
 Widened,,,,
-lymphadenopathy,C0497156,"Abnormální velikost, počet nebo konzistence lymfatických uzlin.",Disease or Syndrome,lymphadenopathy
-arteries,C0003842,The vessels carrying blood away from the heart.,"Body Part, Organ, or Organ Component",arteries
+lymphadenopathy,C0497156,lymphadenopathy,Disease or Syndrome,"Abnormální velikost, počet nebo konzistence lymfatických uzlin."
+arteries,C0003842,arteries,"Body Part, Organ, or Organ Component",The vessels carrying blood away from the heart.
 out of view,,,,
 denser,,,,
-lobes,C0796494,"A portion of an organ, such as the liver, lung, breast, or brain.","Body Part, Organ, or Organ Component",lobes
+lobes,C0796494,lobes,"Body Part, Organ, or Organ Component","A portion of an organ, such as the liver, lung, breast, or brain."
 ground - glass,,,,
 withdrawn 1 cm,,,,
 2.9 cm above,,,,
 coiled,,,,
 3.4 cm,,,,
-leftward,C5570776,No results,No results,leftward
-Hilar,C0205150,Refers to the area associated with the hilum.,Spatial Concept,Hilar
+leftward,C5570776,leftward,No results,No results
+Hilar,C0205150,Hilar,Spatial Concept,Refers to the area associated with the hilum.
 adenopathy,,,,
 Expected,,,,
 Little,,,,
@@ -877,36 +877,36 @@ removal,,,,
 bronchograms,,,,
 obliterating,,,,
 3.6 cm above,,,,
-orogastric,C0450104,No results,No results,orogastric
+orogastric,C0450104,orogastric,No results,No results
 out of the field of view,,,,
 Enlargement,,,,
-exaggerated,C0442801,No results,No results,exaggerated
+exaggerated,C0442801,exaggerated,No results,No results
 AP technique,,,,
 cardiomegally,,,,
 right side,,,,
 inlet,,,,
-generalized,C0205246,"Widespread, broadly dispersed, common.",Spatial Concept,generalized
-retained,C0333118,To maintain possession of something.,Functional Concept,retained
+generalized,C0205246,generalized,Spatial Concept,"Widespread, broadly dispersed, common."
+retained,C0333118,retained,Functional Concept,To maintain possession of something.
 secretions,,,,
-Pacemaker,C0810633,"Stimulators used to regulate or substitute the normal rate at which a biologic center establishes the regular intervals of activity (rhythm) of an organ (e.g., heart, lungs). These stimulators control the pace by means of some artificial (e.g., electric generator) stimuli. Pacemakers can be designed either for continuous use (usually implantable devices) or for temporary external use.",Medical Device,Pacemaker
-kyphosis,C2115817,No results,No results,kyphosis
+Pacemaker,C0810633,Pacemaker,Medical Device,"Stimulators used to regulate or substitute the normal rate at which a biologic center establishes the regular intervals of activity (rhythm) of an organ (e.g., heart, lungs). These stimulators control the pace by means of some artificial (e.g., electric generator) stimuli. Pacemakers can be designed either for continuous use (usually implantable devices) or for temporary external use."
+kyphosis,C2115817,kyphosis,No results,No results
 pacer,,,,
 not well evaluated,,,,
-Healed,C0205249,"Recovered, restored to healthy condition by natural processes, e.g. by scar formation; freed from illness or injury.",Functional Concept,Healed
+Healed,C0205249,Healed,Functional Concept,"Recovered, restored to healthy condition by natural processes, e.g. by scar formation; freed from illness or injury."
 cage,,,,
-trauma,C3714660,"damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity; for emotional trauma use PSYCHOLOGICAL SHOCK.",Injury or Poisoning,trauma
+trauma,C3714660,trauma,Injury or Poisoning,"damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity; for emotional trauma use PSYCHOLOGICAL SHOCK."
 gas,,,,
 under,,,,
 subdiaphragmatic,,,,
 approximately,,,,
 13 mm,,,,
 hyperlucent,,,,
-cervical,C0205064,"Relating to a neck, or cervix, in any sense.",Spatial Concept,cervical
-soft tissue,C0225317,A system of diagnosis and treatment directed toward tissues other than skeletal or arthrodial elements.,Tissue,soft tissue
-CP,C0719066,No results,No results,CP
-bony,C0443157,No results,No results,bony
+cervical,C0205064,cervical,Spatial Concept,"Relating to a neck, or cervix, in any sense."
+soft tissue,C0225317,soft tissue,Tissue,A system of diagnosis and treatment directed toward tissues other than skeletal or arthrodial elements.
+CP,C0719066,CP,No results,No results
+bony,C0443157,bony,No results,No results
 Fully,,,,
-to,C1883351,"Used as a function word to indicate direction, purpose, or movement.",Qualitative Concept,to
+to,C1883351,to,Qualitative Concept,"Used as a function word to indicate direction, purpose, or movement."
 underpenetration,,,,
 Worsening,,,,
 supine,,,,
@@ -917,30 +917,30 @@ coursing,,,,
 inferiorly,,,,
 expected,,,,
 widened,,,,
-inspiration,C1507287,No results,No results,inspiration
-opacifications,C0449584,No results,No results,opacifications
+inspiration,C1507287,inspiration,No results,No results
+opacifications,C0449584,opacifications,No results,No results
 positioned,,,,
-high,C0205250,An elevated level or position or degree; greater than normal in degree or intensity or amount.,Qualitative Concept,high
+high,C0205250,high,Qualitative Concept,An elevated level or position or degree; greater than normal in degree or intensity or amount.
 7 cm,,,,
-Widening,C0332464,"Having a width, or side to side dimension, that is greater than is normally expected.",Spatial Concept,Widening
+Widening,C0332464,Widening,Spatial Concept,"Having a width, or side to side dimension, that is greater than is normally expected."
 fat,,,,
-High,C0205250,An elevated level or position or degree; greater than normal in degree or intensity or amount.,Qualitative Concept,High
-exchanged,C1621574,No results,No results,exchanged
+High,C0205250,High,Qualitative Concept,An elevated level or position or degree; greater than normal in degree or intensity or amount.
+exchanged,C1621574,exchanged,No results,No results
 type,,,,
-Prominent,C0205402,No results,No results,Prominent
-density,C0178587,The amount of something per unit size.,Quantitative Concept,density
+Prominent,C0205402,Prominent,No results,No results
+density,C0178587,density,Quantitative Concept,The amount of something per unit size.
 juxta,,,,
 nasoenteric,,,,
 GE junction,,,,
 semiupright,,,,
 projection,,,,
-parts,C0449719,One of the portions into which something is regarded as divided and which together constitute a whole.,Spatial Concept,parts
-collapsed,C0392748,No results,No results,collapsed
-decompensation,C0231187,"The inability of an organ or organ system to maintain homeostasis due to functional overload, often caused by the presence of disease intrinsic to the organ or organ system, or dysfunction in other organ systems.",Finding,decompensation
+parts,C0449719,parts,Spatial Concept,One of the portions into which something is regarded as divided and which together constitute a whole.
+collapsed,C0392748,collapsed,No results,No results
+decompensation,C0231187,decompensation,Finding,"The inability of an organ or organ system to maintain homeostasis due to functional overload, often caused by the presence of disease intrinsic to the organ or organ system, or dysfunction in other organ systems."
 Its,,,,
 gastric,,,,
-gastroenterostomy,C0017164,Variedade dos procedimentos cirúrgicos reconstrutivos planejados para restaurar a continuidade gastrointestinal. As duas principais classes de procedimentos de reconstrução são a Billroth I (gastroduodenostomia) e a Billroth II (gastrojejunostomia).,Therapeutic or Preventive Procedure,gastroenterostomy
-Esophageal,C1522619,relating to esophagus,Spatial Concept,Esophageal
+gastroenterostomy,C0017164,gastroenterostomy,Therapeutic or Preventive Procedure,Variedade dos procedimentos cirúrgicos reconstrutivos planejados para restaurar a continuidade gastrointestinal. As duas principais classes de procedimentos de reconstrução são a Billroth I (gastroduodenostomia) e a Billroth II (gastrojejunostomia).
+Esophageal,C1522619,Esophageal,Spatial Concept,relating to esophagus
 drainage,,,,
 quite,,,,
 milder,,,,
@@ -948,39 +948,39 @@ AICD,,,,
 single,,,,
 Indistinctness,,,,
 procedure,,,,
-wedge,C0439639,Any shape that is triangular in cross section.,Spatial Concept,wedge
+wedge,C0439639,wedge,Spatial Concept,Any shape that is triangular in cross section.
 resection,,,,
-6 - mm,C3842086,No results,No results,6 - mm
+6 - mm,C3842086,6 - mm,No results,No results
 nodular,,,,
 suture,,,,
-seventh,C0205441,Following the sixth position in an ordering or series; coming next after the sixth and just before the eighth in position.,Quantitative Concept,seventh
+seventh,C0205441,seventh,Quantitative Concept,Following the sixth position in an ordering or series; coming next after the sixth and just before the eighth in position.
 Remainder,,,,
-Bronchial,C0205039,"Of, or pertaining to, the bronchus.","Body Part, Organ, or Organ Component",Bronchial
-skeletal,C0521324,No results,No results,skeletal
-6,C5399941,Dead,Finding,6
-mm,C0456680,"A unit of both speed (scalar) and velocity (vector), defined as the distance of one millimeter travelled per unit time equal to one hour.",Quantitative Concept,mm
-nodule,C0028259,A 1 to 5 cm firm lesion raised above the surface of the surrounding skin; differs from a papule only in size,Acquired Abnormality,nodule
+Bronchial,C0205039,Bronchial,"Body Part, Organ, or Organ Component","Of, or pertaining to, the bronchus."
+skeletal,C0521324,skeletal,No results,No results
+6,C5399941,6,Finding,Dead
+mm,C0456680,mm,Quantitative Concept,"A unit of both speed (scalar) and velocity (vector), defined as the distance of one millimeter travelled per unit time equal to one hour."
+nodule,C0028259,nodule,Acquired Abnormality,A 1 to 5 cm firm lesion raised above the surface of the surrounding skin; differs from a papule only in size
 chain,,,,
 sutures,,,,
-Pneumoperitoneum,C0032320,"Přítomnost vzduchu v břišní (peritoneální) dutině. Vzniká např. proniknutím vzduchu při perforaci některého z dutých břišních orgánů, např. jako závažná komplikace peptického vředu. Vzduch se u stojícího pacienta hromadí pod bránicí, a na rentgenovém snímku je proto patrný jako poloměsíčité (srpkovité) projasnění. (cit. Velký lékařský slovník online, 2012 http://lekarske.slovniky.cz/ )",Disease or Syndrome,Pneumoperitoneum
-pedicle,C0456605,No results,No results,pedicle
+Pneumoperitoneum,C0032320,Pneumoperitoneum,Disease or Syndrome,"Přítomnost vzduchu v břišní (peritoneální) dutině. Vzniká např. proniknutím vzduchu při perforaci některého z dutých břišních orgánů, např. jako závažná komplikace peptického vředu. Vzduch se u stojícího pacienta hromadí pod bránicí, a na rentgenovém snímku je proto patrný jako poloměsíčité (srpkovité) projasnění. (cit. Velký lékařský slovník online, 2012 http://lekarske.slovniky.cz/ )"
+pedicle,C0456605,pedicle,No results,No results
 Free,,,,
 underneath,,,,
 projectional,,,,
-Multi,C1651007,No results,No results,Multi
+Multi,C1651007,Multi,No results,No results
 ill,,,,
-defined,C5239603,Clearly characterized or delimited.,Functional Concept,defined
-sarcoidosis,C0036202,"A rare multisystemic, autoinflammatory disorder of unknown etiology characterized by the formation of immune, non-caseating granulomas in any organ(s), leading to variable clinical symptoms and severity. Clinical presentation is typically with persistent dry cough, eye or skin manifestations, peripheral lymph nodes, fatigue, weight loss, fever or night sweats, and Löfgren syndrome.",Disease or Syndrome,sarcoidosis
+defined,C5239603,defined,Functional Concept,Clearly characterized or delimited.
+sarcoidosis,C0036202,sarcoidosis,Disease or Syndrome,"A rare multisystemic, autoinflammatory disorder of unknown etiology characterized by the formation of immune, non-caseating granulomas in any organ(s), leading to variable clinical symptoms and severity. Clinical presentation is typically with persistent dry cough, eye or skin manifestations, peripheral lymph nodes, fatigue, weight loss, fever or night sweats, and Löfgren syndrome."
 Chain,,,,
 Rounded,,,,
 discrete,,,,
-fullness,C0439650,No results,No results,fullness
+fullness,C0439650,fullness,No results,No results
 suprahilar,,,,
 consolidative,,,,
-fibrotic,C0334129,No results,No results,fibrotic
+fibrotic,C0334129,fibrotic,No results,No results
 longstanding,,,,
 micronodules,,,,
-fibrosis,C0016059,"Any pathological condition where fibrous connective tissue invades any organ, usually as a consequence of inflammation or other injury.",Pathologic Function,fibrosis
+fibrosis,C0016059,fibrosis,Pathologic Function,"Any pathological condition where fibrous connective tissue invades any organ, usually as a consequence of inflammation or other injury."
 thoracolumbar junction,,,,
 Opacity,,,,
 not appreciably changed,,,,
@@ -989,61 +989,61 @@ Band - like,,,,
 Post - surgical,,,,
 Nodular,,,,
 wedge resection,,,,
-operative,C1882154,Occurring during or associated with a surgical procedure.,Temporal Concept,operative
-scattered,C0439742,No results,No results,scattered
+operative,C1882154,operative,Temporal Concept,Occurring during or associated with a surgical procedure.
+scattered,C0439742,scattered,No results,No results
 Subcentimeter,,,,
-Fullness,C0439650,No results,No results,Fullness
-distended,C4082695,Expanded out from or swelling from normal boundaries.,Qualitative Concept,distended
-same,C0445247,"Equal, or closely similar or comparable, in kind or quality or quantity or degree.",Qualitative Concept,same
-location,C0450429,"A position, site, or point in space where something can be found.",Spatial Concept,location
-view,C0449911,"A specific representation of data, situations, topics, etc.",Spatial Concept,view
+Fullness,C0439650,Fullness,No results,No results
+distended,C4082695,distended,Qualitative Concept,Expanded out from or swelling from normal boundaries.
+same,C0445247,same,Qualitative Concept,"Equal, or closely similar or comparable, in kind or quality or quantity or degree."
+location,C0450429,location,Spatial Concept,"A position, site, or point in space where something can be found."
+view,C0449911,view,Spatial Concept,"A specific representation of data, situations, topics, etc."
 it,,,,
 amorphous,,,,
 Suture,,,,
-material,C0520510,"general term for structural metal, plastic, fabric, and other components of devices, equipment, buildings, apparel, etc.",Substance,material
+material,C0520510,material,Substance,"general term for structural metal, plastic, fabric, and other components of devices, equipment, buildings, apparel, etc."
 sarcoid,,,,
 flair,,,,
 compartment,,,,
 Tiny,,,,
 high - positioned,,,,
 plate,,,,
-atelectases,C0004144,"Ausência de ar no pulmão inteiro ou em parte dele, como no pulmão incompletamente inflado do recém-nascido ou num pulmão adulto colapsado. Atelectasia pulmonar pode ser causada obstrução das vias respiratórias, compressão pulmonar, contração fibrótica ou outros fatores.",Pathologic Function,atelectases
-Lateral,C0205093,Applies to an abnormality that is located farther from the median plane or midline of the body or of the referenced structure. [],Spatial Concept,Lateral
+atelectases,C0004144,atelectases,Pathologic Function,"Ausência de ar no pulmão inteiro ou em parte dele, como no pulmão incompletamente inflado do recém-nascido ou num pulmão adulto colapsado. Atelectasia pulmonar pode ser causada obstrução das vias respiratórias, compressão pulmonar, contração fibrótica ou outros fatores."
+Lateral,C0205093,Lateral,Spatial Concept,Applies to an abnormality that is located farther from the median plane or midline of the body or of the referenced structure. []
 sinuses,,,,
-accumulation,C4055506,A state characterized by the gradual increase in entities or substances.,Finding,accumulation
-dependent,C3244310,<p>A party covered under a policy based on association with a subscriber.</p>,Functional Concept,dependent
+accumulation,C4055506,accumulation,Finding,A state characterized by the gradual increase in entities or substances.
+dependent,C3244310,dependent,Functional Concept,<p>A party covered under a policy based on association with a subscriber.</p>
 borders,,,,
-congestive,C0742742,Relating to or affected by an abnormal collection of blood or other fluid.,Qualitative Concept,congestive
-pattern,C0449774,"An arrangement of objects, facts, behaviors, or other things which have scientific, mathematical, geometric, statistical, or other meaning.",Spatial Concept,pattern
+congestive,C0742742,congestive,Qualitative Concept,Relating to or affected by an abnormal collection of blood or other fluid.
+pattern,C0449774,pattern,Spatial Concept,"An arrangement of objects, facts, behaviors, or other things which have scientific, mathematical, geometric, statistical, or other meaning."
 overlie,,,,
 posteroinferior,,,,
 Substantial,,,,
-streak,C2348542,A marking of a different color or texture from the background.,Idea or Concept,streak
+streak,C2348542,streak,Idea or Concept,A marking of a different color or texture from the background.
 Vertebral,,,,
-stabilization,C1293130,No results,No results,stabilization
-paraspinal,C0442145,Pertaining to muscles and/or tissue adjacent to the spinal column.,Spatial Concept,paraspinal
-Spinal,C0521329,Of or relating to the spine or spinal cord.,Spatial Concept,Spinal
+stabilization,C1293130,stabilization,No results,No results
+paraspinal,C0442145,paraspinal,Spatial Concept,Pertaining to muscles and/or tissue adjacent to the spinal column.
+Spinal,C0521329,Spinal,Spatial Concept,Of or relating to the spine or spinal cord.
 Tubes,,,,
 fine,,,,
-detail,C1522508,Particulars considered individually and in relation to a whole.,Qualitative Concept,detail
-esophageal,C1522619,relating to esophagus,Spatial Concept,esophageal
+detail,C1522508,detail,Qualitative Concept,Particulars considered individually and in relation to a whole.
+esophageal,C1522619,esophageal,Spatial Concept,relating to esophagus
 layered,,,,
 hazinness,,,,
 Layered,,,,
-cutaneous,C0221912,Involving the skin.,Spatial Concept,cutaneous
-intubated,C4698386,No results,No results,intubated
+cutaneous,C0221912,cutaneous,Spatial Concept,Involving the skin.
+intubated,C4698386,intubated,No results,No results
 8 cm above,,,,
 nondisplaced,,,,
 dorsolateral part,,,,
-anchor,C3854239,No results,No results,anchor
+anchor,C3854239,anchor,No results,No results
 masses,,,,
-lesions,C0221198,"A localized pathological or traumatic structural change, damage, deformity, or discontinuity of tissue, organ, or body part.",Finding,lesions
+lesions,C0221198,lesions,Finding,"A localized pathological or traumatic structural change, damage, deformity, or discontinuity of tissue, organ, or body part."
 Asymmetric,,,,
-Coronary,C1522318,Surrounding like a crown (especially of the blood vessels surrounding the heart).,Spatial Concept,Coronary
-marked,C1706089,A prominent or noticeable characteristic.,Qualitative Concept,marked
+Coronary,C1522318,Coronary,Spatial Concept,Surrounding like a crown (especially of the blood vessels surrounding the heart).
+marked,C1706089,marked,Qualitative Concept,A prominent or noticeable characteristic.
 Pre,,,,
 manifestation,,,,
-erect,C0522014,No results,No results,erect
+erect,C0522014,erect,No results,No results
 S - shaped,,,,
 silhouetting,,,,
 decompensating,,,,
@@ -1061,12 +1061,12 @@ COMPRESSIVE,,,,
 BASILAR,,,,
 ATELECTASIS,,,,
 significant interval,,,,
-local,C0205276,Of or belonging to a restricted area or locality.,Spatial Concept,local
-rapid,C0456962,Acting or occurring in a brief period of time.,Qualitative Concept,rapid
+local,C0205276,local,Spatial Concept,Of or belonging to a restricted area or locality.
+rapid,C0456962,rapid,Qualitative Concept,Acting or occurring in a brief period of time.
 Hazy,,,,
-hematoma,C0018944,"A collection of blood outside the BLOOD VESSELS. Hematoma can be localized in an organ, space, or tissue.",Pathologic Function,hematoma
+hematoma,C0018944,hematoma,Pathologic Function,"A collection of blood outside the BLOOD VESSELS. Hematoma can be localized in an organ, space, or tissue."
 Increasing,,,,
-site,C0205145,A position in relation to its surroundings.,Spatial Concept,site
+site,C0205145,site,Spatial Concept,A position in relation to its surroundings.
 improving,,,,
 peripherally,,,,
 inserted,,,,
@@ -1077,10 +1077,10 @@ Layering,,,,
 bigger,,,,
 2.3 cm above the carina,,,,
 Dobbhoff,,,,
-dilated,C0700124,The condition of being dilated or stretched.,Finding,dilated
-loops,C0181687,No results,No results,loops
+dilated,C0700124,dilated,Finding,The condition of being dilated or stretched.
+loops,C0181687,loops,No results,No results
 bowel,,,,
-ileus,C1258215,"Afección causada por la falta de PERISTALTISMO intestinal o MOTILIDAD INTESTINAL sin alguna obstrucción mecánica. Esta interferencia del flujo de CONTENIDO INTESTINAL lleva a menudo a la OBSTRUCCIÓN INTESTINAL. El íleo puede clasificarse en postoperatorio, inflamatorio, metabólico, neurogénico, e inducido por drogas.",Disease or Syndrome,ileus
+ileus,C1258215,ileus,Disease or Syndrome,"Afección causada por la falta de PERISTALTISMO intestinal o MOTILIDAD INTESTINAL sin alguna obstrucción mecánica. Esta interferencia del flujo de CONTENIDO INTESTINAL lleva a menudo a la OBSTRUCCIÓN INTESTINAL. El íleo puede clasificarse en postoperatorio, inflamatorio, metabólico, neurogénico, e inducido por drogas."
 PIC,,,,
 brachiocephalic,,,,
 pigtail,,,,
@@ -1089,35 +1089,35 @@ air space,,,,
 pronounced,,,,
 continued,,,,
 supervening,,,,
-Loss,C1517945,A gradual decline in amount or activity.,Quantitative Concept,Loss
-course,C0750729,"Passage through time; duration; a systematic or/and orderly succession; a sequence, e.g. course of treatment; a mode of action or behavior; natural development, typical manner of proceeding.",Temporal Concept,course
-off,C1518543,No longer planned or scheduled (said of events).,Qualitative Concept,off
-field of view,C2700177,The extent of an area that is visible.,Spatial Concept,field of view
-possible,C0332149,Capable of happening or occurring.,Finding,possible
+Loss,C1517945,Loss,Quantitative Concept,A gradual decline in amount or activity.
+course,C0750729,course,Temporal Concept,"Passage through time; duration; a systematic or/and orderly succession; a sequence, e.g. course of treatment; a mode of action or behavior; natural development, typical manner of proceeding."
+off,C1518543,off,Qualitative Concept,No longer planned or scheduled (said of events).
+field of view,C2700177,field of view,Spatial Concept,The extent of an area that is visible.
+possible,C0332149,possible,Finding,Capable of happening or occurring.
 Superiorly,,,,
-Possible,C0332149,Capable of happening or occurring.,Finding,Possible
+Possible,C0332149,Possible,Finding,Capable of happening or occurring.
 pleural - based,,,,
 sided,,,,
-withdrawn,C0424092,No results,No results,withdrawn
+withdrawn,C0424092,withdrawn,No results,No results
 approximately 5 cm,,,,
-gastroesophageal,C0744316,No results,No results,gastroesophageal
-Constant,C1547014,No results,No results,Constant
-extent,C0439792,"The range, magnitude, or distance over which a thing spans an interval of distance, space, or time.",Spatial Concept,extent
-distribution,C1704711,The act of distributing or spreading or apportioning.,Functional Concept,distribution
-known,C0205309,"Recognized, familiar, or within the scope of knowledge.",Qualitative Concept,known
+gastroesophageal,C0744316,gastroesophageal,No results,No results
+Constant,C1547014,Constant,No results,No results
+extent,C0439792,extent,Spatial Concept,"The range, magnitude, or distance over which a thing spans an interval of distance, space, or time."
+distribution,C1704711,distribution,Functional Concept,The act of distributing or spreading or apportioning.
+known,C0205309,known,Qualitative Concept,"Recognized, familiar, or within the scope of knowledge."
 5.6 cm,,,,
 above,,,,
-side,C0441987,"One of the two lateral margins or surfaces of a body, midway between the front and back.",Spatial Concept,side
+side,C0441987,side,Spatial Concept,"One of the two lateral margins or surfaces of a body, midway between the front and back."
 ports,,,,
-axilla,C0004454,Área do corpo humano abaixo da ARTICULAÇÃO DO OMBRO.,Body Location or Region,axilla
+axilla,C0004454,axilla,Body Location or Region,Área do corpo humano abaixo da ARTICULAÇÃO DO OMBRO.
 1.8 cm above,,,,
 sidehole,,,,
 costal,,,,
-cartilage,C0007301,"Necévní forma pojivové tkáně složená z CHONDROCYTŮ vestavěných do matrice, která zahrnuje CHONDROITINSULFÁTY a různé typy FIBRILÁRNÍCH KOLAGENŮ. Tři hlavní typy jsou HYALINNÍ CHRUPAVKA, VAZIVOVÁ CHRUPAVKA a ELASTICKÁ CHRUPAVKA.",Tissue,cartilage
+cartilage,C0007301,cartilage,Tissue,"Necévní forma pojivové tkáně složená z CHONDROCYTŮ vestavěných do matrice, která zahrnuje CHONDROITINSULFÁTY a různé typy FIBRILÁRNÍCH KOLAGENŮ. Tři hlavní typy jsou HYALINNÍ CHRUPAVKA, VAZIVOVÁ CHRUPAVKA a ELASTICKÁ CHRUPAVKA."
 heavily,,,,
-annulus,C2262860,No results,No results,annulus
-bronchial,C0205039,"Of, or pertaining to, the bronchus.","Body Part, Organ, or Organ Component",bronchial
-peripheral,C0205100,On or near an edge or constituting an outer boundary; the outer area.,Spatial Concept,peripheral
+annulus,C2262860,annulus,No results,No results
+bronchial,C0205039,bronchial,"Body Part, Organ, or Organ Component","Of, or pertaining to, the bronchus."
+peripheral,C0205100,peripheral,Spatial Concept,On or near an edge or constituting an outer boundary; the outer area.
 mid - to - distal,,,,
 20 cm for more optimal placement,,,,
 which,,,,
@@ -1125,56 +1125,56 @@ Pigtail,,,,
 pnemonia,,,,
 Hila,,,,
 indistinct,,,,
-Unusual,C2700116,"Out of the ordinary, uncommon, or unexpected.",Qualitative Concept,Unusual
+Unusual,C2700116,Unusual,Qualitative Concept,"Out of the ordinary, uncommon, or unexpected."
 collection,,,,
 cavitary,,,,
 OG,,,,
 ETT,,,,
-good,C0205170,Valuable or useful or agreeable or pleasing.,Qualitative Concept,good
+good,C0205170,good,Qualitative Concept,Valuable or useful or agreeable or pleasing.
 postion,,,,
 Dahboff,,,,
 plerual,,,,
-smaller,C0547044,"Of lower rank, degree, or importance; of reduced size, extent, or degree; more limited in quantity.",Qualitative Concept,smaller
+smaller,C0547044,smaller,Qualitative Concept,"Of lower rank, degree, or importance; of reduced size, extent, or degree; more limited in quantity."
 Distal,,,,
 hyperinflation,,,,
-bronchiectasis,C0006267,"Chorobné a trvalé rozšíření průdušek. Někdy je vrozené, častěji vzniká jako následek některých (zejména opakovaných) zánětů. (cit. Velký lékařský slovník online, 2012 http://lekarske.slovniky.cz/ )",Disease or Syndrome,bronchiectasis
-defibrillator,C0180307,"Cardiac electrical stimulators that apply brief high-voltage electroshocks to the HEART. These stimulators are used to restore normal rhythm and contractile function in hearts of patients who are experiencing VENTRICULAR FIBRILLATION or ventricular tachycardia (TACHYCARDIA, VENTRICULAR) that is not accompanied by a palpable PULSE. Some defibrillators may also be used to correct certain noncritical dysrhythmias (called synchronized defibrillation or CARDIOVERSION), using relatively low-level discharges synchronized to the patient's ECG waveform. (UMDNS, 2003)",Medical Device,defibrillator
-electrodes,C0013812,"conductor by which a current enters or leaves a nonmetallic medium; in electrotherapy, electrodes are instruments with a point or surface from which to transmit electric current to the body of a patient or to another instrument; in electrodiagnosis, they are needles or metal plates.",Manufactured Object,electrodes
+bronchiectasis,C0006267,bronchiectasis,Disease or Syndrome,"Chorobné a trvalé rozšíření průdušek. Někdy je vrozené, častěji vzniká jako následek některých (zejména opakovaných) zánětů. (cit. Velký lékařský slovník online, 2012 http://lekarske.slovniky.cz/ )"
+defibrillator,C0180307,defibrillator,Medical Device,"Cardiac electrical stimulators that apply brief high-voltage electroshocks to the HEART. These stimulators are used to restore normal rhythm and contractile function in hearts of patients who are experiencing VENTRICULAR FIBRILLATION or ventricular tachycardia (TACHYCARDIA, VENTRICULAR) that is not accompanied by a palpable PULSE. Some defibrillators may also be used to correct certain noncritical dysrhythmias (called synchronized defibrillation or CARDIOVERSION), using relatively low-level discharges synchronized to the patient's ECG waveform. (UMDNS, 2003)"
+electrodes,C0013812,electrodes,Manufactured Object,"conductor by which a current enters or leaves a nonmetallic medium; in electrotherapy, electrodes are instruments with a point or surface from which to transmit electric current to the body of a patient or to another instrument; in electrodiagnosis, they are needles or metal plates."
 Mild - to - moderate,,,,
 mild - to - moderate,,,,
 triple,,,,
 no change,,,,
 pneumonic,,,,
-coronary,C1522318,Surrounding like a crown (especially of the blood vessels surrounding the heart).,Spatial Concept,coronary
+coronary,C1522318,coronary,Spatial Concept,Surrounding like a crown (especially of the blood vessels surrounding the heart).
 outer margin,,,,
 Triple,,,,
 in the expected positions,,,,
-Marked,C1706089,A prominent or noticeable characteristic.,Qualitative Concept,Marked
+Marked,C1706089,Marked,Qualitative Concept,A prominent or noticeable characteristic.
 cardiomyopathy,,,,
-Central,C0205099,Applies to an abnormality that is located close to the median plane or midline of the body or of the referenced structure. [],Spatial Concept,Central
+Central,C0205099,Central,Spatial Concept,Applies to an abnormality that is located close to the median plane or midline of the body or of the referenced structure. []
 Position,,,,
-biventricular,C0699808,No results,No results,biventricular
-pneumoperitoneum,C0032320,"Přítomnost vzduchu v břišní (peritoneální) dutině. Vzniká např. proniknutím vzduchu při perforaci některého z dutých břišních orgánů, např. jako závažná komplikace peptického vředu. Vzduch se u stojícího pacienta hromadí pod bránicí, a na rentgenovém snímku je proto patrný jako poloměsíčité (srpkovité) projasnění. (cit. Velký lékařský slovník online, 2012 http://lekarske.slovniky.cz/ )",Disease or Syndrome,pneumoperitoneum
+biventricular,C0699808,biventricular,No results,No results
+pneumoperitoneum,C0032320,pneumoperitoneum,Disease or Syndrome,"Přítomnost vzduchu v břišní (peritoneální) dutině. Vzniká např. proniknutím vzduchu při perforaci některého z dutých břišních orgánů, např. jako závažná komplikace peptického vředu. Vzduch se u stojícího pacienta hromadí pod bránicí, a na rentgenovém snímku je proto patrný jako poloměsíčité (srpkovité) projasnění. (cit. Velký lékařský slovník online, 2012 http://lekarske.slovniky.cz/ )"
 radiopaque,,,,
 one - third,,,,
 1 cm,,,,
-Base,C0178499,opposite of acid,Chemical Viewed Functionally,Base
-consolidated,C0702117,No results,No results,consolidated
+Base,C0178499,Base,Chemical Viewed Functionally,opposite of acid
+consolidated,C0702117,consolidated,No results,No results
 mass,,,,
-indeterminate,C0205258,Grado o valor no conocido o establecido con exactitud.,Qualitative Concept,indeterminate
+indeterminate,C0205258,indeterminate,Qualitative Concept,Grado o valor no conocido o establecido con exactitud.
 glenohumeral,,,,
-acromioclavicular,C0695640,Applying force by hand to a client's osseous and/or adjacent soft tissue structures of the acromioclavical area to restore his or her normal anatomical and/or physiological structure and/or function. Service is billed per adjustment.,Therapeutic or Preventive Procedure,acromioclavicular
-joints,C0022417,"Spojení dvou nebo několika kostí plochami povlečenými chrupavkou. Kloub je obv. tvořen kloubní hlavicí a kloubní jamkou uzavřenými do kloubního pouzdra (capsula) tvořeného vazivem a zpevněného kloubními vazy (ligamenty). Někdy je mezi kloubní plochy kostí vložena ještě vazivová destička upravující funkci kloubu (např. meniskus v koleně). K. umožňuje pohyblivé spojení kostí, i když u některých k. je rozsah pohybů malý či málo nápadný (např. mezi žeberními chrupavkami a hrudní kostí). Rozsah a typ pohybu je dán uspořádáním k. a bývá omezen při kloubních onemocněních (srov. ankylóza). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)",Body Space or Junction,joints
-Interstitial,C0596790,"Relating to or situated in the small, narrow spaces between tissues or parts of an organ.",Body Location or Region,Interstitial
+acromioclavicular,C0695640,acromioclavicular,Therapeutic or Preventive Procedure,Applying force by hand to a client's osseous and/or adjacent soft tissue structures of the acromioclavical area to restore his or her normal anatomical and/or physiological structure and/or function. Service is billed per adjustment.
+joints,C0022417,joints,Body Space or Junction,"Spojení dvou nebo několika kostí plochami povlečenými chrupavkou. Kloub je obv. tvořen kloubní hlavicí a kloubní jamkou uzavřenými do kloubního pouzdra (capsula) tvořeného vazivem a zpevněného kloubními vazy (ligamenty). Někdy je mezi kloubní plochy kostí vložena ještě vazivová destička upravující funkci kloubu (např. meniskus v koleně). K. umožňuje pohyblivé spojení kostí, i když u některých k. je rozsah pohybů malý či málo nápadný (např. mezi žeberními chrupavkami a hrudní kostí). Rozsah a typ pohybu je dán uspořádáním k. a bývá omezen při kloubních onemocněních (srov. ankylóza). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+Interstitial,C0596790,Interstitial,Body Location or Region,"Relating to or situated in the small, narrow spaces between tissues or parts of an organ."
 Minimal to no,,,,
 The right - sided,,,,
-thoracentesis,C0189477,The removal of excess fluid via needle puncture from the thoracic cavity.,Therapeutic or Preventive Procedure,thoracentesis
-Compression,C0728907,"The act, process, or result of pressing together, flattening, or condensing, particularly, increasing an external physical pressure on a body structure. Also refers to the reduction in the volume of a body or substance and augmentation of its density due to pressure.",Natural Phenomenon or Process,Compression
-Atherosclerotic,C0333482,status similar or related to atherosclerosis,Functional Concept,Atherosclerotic
+thoracentesis,C0189477,thoracentesis,Therapeutic or Preventive Procedure,The removal of excess fluid via needle puncture from the thoracic cavity.
+Compression,C0728907,Compression,Natural Phenomenon or Process,"The act, process, or result of pressing together, flattening, or condensing, particularly, increasing an external physical pressure on a body structure. Also refers to the reduction in the volume of a body or substance and augmentation of its density due to pressure."
+Atherosclerotic,C0333482,Atherosclerotic,Functional Concept,status similar or related to atherosclerosis
 Multilevel,,,,
 Obscuration,,,,
 Operation,,,,
-Obliteration,C0332465,No results,No results,Obliteration
+Obliteration,C0332465,Obliteration,No results,No results
 angles,,,,
 not well visualized,,,,
 not increased,,,,
@@ -1182,70 +1182,70 @@ No change,,,,
 sized,,,,
 It,,,,
 rounded,,,,
-S,C5381851,No results,No results,S
-shaped,C0332479,The spatial arrangement of something as distinct from its substance.,Spatial Concept,shaped
-Peripheral,C0205100,On or near an edge or constituting an outer boundary; the outer area.,Spatial Concept,Peripheral
+S,C5381851,S,No results,No results
+shaped,C0332479,shaped,Spatial Concept,The spatial arrangement of something as distinct from its substance.
+Peripheral,C0205100,Peripheral,Spatial Concept,On or near an edge or constituting an outer boundary; the outer area.
 Opacities,,,,
 Emphysema,,,,
-interstitium,C2328510,No results,No results,interstitium
-inflammatory,C0333348,Relating to inflammation.,Functional Concept,inflammatory
+interstitium,C2328510,interstitium,No results,No results
+inflammatory,C0333348,inflammatory,Functional Concept,Relating to inflammation.
 hyperexpansion,,,,
 T 12 vertebral,,,,
-nonspecific,C0750540,No results,No results,nonspecific
-bacterial,C0521009,No results,No results,bacterial
+nonspecific,C0750540,nonspecific,No results,No results
+bacterial,C0521009,bacterial,No results,No results
 opportunistic,,,,
 reaction to inhaled substances,,,,
-Thoracolumbar,C0450219,No results,No results,Thoracolumbar
+Thoracolumbar,C0450219,Thoracolumbar,No results,No results
 scapular,,,,
-Numerous,C0439064,An indefinite large quantity that is considered to be greater than several.,Quantitative Concept,Numerous
+Numerous,C0439064,Numerous,Quantitative Concept,An indefinite large quantity that is considered to be greater than several.
 metastatic,,,,
 callus,,,,
-Extent,C0439792,"The range, magnitude, or distance over which a thing spans an interval of distance, space, or time.",Spatial Concept,Extent
-Confluent,C0205200,No results,No results,Confluent
-locations,C0450429,"A position, site, or point in space where something can be found.",Spatial Concept,locations
+Extent,C0439792,Extent,Spatial Concept,"The range, magnitude, or distance over which a thing spans an interval of distance, space, or time."
+Confluent,C0205200,Confluent,No results,No results
+locations,C0450429,locations,Spatial Concept,"A position, site, or point in space where something can be found."
 lucent,,,,
 centers,,,,
 intersitial,,,,
-congested,C1533708,No results,No results,congested
+congested,C1533708,congested,No results,No results
 similar to prior radiographs,,,,
-chest radiograph,C3842377,No results,No results,chest radiograph
+chest radiograph,C3842377,chest radiograph,No results,No results
 hyperexpanded,,,,
 evidence of prior smoking,,,,
 configurational,,,,
 semi - linear,,,,
-calcium,C0006675,"basic element found in nearly all organized tissues; a member of the alkaline earth family of metals with the atomic symbol Ca, atomic number 20, and atomic weight 40; it is the most abundant mineral in the body and combines with phosphorus to form calcium phosphate in the bones and teeth; it is essential for the normal functioning of nerves and muscles and plays a role in blood coagulation and in many enzymatic processes.",Pharmacologic Substance,calcium
+calcium,C0006675,calcium,Pharmacologic Substance,"basic element found in nearly all organized tissues; a member of the alkaline earth family of metals with the atomic symbol Ca, atomic number 20, and atomic weight 40; it is the most abundant mineral in the body and combines with phosphorus to form calcium phosphate in the bones and teeth; it is essential for the normal functioning of nerves and muscles and plays a role in blood coagulation and in many enzymatic processes."
 deposits,,,,
 hypertranslucent,,,,
-degree,C5382011,No results,No results,degree
+degree,C5382011,degree,No results,No results
 lucencies,,,,
 wedging,,,,
 processes,,,,
 lymphomatous,,,,
-tricuspid,C0443327,No results,No results,tricuspid
+tricuspid,C0443327,tricuspid,No results,No results
 replacements,,,,
 waterseal,,,,
 takeoff,,,,
-Other,C0205394,Different than the one(s) previously specified or mentioned.,Qualitative Concept,Other
-relative,C0205345,Considered in comparison with something else; dependent on or interconnected with something else; not absolute.,Qualitative Concept,relative
-external,C0205101,"Happening or arising or located outside or beyond some limits, or especially, some surface.",Spatial Concept,external
-Visceral,C0442045,"Of, or relating to, or affecting the internal organs.",Spatial Concept,Visceral
+Other,C0205394,Other,Qualitative Concept,Different than the one(s) previously specified or mentioned.
+relative,C0205345,relative,Qualitative Concept,Considered in comparison with something else; dependent on or interconnected with something else; not absolute.
+external,C0205101,external,Spatial Concept,"Happening or arising or located outside or beyond some limits, or especially, some surface."
+Visceral,C0442045,Visceral,Spatial Concept,"Of, or relating to, or affecting the internal organs."
 regions,,,,
-Elevated,C3163633,Raised or increased above normal levels or limits.,Qualitative Concept,Elevated
-rotated,C0231458,No results,No results,rotated
-different,C1705242,The quality of being unlike or dissimilar.,Qualitative Concept,different
-Trachea,C0040578,The cartilaginous and membranous tube descending from the larynx and branching into the right and left main bronchi.,"Body Part, Organ, or Organ Component",Trachea
+Elevated,C3163633,Elevated,Qualitative Concept,Raised or increased above normal levels or limits.
+rotated,C0231458,rotated,No results,No results
+different,C1705242,different,Qualitative Concept,The quality of being unlike or dissimilar.
+Trachea,C0040578,Trachea,"Body Part, Organ, or Organ Component",The cartilaginous and membranous tube descending from the larynx and branching into the right and left main bronchi.
 deviated,,,,
-Both,C1706086,One and the other; relating to or being two in conjunction.,Qualitative Concept,Both
-no,C1298908,The non-affirmative response to a question.,Finding,no
+Both,C1706086,Both,Qualitative Concept,One and the other; relating to or being two in conjunction.
+no,C1298908,no,Finding,The non-affirmative response to a question.
 sequela,,,,
-traumatic event,C4751223,No results,No results,traumatic event
+traumatic event,C4751223,traumatic event,No results,No results
 amount of,,,,
 AC,,,,
-joint,C0022417,"Spojení dvou nebo několika kostí plochami povlečenými chrupavkou. Kloub je obv. tvořen kloubní hlavicí a kloubní jamkou uzavřenými do kloubního pouzdra (capsula) tvořeného vazivem a zpevněného kloubními vazy (ligamenty). Někdy je mezi kloubní plochy kostí vložena ještě vazivová destička upravující funkci kloubu (např. meniskus v koleně). K. umožňuje pohyblivé spojení kostí, i když u některých k. je rozsah pohybů malý či málo nápadný (např. mezi žeberními chrupavkami a hrudní kostí). Rozsah a typ pohybu je dán uspořádáním k. a bývá omezen při kloubních onemocněních (srov. ankylóza). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)",Body Space or Junction,joint
-resorption,C2985494,No results,No results,resorption
+joint,C0022417,joint,Body Space or Junction,"Spojení dvou nebo několika kostí plochami povlečenými chrupavkou. Kloub je obv. tvořen kloubní hlavicí a kloubní jamkou uzavřenými do kloubního pouzdra (capsula) tvořeného vazivem a zpevněného kloubními vazy (ligamenty). Někdy je mezi kloubní plochy kostí vložena ještě vazivová destička upravující funkci kloubu (např. meniskus v koleně). K. umožňuje pohyblivé spojení kostí, i když u některých k. je rozsah pohybů malý či málo nápadný (např. mezi žeberními chrupavkami a hrudní kostí). Rozsah a typ pohybu je dán uspořádáním k. a bývá omezen při kloubních onemocněních (srov. ankylóza). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+resorption,C2985494,resorption,No results,No results
 Overlying,,,,
 EKG,,,,
 Minimally,,,,
 Bronchovascular,,,,
-Chronic,C0205191,"Condition lasting for more than 3-6 months, or persisting beyond the course of an acute disease, or after tissue healing is complete.",Temporal Concept,Chronic
+Chronic,C0205191,Chronic,Temporal Concept,"Condition lasting for more than 3-6 months, or persisting beyond the course of an acute disease, or after tissue healing is complete."
 separation,,,,
