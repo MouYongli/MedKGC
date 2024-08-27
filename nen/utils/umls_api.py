@@ -82,7 +82,6 @@ def umls_id2semantic(id, version="current"):
     if response.status_code == 200:
         response = response.json()
         return response["result"]["semanticTypes"][0]["name"]
-
     else:
         print(f"Query failed: {id}, Status code: {response.status_code}")
         return None
