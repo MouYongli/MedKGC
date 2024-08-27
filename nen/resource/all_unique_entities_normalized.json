@@ -761,7 +761,7 @@
       "UMLS": {
         "ui": "C2963144",
         "name": "clear",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -10699,7 +10699,7 @@
       "UMLS": {
         "ui": "C0700140",
         "name": "engorged",
-        "semanticTypes": "No results",
+        "semanticTypes": "Functional Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -24313,7 +24313,7 @@
       "UMLS": {
         "ui": "C0702116",
         "name": "consolidation",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -24395,7 +24395,7 @@
       "UMLS": {
         "ui": "C3282907",
         "name": "nasogastric",
-        "semanticTypes": "No results",
+        "semanticTypes": "Body Location or Region",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -24849,7 +24849,7 @@
       "UMLS": {
         "ui": "C0475468",
         "name": "esophagogastric",
-        "semanticTypes": "No results",
+        "semanticTypes": "Body Location or Region",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -25015,7 +25015,7 @@
       "UMLS": {
         "ui": "C1440917",
         "name": "little",
-        "semanticTypes": "No results",
+        "semanticTypes": "Immunologic Factor",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -26563,7 +26563,7 @@
       "UMLS": {
         "ui": "C1548787",
         "name": "appropriate",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -29061,7 +29061,7 @@
       "UMLS": {
         "ui": "C0700148",
         "name": "congestion",
-        "semanticTypes": "No results",
+        "semanticTypes": "Pathologic Function",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -32087,7 +32087,7 @@
       "UMLS": {
         "ui": "C0442800",
         "name": "enlarged",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -41141,7 +41141,7 @@
       "UMLS": {
         "ui": "C4554476",
         "name": "remnant",
-        "semanticTypes": "No results",
+        "semanticTypes": "Finding",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -42159,7 +42159,7 @@
       "UMLS": {
         "ui": "C0205217",
         "name": "increased",
-        "semanticTypes": "No results",
+        "semanticTypes": "Quantitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -48053,7 +48053,7 @@
       "UMLS": {
         "ui": "C0205277",
         "name": "loculated",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -48763,7 +48763,7 @@
       "UMLS": {
         "ui": "C0443157",
         "name": "Bony",
-        "semanticTypes": "No results",
+        "semanticTypes": "Functional Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -48939,7 +48939,7 @@
       "UMLS": {
         "ui": "C0702116",
         "name": "consolidations",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -50151,7 +50151,7 @@
       "UMLS": {
         "ui": "C4068833",
         "name": "vascularity",
-        "semanticTypes": "No results",
+        "semanticTypes": "Finding",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -51813,7 +51813,7 @@
       "UMLS": {
         "ui": "C0231760",
         "name": "angle",
-        "semanticTypes": "No results",
+        "semanticTypes": "Finding",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -52151,7 +52151,7 @@
       "UMLS": {
         "ui": "C5690167",
         "name": "component",
-        "semanticTypes": "No results",
+        "semanticTypes": "Intellectual Product",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -55849,7 +55849,7 @@
       "UMLS": {
         "ui": "C0547047",
         "name": "decrease",
-        "semanticTypes": "No results",
+        "semanticTypes": "Quantitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -55991,7 +55991,7 @@
       "UMLS": {
         "ui": "C0449584",
         "name": "opacification",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -56413,7 +56413,7 @@
       "UMLS": {
         "ui": "C0205402",
         "name": "prominent",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -56875,7 +56875,7 @@
       "UMLS": {
         "ui": "C0442800",
         "name": "Enlarged",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -58553,7 +58553,7 @@
       "UMLS": {
         "ui": "C3282907",
         "name": "Nasogastric",
-        "semanticTypes": "No results",
+        "semanticTypes": "Body Location or Region",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -58853,7 +58853,7 @@
       "UMLS": {
         "ui": "C5453015",
         "name": "posttraumatic",
-        "semanticTypes": "No results",
+        "semanticTypes": "Temporal Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -58935,7 +58935,7 @@
       "UMLS": {
         "ui": "C0522501",
         "name": "Massive",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -58997,7 +58997,7 @@
       "UMLS": {
         "ui": "C3714811",
         "name": "resolved",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -59019,7 +59019,7 @@
       "UMLS": {
         "ui": "C0750540",
         "name": "Nonspecific",
-        "semanticTypes": "No results",
+        "semanticTypes": "Idea or Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -59233,7 +59233,7 @@
       "UMLS": {
         "ui": "C0521163",
         "name": "convex",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -60109,7 +60109,7 @@
       "UMLS": {
         "ui": "C2215609",
         "name": "aeration",
-        "semanticTypes": "No results",
+        "semanticTypes": "Therapeutic or Preventive Procedure",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -60559,7 +60559,7 @@
       "UMLS": {
         "ui": "C0205200",
         "name": "confluent",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -60985,7 +60985,7 @@
       "UMLS": {
         "ui": "C0333076",
         "name": "tortuosity",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -61299,7 +61299,7 @@
       "UMLS": {
         "ui": "C1184146",
         "name": "basilar",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -61875,7 +61875,7 @@
       "UMLS": {
         "ui": "C3536832",
         "name": "Air",
-        "semanticTypes": "No results",
+        "semanticTypes": "Pharmacologic Substance",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -63881,7 +63881,7 @@
       "UMLS": {
         "ui": "C0016203",
         "name": "flattened",
-        "semanticTypes": "No results",
+        "semanticTypes": "Functional Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -64921,7 +64921,7 @@
       "UMLS": {
         "ui": "C0439742",
         "name": "Scattered",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -65079,7 +65079,7 @@
       "UMLS": {
         "ui": "C0333076",
         "name": "Tortuosity",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -65507,7 +65507,7 @@
       "UMLS": {
         "ui": "C3536832",
         "name": "air",
-        "semanticTypes": "No results",
+        "semanticTypes": "Pharmacologic Substance",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -66387,7 +66387,7 @@
       "UMLS": {
         "ui": "C0449584",
         "name": "Opacification",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -67565,7 +67565,7 @@
       "UMLS": {
         "ui": "C0442123",
         "name": "intravascular",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -67819,7 +67819,7 @@
       "UMLS": {
         "ui": "C1533591",
         "name": "calcification",
-        "semanticTypes": "No results",
+        "semanticTypes": "Pathologic Function",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -68039,7 +68039,7 @@
       "UMLS": {
         "ui": "C0332620",
         "name": "redistribution",
-        "semanticTypes": "No results",
+        "semanticTypes": "Functional Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -68193,7 +68193,7 @@
       "UMLS": {
         "ui": "C0205217",
         "name": "Increased",
-        "semanticTypes": "No results",
+        "semanticTypes": "Quantitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -68641,7 +68641,7 @@
       "UMLS": {
         "ui": "C0501117",
         "name": "right internal jugular vein",
-        "semanticTypes": "No results",
+        "semanticTypes": "Body Part, Organ, or Organ Component",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -69147,7 +69147,7 @@
       "UMLS": {
         "ui": "C0232902",
         "name": "migrated",
-        "semanticTypes": "No results",
+        "semanticTypes": "Functional Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -69387,7 +69387,7 @@
       "UMLS": {
         "ui": "C1547014",
         "name": "constant",
-        "semanticTypes": "No results",
+        "semanticTypes": "Quantitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -69689,7 +69689,7 @@
       "UMLS": {
         "ui": "C0332516",
         "name": "symmetrical",
-        "semanticTypes": "No results",
+        "semanticTypes": "Finding",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -70283,7 +70283,7 @@
       "UMLS": {
         "ui": "C0702116",
         "name": "Consolidative",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -70709,7 +70709,7 @@
       "UMLS": {
         "ui": "C4068863",
         "name": "tortuous",
-        "semanticTypes": "No results",
+        "semanticTypes": "Finding",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -70823,7 +70823,7 @@
       "UMLS": {
         "ui": "C0205434",
         "name": "decompensated",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -71139,7 +71139,7 @@
       "UMLS": {
         "ui": "C4534553",
         "name": "GE",
-        "semanticTypes": "No results",
+        "semanticTypes": "Therapeutic or Preventive Procedure",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -71459,7 +71459,7 @@
       "UMLS": {
         "ui": "C2986473",
         "name": "metallic",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -71663,7 +71663,7 @@
       "UMLS": {
         "ui": "C0439669",
         "name": "iatrogenic",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -71811,7 +71811,7 @@
       "UMLS": {
         "ui": "C0332252",
         "name": "not seen",
-        "semanticTypes": "No results",
+        "semanticTypes": "Functional Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -72119,7 +72119,7 @@
       "UMLS": {
         "ui": "C0439688",
         "name": "atelectatic",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -72409,7 +72409,7 @@
       "UMLS": {
         "ui": "C0439688",
         "name": "Atelectatic",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -72807,7 +72807,7 @@
       "UMLS": {
         "ui": "C0205443",
         "name": "ninth",
-        "semanticTypes": "No results",
+        "semanticTypes": "Quantitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -73211,7 +73211,7 @@
       "UMLS": {
         "ui": "C0443315",
         "name": "Subcutaneous",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -73451,7 +73451,7 @@
       "UMLS": {
         "ui": "C0443315",
         "name": "subcutaneous",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -73957,7 +73957,7 @@
       "UMLS": {
         "ui": "C4554413",
         "name": "fractured",
-        "semanticTypes": "No results",
+        "semanticTypes": "Finding",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -74101,7 +74101,7 @@
       "UMLS": {
         "ui": "C5570774",
         "name": "rightward",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -74587,7 +74587,7 @@
       "UMLS": {
         "ui": "C2963144",
         "name": "Clear",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -74667,7 +74667,7 @@
       "UMLS": {
         "ui": "C0332554",
         "name": "shadows",
-        "semanticTypes": "No results",
+        "semanticTypes": "Functional Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -74979,7 +74979,7 @@
       "UMLS": {
         "ui": "C0746928",
         "name": "non - displaced",
-        "semanticTypes": "No results",
+        "semanticTypes": "Idea or Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -75007,7 +75007,7 @@
       "UMLS": {
         "ui": "C4231117",
         "name": "pectus",
-        "semanticTypes": "No results",
+        "semanticTypes": "Congenital Abnormality",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -75127,7 +75127,7 @@
       "UMLS": {
         "ui": "C4231117",
         "name": "Pectus",
-        "semanticTypes": "No results",
+        "semanticTypes": "Congenital Abnormality",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -75383,7 +75383,7 @@
       "UMLS": {
         "ui": "C0750546",
         "name": "newly",
-        "semanticTypes": "No results",
+        "semanticTypes": "Idea or Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -75405,7 +75405,7 @@
       "UMLS": {
         "ui": "C0750489",
         "name": "apparent",
-        "semanticTypes": "No results",
+        "semanticTypes": "Idea or Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -75925,7 +75925,7 @@
       "UMLS": {
         "ui": "C0450219",
         "name": "thoracolumbar",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -76137,7 +76137,7 @@
       "UMLS": {
         "ui": "C0449258",
         "name": "progression",
-        "semanticTypes": "No results",
+        "semanticTypes": "Functional Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -76575,7 +76575,7 @@
       "UMLS": {
         "ui": "C0521015",
         "name": "mycobacterial",
-        "semanticTypes": "No results",
+        "semanticTypes": "Functional Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -77337,7 +77337,7 @@
       "UMLS": {
         "ui": "C1268545",
         "name": "wire",
-        "semanticTypes": "No results",
+        "semanticTypes": "Medical Device",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -77597,7 +77597,7 @@
       "UMLS": {
         "ui": "C0332554",
         "name": "shadow",
-        "semanticTypes": "No results",
+        "semanticTypes": "Functional Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -77619,7 +77619,7 @@
       "UMLS": {
         "ui": "C1510420",
         "name": "cavitation",
-        "semanticTypes": "No results",
+        "semanticTypes": "Anatomical Abnormality",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -77863,7 +77863,7 @@
       "UMLS": {
         "ui": "C0750508",
         "name": "persistently",
-        "semanticTypes": "No results",
+        "semanticTypes": "Idea or Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -78279,7 +78279,7 @@
       "UMLS": {
         "ui": "C0522501",
         "name": "massive",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -78471,7 +78471,7 @@
       "UMLS": {
         "ui": "C0181687",
         "name": "Loops",
-        "semanticTypes": "No results",
+        "semanticTypes": "Medical Device",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -78591,7 +78591,7 @@
       "UMLS": {
         "ui": "C1561517",
         "name": "lingula",
-        "semanticTypes": "No results",
+        "semanticTypes": "Body Part, Organ, or Organ Component",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -79653,7 +79653,7 @@
       "UMLS": {
         "ui": "C5570776",
         "name": "leftward",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -79877,7 +79877,7 @@
       "UMLS": {
         "ui": "C0450104",
         "name": "orogastric",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -79935,7 +79935,7 @@
       "UMLS": {
         "ui": "C0442801",
         "name": "exaggerated",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -80101,7 +80101,7 @@
       "UMLS": {
         "ui": "C2115817",
         "name": "kyphosis",
-        "semanticTypes": "No results",
+        "semanticTypes": "Finding",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -80421,7 +80421,7 @@
       "UMLS": {
         "ui": "C0719066",
         "name": "CP",
-        "semanticTypes": "No results",
+        "semanticTypes": "Organic Chemical",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -80449,7 +80449,7 @@
       "UMLS": {
         "ui": "C0443157",
         "name": "bony",
-        "semanticTypes": "No results",
+        "semanticTypes": "Functional Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -80697,7 +80697,7 @@
       "UMLS": {
         "ui": "C1507287",
         "name": "inspiration",
-        "semanticTypes": "No results",
+        "semanticTypes": "Clinical Attribute",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -80719,7 +80719,7 @@
       "UMLS": {
         "ui": "C0449584",
         "name": "opacifications",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -80891,7 +80891,7 @@
       "UMLS": {
         "ui": "C1621574",
         "name": "exchanged",
-        "semanticTypes": "No results",
+        "semanticTypes": "Molecular Function",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -80925,7 +80925,7 @@
       "UMLS": {
         "ui": "C0205402",
         "name": "Prominent",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -81081,7 +81081,7 @@
       "UMLS": {
         "ui": "C0392748",
         "name": "collapsed",
-        "semanticTypes": "No results",
+        "semanticTypes": "Functional Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -81371,7 +81371,7 @@
       "UMLS": {
         "ui": "C3842086",
         "name": "6 - mm",
-        "semanticTypes": "No results",
+        "semanticTypes": "Finding",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -81521,7 +81521,7 @@
       "UMLS": {
         "ui": "C0521324",
         "name": "skeletal",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -81793,7 +81793,7 @@
       "UMLS": {
         "ui": "C0456605",
         "name": "pedicle",
-        "semanticTypes": "No results",
+        "semanticTypes": "Body Part, Organ, or Organ Component",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -81851,7 +81851,7 @@
       "UMLS": {
         "ui": "C1651007",
         "name": "Multi",
-        "semanticTypes": "No results",
+        "semanticTypes": "Organic Chemical",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -82007,7 +82007,7 @@
       "UMLS": {
         "ui": "C0439650",
         "name": "fullness",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -82089,7 +82089,7 @@
       "UMLS": {
         "ui": "C0334129",
         "name": "fibrotic",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -82299,7 +82299,7 @@
       "UMLS": {
         "ui": "C0439742",
         "name": "scattered",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -82333,7 +82333,7 @@
       "UMLS": {
         "ui": "C0439650",
         "name": "Fullness",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -82871,7 +82871,7 @@
       "UMLS": {
         "ui": "C1293130",
         "name": "stabilization",
-        "semanticTypes": "No results",
+        "semanticTypes": "Therapeutic or Preventive Procedure",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -83075,7 +83075,7 @@
       "UMLS": {
         "ui": "C4698386",
         "name": "intubated",
-        "semanticTypes": "No results",
+        "semanticTypes": "Finding",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -83133,7 +83133,7 @@
       "UMLS": {
         "ui": "C3854239",
         "name": "anchor",
-        "semanticTypes": "No results",
+        "semanticTypes": "Medical Device",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -83275,7 +83275,7 @@
       "UMLS": {
         "ui": "C0522014",
         "name": "erect",
-        "semanticTypes": "No results",
+        "semanticTypes": "Functional Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -83821,7 +83821,7 @@
       "UMLS": {
         "ui": "C0181687",
         "name": "loops",
-        "semanticTypes": "No results",
+        "semanticTypes": "Medical Device",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -84195,7 +84195,7 @@
       "UMLS": {
         "ui": "C0424092",
         "name": "withdrawn",
-        "semanticTypes": "No results",
+        "semanticTypes": "Finding",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -84241,7 +84241,7 @@
       "UMLS": {
         "ui": "C0744316",
         "name": "gastroesophageal",
-        "semanticTypes": "No results",
+        "semanticTypes": "Body Location or Region",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -84263,7 +84263,7 @@
       "UMLS": {
         "ui": "C1547014",
         "name": "Constant",
-        "semanticTypes": "No results",
+        "semanticTypes": "Quantitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -84531,7 +84531,7 @@
       "UMLS": {
         "ui": "C2262860",
         "name": "annulus",
-        "semanticTypes": "No results",
+        "semanticTypes": "Cell Component",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -85149,7 +85149,7 @@
       "UMLS": {
         "ui": "C0699808",
         "name": "biventricular",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -85257,7 +85257,7 @@
       "UMLS": {
         "ui": "C0702117",
         "name": "consolidated",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -85529,7 +85529,7 @@
       "UMLS": {
         "ui": "C0332465",
         "name": "Obliteration",
-        "semanticTypes": "No results",
+        "semanticTypes": "Functional Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -85653,7 +85653,7 @@
       "UMLS": {
         "ui": "C5381851",
         "name": "S",
-        "semanticTypes": "No results",
+        "semanticTypes": "Laboratory or Test Result",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -85743,7 +85743,7 @@
       "UMLS": {
         "ui": "C2328510",
         "name": "interstitium",
-        "semanticTypes": "No results",
+        "semanticTypes": "Body Part, Organ, or Organ Component",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -85817,7 +85817,7 @@
       "UMLS": {
         "ui": "C0750540",
         "name": "nonspecific",
-        "semanticTypes": "No results",
+        "semanticTypes": "Idea or Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -85839,7 +85839,7 @@
       "UMLS": {
         "ui": "C0521009",
         "name": "bacterial",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -85885,7 +85885,7 @@
       "UMLS": {
         "ui": "C0450219",
         "name": "Thoracolumbar",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -85987,7 +85987,7 @@
       "UMLS": {
         "ui": "C0205200",
         "name": "Confluent",
-        "semanticTypes": "No results",
+        "semanticTypes": "Qualitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -86073,7 +86073,7 @@
       "UMLS": {
         "ui": "C1533708",
         "name": "congested",
-        "semanticTypes": "No results",
+        "semanticTypes": "Functional Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -86107,7 +86107,7 @@
       "UMLS": {
         "ui": "C3842377",
         "name": "chest radiograph",
-        "semanticTypes": "No results",
+        "semanticTypes": "Diagnostic Procedure",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -86223,7 +86223,7 @@
       "UMLS": {
         "ui": "C5382011",
         "name": "degree",
-        "semanticTypes": "No results",
+        "semanticTypes": "Quantitative Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -86299,7 +86299,7 @@
       "UMLS": {
         "ui": "C0443327",
         "name": "tricuspid",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -86479,7 +86479,7 @@
       "UMLS": {
         "ui": "C0231458",
         "name": "rotated",
-        "semanticTypes": "No results",
+        "semanticTypes": "Spatial Concept",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -86613,7 +86613,7 @@
       "UMLS": {
         "ui": "C4751223",
         "name": "traumatic event",
-        "semanticTypes": "No results",
+        "semanticTypes": "Event",
         "definition": {
           "definition": "No results",
           "source": "No results"
@@ -86705,7 +86705,7 @@
       "UMLS": {
         "ui": "C2985494",
         "name": "resorption",
-        "semanticTypes": "No results",
+        "semanticTypes": "Organism Function",
         "definition": {
           "definition": "No results",
           "source": "No results"
