@@ -1167,7 +1167,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "hilar": {
         "label": "ANAT-DP",
@@ -1683,7 +1683,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "pleural": {
         "label": "ANAT-DP",
@@ -6291,7 +6291,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Heart": {
         "label": "ANAT-DP",
@@ -9981,7 +9981,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "unremarkable": {
         "label": "OBS-DP",
@@ -20619,7 +20619,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "displaced": {
         "label": "OBS-DA",
@@ -24441,7 +24441,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "esophagogastric": {
         "label": "ANAT-DP",
@@ -24543,7 +24543,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Otherwise": {
         "label": "OBS-DP",
@@ -24561,7 +24561,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "little": {
         "label": "OBS-DP",
@@ -24621,7 +24621,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "change": {
         "label": "OBS-DP",
@@ -25929,7 +25929,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "4.3 cm": {
         "label": "ANAT-DP",
@@ -25941,7 +25941,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "NG": {
         "label": "OBS-DP",
@@ -26043,7 +26043,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "malpositioned": {
         "label": "OBS-DP",
@@ -28599,7 +28599,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "barely": {
         "label": "ANAT-DP",
@@ -28611,7 +28611,7 @@
                 }
             }
         ],
-        "normalization": "no results"
+        "normalization": null
     },
     "proximal": {
         "label": "ANAT-DP",
@@ -28701,7 +28701,7 @@
                 }
             }
         ],
-        "normalization": "no results"
+        "normalization": null
     },
     "approximately 12 cm": {
         "label": "ANAT-DP",
@@ -28713,7 +28713,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "approximately 2 cm": {
         "label": "ANAT-DP",
@@ -28725,7 +28725,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Lung": {
         "label": "ANAT-DP",
@@ -29259,7 +29259,7 @@
                 }
             }
         ],
-        "normalization": "no results"
+        "normalization": null
     },
     "CHF": {
         "label": "OBS-DA",
@@ -30087,7 +30087,7 @@
                 }
             }
         ],
-        "normalization": "no results"
+        "normalization": null
     },
     "structures": {
         "label": "ANAT-DP",
@@ -35757,7 +35757,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "opacities": {
         "label": "OBS-DP",
@@ -40521,7 +40521,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "lateral": {
         "label": "OBS-DP",
@@ -41115,7 +41115,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Osseous": {
         "label": "ANAT-DP",
@@ -41163,7 +41163,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "patient 's arms": {
         "label": "OBS-DP",
@@ -41175,7 +41175,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "increased": {
         "label": "OBS-DP",
@@ -42285,7 +42285,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "recent exam from ___": {
         "label": "OBS-DP",
@@ -42297,7 +42297,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "similar": {
         "label": "OBS-DP",
@@ -42381,7 +42381,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Old": {
         "label": "OBS-DP",
@@ -43233,7 +43233,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "overall": {
         "label": "OBS-DP",
@@ -43317,7 +43317,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "obscuring": {
         "label": "OBS-DP",
@@ -43353,7 +43353,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "upper": {
         "label": "ANAT-DP",
@@ -45273,7 +45273,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "patient 's head": {
         "label": "OBS-DP",
@@ -45285,7 +45285,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "apices": {
         "label": "ANAT-DP",
@@ -45297,7 +45297,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "visualized": {
         "label": "OBS-DP",
@@ -45315,7 +45315,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "heart": {
         "label": "ANAT-DP",
@@ -45999,7 +45999,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "layering": {
         "label": "OBS-DP",
@@ -46929,7 +46929,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "device": {
         "label": "OBS-DP",
@@ -48549,7 +48549,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "within": {
         "label": "OBS-DP",
@@ -49131,7 +49131,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "vascularity": {
         "label": "ANAT-DP",
@@ -50385,7 +50385,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Bibasilar": {
         "label": "ANAT-DP",
@@ -50511,7 +50511,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "airspace": {
         "label": "ANAT-DP",
@@ -50619,7 +50619,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "costophrenic": {
         "label": "ANAT-DP",
@@ -50973,7 +50973,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "increase": {
         "label": "OBS-DP",
@@ -51135,7 +51135,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "not well assessed": {
         "label": "OBS-DP",
@@ -51147,7 +51147,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "monitoring": {
         "label": "OBS-DA",
@@ -52677,7 +52677,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Stable": {
         "label": "OBS-DP",
@@ -54441,7 +54441,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "hemidiaphragm": {
         "label": "ANAT-DP",
@@ -55185,7 +55185,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "prominent": {
         "label": "OBS-DP",
@@ -55653,7 +55653,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "hypertension": {
         "label": "OBS-DP",
@@ -55785,7 +55785,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "atrium": {
         "label": "OBS-DP",
@@ -56559,7 +56559,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "peculiar": {
         "label": "OBS-DP",
@@ -56571,7 +56571,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "shape": {
         "label": "OBS-DP",
@@ -56667,7 +56667,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Aortic": {
         "label": "ANAT-DP",
@@ -56823,7 +56823,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "not less distinct": {
         "label": "OBS-DP",
@@ -56835,7 +56835,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "interstitial": {
         "label": "ANAT-DP",
@@ -57267,7 +57267,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Nasogastric": {
         "label": "OBS-DP",
@@ -57321,7 +57321,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Multiple": {
         "label": "OBS-DP",
@@ -58011,7 +58011,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Slight": {
         "label": "OBS-DP",
@@ -59427,7 +59427,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "ventricular": {
         "label": "ANAT-DP",
@@ -59469,7 +59469,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "similar to prior": {
         "label": "OBS-DP",
@@ -59499,7 +59499,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "tortuosity": {
         "label": "OBS-DP",
@@ -60213,7 +60213,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "superimposed": {
         "label": "OBS-U",
@@ -60285,7 +60285,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "top": {
         "label": "OBS-DP",
@@ -60477,7 +60477,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "surgery": {
         "label": "OBS-U",
@@ -61857,7 +61857,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "trace": {
         "label": "OBS-DP",
@@ -61899,7 +61899,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "borderline": {
         "label": "OBS-DP",
@@ -62049,7 +62049,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "degenerative": {
         "label": "OBS-DP",
@@ -62157,7 +62157,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "appropriately": {
         "label": "OBS-DP",
@@ -62169,7 +62169,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "aligned": {
         "label": "OBS-DP",
@@ -62259,7 +62259,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "flattened": {
         "label": "OBS-DP",
@@ -62379,7 +62379,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "early": {
         "label": "OBS-U",
@@ -62433,7 +62433,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "infiltrate": {
         "label": "OBS-U",
@@ -62529,7 +62529,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "atypical": {
         "label": "OBS-U",
@@ -62637,7 +62637,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "9 mm": {
         "label": "OBS-DP",
@@ -62655,7 +62655,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "otherwise": {
         "label": "OBS-DP",
@@ -63171,7 +63171,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "diameter": {
         "label": "ANAT-DP",
@@ -63363,7 +63363,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Tortuosity": {
         "label": "OBS-DP",
@@ -63501,7 +63501,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "infiltrates": {
         "label": "OBS-DA",
@@ -63801,7 +63801,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Continued": {
         "label": "OBS-DP",
@@ -63957,7 +63957,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "expanded": {
         "label": "OBS-DP",
@@ -64257,7 +64257,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "fluid": {
         "label": "OBS-DP",
@@ -65175,7 +65175,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "internal": {
         "label": "ANAT-DP",
@@ -65571,7 +65571,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "in position": {
         "label": "OBS-DP",
@@ -65703,7 +65703,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "essentially": {
         "label": "OBS-DP",
@@ -65745,7 +65745,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "inflated": {
         "label": "OBS-DP",
@@ -65769,7 +65769,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "hemothorax": {
         "label": "OBS-DA",
@@ -65925,7 +65925,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "fifth": {
         "label": "ANAT-DP",
@@ -66039,7 +66039,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "redistribution": {
         "label": "OBS-DP",
@@ -66135,7 +66135,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Increased": {
         "label": "OBS-DP",
@@ -66327,7 +66327,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Multifocal": {
         "label": "OBS-DP",
@@ -66483,7 +66483,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "severity": {
         "label": "OBS-DP",
@@ -66579,7 +66579,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "valvular": {
         "label": "ANAT-DP",
@@ -66591,7 +66591,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "replacement": {
         "label": "OBS-DP",
@@ -66693,7 +66693,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "drain": {
         "label": "OBS-DA",
@@ -66993,7 +66993,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Swan - Ganz": {
         "label": "OBS-DP",
@@ -67077,7 +67077,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "5 cm above": {
         "label": "ANAT-DP",
@@ -67089,7 +67089,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Median": {
         "label": "ANAT-DP",
@@ -67125,7 +67125,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "cardia": {
         "label": "ANAT-DP",
@@ -67191,7 +67191,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "the Swan - Ganz": {
         "label": "OBS-DA",
@@ -67371,7 +67371,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Surgical": {
         "label": "OBS-DP",
@@ -67881,7 +67881,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Upper": {
         "label": "ANAT-DP",
@@ -68037,7 +68037,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "thyroid": {
         "label": "ANAT-DP",
@@ -68073,7 +68073,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "thyroidectomy": {
         "label": "OBS-U",
@@ -68337,7 +68337,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "HILAR": {
         "label": "ANAT-DP",
@@ -68385,7 +68385,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "LOBE": {
         "label": "ANAT-DP",
@@ -68409,7 +68409,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "accessory": {
         "label": "OBS-DP",
@@ -68643,7 +68643,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Calcific": {
         "label": "OBS-DP",
@@ -68703,7 +68703,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "minimally": {
         "label": "OBS-DP",
@@ -68733,7 +68733,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "crowd": {
         "label": "OBS-DP",
@@ -68847,7 +68847,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "in standard position": {
         "label": "OBS-DP",
@@ -68859,7 +68859,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "side holes": {
         "label": "OBS-DP",
@@ -69063,7 +69063,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "ventricle": {
         "label": "ANAT-DP",
@@ -69147,7 +69147,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "metallic": {
         "label": "OBS-DP",
@@ -69255,7 +69255,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "curvilinear": {
         "label": "OBS-DP",
@@ -69267,7 +69267,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "beneath": {
         "label": "ANAT-DP",
@@ -69399,7 +69399,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "in acceptable position": {
         "label": "OBS-DP",
@@ -69411,7 +69411,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "advanced": {
         "label": "OBS-DP",
@@ -69441,7 +69441,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "implement": {
         "label": "OBS-DP",
@@ -69453,7 +69453,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "medially": {
         "label": "ANAT-DP",
@@ -69465,7 +69465,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "not seen": {
         "label": "OBS-DP",
@@ -69531,7 +69531,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Pacer": {
         "label": "OBS-DP",
@@ -69723,7 +69723,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "upright position": {
         "label": "OBS-DP",
@@ -69777,7 +69777,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "amount": {
         "label": "OBS-DP",
@@ -69873,7 +69873,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "tiny": {
         "label": "OBS-U",
@@ -69921,7 +69921,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "residual": {
         "label": "OBS-U",
@@ -70053,7 +70053,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "thickenings": {
         "label": "OBS-DP",
@@ -70101,7 +70101,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "gross": {
         "label": "OBS-DA",
@@ -70119,7 +70119,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "malalignment": {
         "label": "OBS-DA",
@@ -70143,7 +70143,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "thorax": {
         "label": "ANAT-DP",
@@ -70173,7 +70173,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "left arm": {
         "label": "ANAT-DP",
@@ -70215,7 +70215,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "L 2 through L 4": {
         "label": "ANAT-DP",
@@ -70305,7 +70305,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "third": {
         "label": "ANAT-DP",
@@ -70347,7 +70347,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "eighth": {
         "label": "ANAT-DP",
@@ -70401,7 +70401,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "scapula": {
         "label": "ANAT-DP",
@@ -70539,7 +70539,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "true": {
         "label": "OBS-DA",
@@ -70605,7 +70605,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "several": {
         "label": "OBS-DP",
@@ -70629,7 +70629,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "clavicle": {
         "label": "ANAT-DP",
@@ -70671,7 +70671,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "4 cm above": {
         "label": "ANAT-DP",
@@ -70683,7 +70683,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "lucency": {
         "label": "OBS-DP",
@@ -70707,7 +70707,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Subcutaneous": {
         "label": "ANAT-DP",
@@ -71463,7 +71463,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "limited": {
         "label": "OBS-DP",
@@ -71559,7 +71559,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "alongside": {
         "label": "OBS-DP",
@@ -71571,7 +71571,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "elongated": {
         "label": "OBS-DP",
@@ -71589,7 +71589,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "aortosclerosis": {
         "label": "OBS-DP",
@@ -71613,7 +71613,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "collections": {
         "label": "OBS-DP",
@@ -71631,7 +71631,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "soft tissues": {
         "label": "ANAT-DP",
@@ -71715,7 +71715,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "severe": {
         "label": "OBS-DP",
@@ -71847,7 +71847,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "deeper": {
         "label": "OBS-DP",
@@ -71859,7 +71859,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "pneumo mediastinum": {
         "label": "OBS-DP",
@@ -71883,7 +71883,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Unremarkable": {
         "label": "OBS-DP",
@@ -72111,7 +72111,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "rod": {
         "label": "OBS-DP",
@@ -72141,7 +72141,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "overlies": {
         "label": "OBS-DP",
@@ -72165,7 +72165,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "T 5 through T 9": {
         "label": "ANAT-DP",
@@ -72183,7 +72183,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "area": {
         "label": "OBS-DP",
@@ -72249,7 +72249,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "intrafissural": {
         "label": "ANAT-DP",
@@ -72261,7 +72261,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "1.5 cm": {
         "label": "OBS-DP",
@@ -72273,7 +72273,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "non - displaced": {
         "label": "OBS-DA",
@@ -72345,7 +72345,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "excavatum": {
         "label": "ANAT-DP",
@@ -72675,7 +72675,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "sheath": {
         "label": "OBS-DP",
@@ -72687,7 +72687,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "positions": {
         "label": "OBS-DP",
@@ -72735,7 +72735,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "distance": {
         "label": "OBS-DP",
@@ -72777,7 +72777,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Lines": {
         "label": "OBS-DP",
@@ -72849,7 +72849,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "markedly": {
         "label": "OBS-DP",
@@ -72873,7 +72873,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Calcified": {
         "label": "OBS-DP",
@@ -72927,7 +72927,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "diffusely": {
         "label": "OBS-DP",
@@ -72945,7 +72945,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "demineralized": {
         "label": "OBS-DP",
@@ -73221,7 +73221,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "progression": {
         "label": "OBS-DP",
@@ -73551,7 +73551,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "cluster": {
         "label": "OBS-DP",
@@ -73617,7 +73617,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "non - tuberculous": {
         "label": "OBS-U",
@@ -73629,7 +73629,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "mycobacterial": {
         "label": "OBS-U",
@@ -73779,7 +73779,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "post - procedural": {
         "label": "OBS-DA",
@@ -73821,7 +73821,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "obscures": {
         "label": "OBS-DP",
@@ -73947,7 +73947,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "zone": {
         "label": "ANAT-DP",
@@ -74037,7 +74037,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "haziness": {
         "label": "OBS-DP",
@@ -74175,7 +74175,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "pulled back about 5 cm": {
         "label": "OBS-DP",
@@ -74187,7 +74187,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "collapse": {
         "label": "OBS-DA",
@@ -74289,7 +74289,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Subtle": {
         "label": "OBS-DP",
@@ -74325,7 +74325,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "minor": {
         "label": "ANAT-DP",
@@ -74397,7 +74397,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "reasonably": {
         "label": "OBS-DP",
@@ -74409,7 +74409,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "well defined": {
         "label": "OBS-DP",
@@ -74529,7 +74529,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Comminuted": {
         "label": "OBS-DP",
@@ -74577,7 +74577,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Partially imaged": {
         "label": "OBS-DP",
@@ -74589,7 +74589,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "spinal": {
         "label": "ANAT-DP",
@@ -74691,7 +74691,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Displaced": {
         "label": "OBS-DP",
@@ -74727,7 +74727,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "especially": {
         "label": "OBS-DP",
@@ -74739,7 +74739,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "orientation": {
         "label": "OBS-DP",
@@ -74769,7 +74769,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Sternal": {
         "label": "ANAT-DP",
@@ -74805,7 +74805,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "transesophageal": {
         "label": "OBS-DP",
@@ -74847,7 +74847,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Developing": {
         "label": "OBS-DP",
@@ -74859,7 +74859,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "development": {
         "label": "OBS-DP",
@@ -74907,7 +74907,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "in": {
         "label": "OBS-DP",
@@ -74925,7 +74925,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "multifocal": {
         "label": "OBS-U",
@@ -74973,7 +74973,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "periphery": {
         "label": "ANAT-DP",
@@ -75003,7 +75003,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "massive": {
         "label": "OBS-U",
@@ -75039,7 +75039,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Findings": {
         "label": "OBS-DP",
@@ -75069,7 +75069,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Status": {
         "label": "OBS-DP",
@@ -75093,7 +75093,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "fissural": {
         "label": "ANAT-DP",
@@ -75207,7 +75207,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "bones": {
         "label": "ANAT-DP",
@@ -75339,7 +75339,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "persistent": {
         "label": "OBS-DP",
@@ -75387,7 +75387,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Pleural": {
         "label": "ANAT-DP",
@@ -75585,7 +75585,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Two": {
         "label": "OBS-DP",
@@ -75621,7 +75621,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "ARDS": {
         "label": "OBS-U",
@@ -75693,7 +75693,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "curled": {
         "label": "OBS-DP",
@@ -75813,7 +75813,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "small - to - moderate": {
         "label": "OBS-DP",
@@ -75831,7 +75831,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "haze": {
         "label": "OBS-DP",
@@ -75843,7 +75843,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Moderate - to - severe": {
         "label": "OBS-DP",
@@ -75879,7 +75879,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "segment": {
         "label": "ANAT-DP",
@@ -76041,7 +76041,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "denser": {
         "label": "OBS-DP",
@@ -76053,7 +76053,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "lobes": {
         "label": "ANAT-DP",
@@ -76095,7 +76095,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "2.9 cm above": {
         "label": "ANAT-DP",
@@ -76107,7 +76107,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "coiled": {
         "label": "OBS-DP",
@@ -76131,7 +76131,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "leftward": {
         "label": "OBS-DP",
@@ -76335,7 +76335,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "orogastric": {
         "label": "OBS-DP",
@@ -76365,7 +76365,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Enlargement": {
         "label": "OBS-DP",
@@ -76413,7 +76413,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "cardiomegally": {
         "label": "OBS-DP",
@@ -76467,7 +76467,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "generalized": {
         "label": "OBS-DP",
@@ -76581,7 +76581,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "not well evaluated": {
         "label": "OBS-DP",
@@ -76593,7 +76593,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Healed": {
         "label": "OBS-DP",
@@ -76719,7 +76719,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "hyperlucent": {
         "label": "OBS-DP",
@@ -76731,7 +76731,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "cervical": {
         "label": "ANAT-DP",
@@ -76827,7 +76827,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "to": {
         "label": "OBS-DP",
@@ -76851,7 +76851,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Worsening": {
         "label": "OBS-DP",
@@ -76971,7 +76971,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "coursing": {
         "label": "OBS-DP",
@@ -76995,7 +76995,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "expected": {
         "label": "OBS-DP",
@@ -77067,7 +77067,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "high": {
         "label": "OBS-DP",
@@ -77109,7 +77109,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Widening": {
         "label": "OBS-DP",
@@ -77265,7 +77265,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "nasoenteric": {
         "label": "OBS-DP",
@@ -77289,7 +77289,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "semiupright": {
         "label": "OBS-U",
@@ -77301,7 +77301,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "projection": {
         "label": "OBS-U",
@@ -77361,7 +77361,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "gastric": {
         "label": "ANAT-DP",
@@ -77439,7 +77439,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "milder": {
         "label": "OBS-DP",
@@ -77451,7 +77451,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "AICD": {
         "label": "OBS-DP",
@@ -77511,7 +77511,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "procedure": {
         "label": "OBS-DA",
@@ -77667,7 +77667,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Bronchial": {
         "label": "ANAT-DP",
@@ -77805,7 +77805,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "sutures": {
         "label": "OBS-DP",
@@ -77943,7 +77943,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "projectional": {
         "label": "OBS-DP",
@@ -77955,7 +77955,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Multi": {
         "label": "OBS-DP",
@@ -78045,7 +78045,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Rounded": {
         "label": "OBS-DP",
@@ -78177,7 +78177,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "micronodules": {
         "label": "OBS-DA",
@@ -78261,7 +78261,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "bulging": {
         "label": "OBS-DP",
@@ -78285,7 +78285,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Post - surgical": {
         "label": "OBS-DP",
@@ -78297,7 +78297,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Nodular": {
         "label": "OBS-DP",
@@ -78357,7 +78357,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Fullness": {
         "label": "OBS-DP",
@@ -78441,7 +78441,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "amorphous": {
         "label": "OBS-DP",
@@ -78453,7 +78453,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Suture": {
         "label": "OBS-DP",
@@ -78465,7 +78465,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "material": {
         "label": "OBS-DP",
@@ -78531,7 +78531,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "high - positioned": {
         "label": "OBS-DP",
@@ -78549,7 +78549,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "plate": {
         "label": "OBS-DP",
@@ -78561,7 +78561,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "atelectases": {
         "label": "OBS-DP",
@@ -78639,7 +78639,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "congestive": {
         "label": "OBS-DA",
@@ -78675,7 +78675,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "posteroinferior": {
         "label": "ANAT-DP",
@@ -78693,7 +78693,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Substantial": {
         "label": "OBS-DP",
@@ -78711,7 +78711,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "streak": {
         "label": "OBS-DP",
@@ -78825,7 +78825,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "fine": {
         "label": "OBS-DP",
@@ -78885,7 +78885,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Layered": {
         "label": "OBS-DP",
@@ -78933,7 +78933,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "nondisplaced": {
         "label": "OBS-DP",
@@ -78945,7 +78945,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "dorsolateral part": {
         "label": "ANAT-DP",
@@ -78957,7 +78957,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "anchor": {
         "label": "OBS-DP",
@@ -79047,7 +79047,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "manifestation": {
         "label": "OBS-U",
@@ -79083,7 +79083,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "silhouetting": {
         "label": "OBS-DP",
@@ -79095,7 +79095,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "decompensating": {
         "label": "OBS-U",
@@ -79119,7 +79119,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Scoliosis": {
         "label": "OBS-DP",
@@ -79149,7 +79149,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "ENLARGEMENT": {
         "label": "OBS-DP",
@@ -79245,7 +79245,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "BASILAR": {
         "label": "ANAT-DP",
@@ -79281,7 +79281,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "local": {
         "label": "OBS-DP",
@@ -79389,7 +79389,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "inserted": {
         "label": "OBS-DP",
@@ -79473,7 +79473,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Dobbhoff": {
         "label": "OBS-DP",
@@ -79521,7 +79521,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "dilated": {
         "label": "OBS-DP",
@@ -79605,7 +79605,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "brachiocephalic": {
         "label": "ANAT-DP",
@@ -79623,7 +79623,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "pigtail": {
         "label": "OBS-DP",
@@ -79659,7 +79659,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "air space": {
         "label": "OBS-DP",
@@ -79671,7 +79671,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "pronounced": {
         "label": "OBS-DP",
@@ -79695,7 +79695,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "continued": {
         "label": "OBS-DP",
@@ -79719,7 +79719,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Loss": {
         "label": "OBS-DP",
@@ -79797,7 +79797,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Possible": {
         "label": "OBS-U",
@@ -79821,7 +79821,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "sided": {
         "label": "ANAT-DP",
@@ -79833,7 +79833,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "withdrawn": {
         "label": "OBS-DP",
@@ -79869,7 +79869,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "gastroesophageal": {
         "label": "ANAT-DP",
@@ -79947,7 +79947,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "above": {
         "label": "OBS-DP",
@@ -79959,7 +79959,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "side": {
         "label": "OBS-DP",
@@ -80031,7 +80031,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "sidehole": {
         "label": "OBS-DP",
@@ -80049,7 +80049,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "costal": {
         "label": "ANAT-DP",
@@ -80085,7 +80085,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "annulus": {
         "label": "OBS-DP",
@@ -80139,7 +80139,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "20 cm for more optimal placement": {
         "label": "OBS-DP",
@@ -80151,7 +80151,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "which": {
         "label": "OBS-DP",
@@ -80163,7 +80163,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Pigtail": {
         "label": "OBS-DP",
@@ -80187,7 +80187,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Hila": {
         "label": "ANAT-DP",
@@ -80211,7 +80211,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Unusual": {
         "label": "OBS-DP",
@@ -80247,7 +80247,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "OG": {
         "label": "OBS-DP",
@@ -80259,7 +80259,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "ETT": {
         "label": "OBS-DP",
@@ -80295,7 +80295,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Dahboff": {
         "label": "OBS-DP",
@@ -80307,7 +80307,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "plerual": {
         "label": "ANAT-DP",
@@ -80319,7 +80319,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "smaller": {
         "label": "OBS-DP",
@@ -80445,7 +80445,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "no change": {
         "label": "OBS-DP",
@@ -80469,7 +80469,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "coronary": {
         "label": "OBS-DP",
@@ -80505,7 +80505,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Triple": {
         "label": "OBS-DP",
@@ -80523,7 +80523,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "in the expected positions": {
         "label": "ANAT-DP",
@@ -80535,7 +80535,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Marked": {
         "label": "OBS-DP",
@@ -80583,7 +80583,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "biventricular": {
         "label": "ANAT-DP",
@@ -80625,7 +80625,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "one - third": {
         "label": "OBS-DP",
@@ -80637,7 +80637,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "1 cm": {
         "label": "OBS-DP",
@@ -80649,7 +80649,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Base": {
         "label": "ANAT-DP",
@@ -80685,7 +80685,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "indeterminate": {
         "label": "OBS-U",
@@ -80757,7 +80757,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "The right - sided": {
         "label": "OBS-DP",
@@ -80769,7 +80769,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "thoracentesis": {
         "label": "OBS-DP",
@@ -80823,7 +80823,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Obscuration": {
         "label": "OBS-DP",
@@ -80889,7 +80889,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "not increased": {
         "label": "OBS-DP",
@@ -80901,7 +80901,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "No change": {
         "label": "OBS-DP",
@@ -80925,7 +80925,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "It": {
         "label": "OBS-DP",
@@ -80937,7 +80937,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "rounded": {
         "label": "OBS-DP",
@@ -81117,7 +81117,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "reaction to inhaled substances": {
         "label": "OBS-U",
@@ -81189,7 +81189,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Extent": {
         "label": "OBS-DP",
@@ -81237,7 +81237,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "centers": {
         "label": "OBS-DP",
@@ -81249,7 +81249,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "intersitial": {
         "label": "ANAT-DP",
@@ -81291,7 +81291,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "chest radiograph": {
         "label": "OBS-DP",
@@ -81315,7 +81315,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "evidence of prior smoking": {
         "label": "OBS-U",
@@ -81339,7 +81339,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "semi - linear": {
         "label": "OBS-DP",
@@ -81351,7 +81351,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "calcium": {
         "label": "OBS-DP",
@@ -81387,7 +81387,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "degree": {
         "label": "OBS-DP",
@@ -81417,7 +81417,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "wedging": {
         "label": "OBS-DP",
@@ -81429,7 +81429,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "processes": {
         "label": "OBS-U",
@@ -81477,7 +81477,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "waterseal": {
         "label": "OBS-DP",
@@ -81489,7 +81489,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "takeoff": {
         "label": "ANAT-DP",
@@ -81501,7 +81501,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Other": {
         "label": "OBS-DP",
@@ -81681,7 +81681,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "AC": {
         "label": "ANAT-DP",
@@ -81705,7 +81705,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "joint": {
         "label": "ANAT-DP",
@@ -81753,7 +81753,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "EKG": {
         "label": "OBS-DP",
@@ -81777,7 +81777,7 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     },
     "Bronchovascular": {
         "label": "ANAT-DP",
@@ -81825,6 +81825,6 @@
                 }
             }
         ],
-        "normalization": NaN
+        "normalization": null
     }
 }
