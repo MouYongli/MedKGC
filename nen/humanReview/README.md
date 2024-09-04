@@ -1,0 +1,1 @@
+output.xlsx is after gpt processing but before human review.
