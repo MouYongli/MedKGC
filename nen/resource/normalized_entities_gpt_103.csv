@@ -1,0 +1,104 @@
+name,ui,term,semanticTypes,definition
+chf,C0018802,Congestive heart failure,Disease or Syndrome,"Vznik otoků, transsudátů vede k obrazu tzv. městnavého (kongestivního) selhání srdce. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+contusion,C0009938,Contusions,Injury or Poisoning,mechanical injury (usually caused by a blow) resulting in hemorrhage beneath unbroken skin; a bruise.
+marker,C5445211,Marker,Qualitative Concept,"A visual indicator of position, place or route."
+pectoralis,C0030747,Pectoralis Muscles,"Body Part, Organ, or Organ Component",Velký a malý prsní sval tvoří přední horní část hrudníku před podpažní jamkou (AXILLA).
+muscles,C4083049,Muscle (organ),"Body Part, Organ, or Organ Component","Nonparenchymatous organ that primarily consists of skeletal muscle tissue aggregated into macroscopic fasciculi by connective tissue; together with other muscles, it constitutes the muscular system. Examples: biceps, diaphragm, masseter, right third external intercostal muscle, external oblique, levator ani, serratus anterior."
+tissues,C0040300,Body tissue,Tissue,"Organ part, which is uncountable and consists of similarly specialized cells and intercellular matrix, aggregated according to genetically determined spatial relationships; together with other tissues, it constitutes an organ component. Examples: epithelium, muscle (tissue), connective tissue, neural tissue, lymphoid tissue."
+7.4 cm,,,,
+clavicular,C0230077,Clavicular region,Body Location or Region,
+end,C0444930,End,Spatial Concept,
+presumed,C4684849,Presumed,Qualitative Concept,Likely to be true; accepted as true.
+manubrium,C0024764,Bone structure of manubrium,"Body Part, Organ, or Organ Component",El segmento superior o más anterior del ESTERNÓN que se articula con la CLAVÍCULA y dos primeros pares de COSTILLAS.
+bleed,C0019080,Hemorrhage,Pathologic Function,Bleeding or escape of blood from a vessel.
+5 cm,,,,
+healing,,,,
+anteriorly,,,,
+Lucency,,,,
+Healing,,,,
+manubrial,C0502720,Manubrial cartilage of manubriosternal joint,"Body Part, Organ, or Organ Component",
+eventration,C0015207,Eventration,Anatomical Abnormality,A localized protrusion of a structure into an adjacent structure or cavity.
+Dense,C0439794,Dense,Qualitative Concept,Having high relative density or specific gravity; permitting little if any light to pass through.
+pectoral,C1521735,Pectoral,Qualitative Concept,Of or pertaining to the chest.
+not well appreciated,,,,
+discrepancy,C1290905,Discrepancy (finding),Finding,
+6.6 cm above,,,,
+greater than,C0439093,Greater Than,Quantitative Concept,A statement about the relative size or order of two objects specifying that an object of interest exceeds another object in quantity or measure or value or status.
+Widespread,C0205391,Widespread,Spatial Concept,Spread throughout a structure or area.
+improve,C0184511,Improved,Finding,Condition changed and/or recovered
+deteriorated,C1457868,Worse,Finding,In an declined condition.
+interim,C2827738,Interim,Temporal Concept,"The time between one event, process, or period and another."
+entire,C0439751,Entire,Quantitative Concept,Including all components without exception; constituting the full amount or extent or duration; complete.
+Pneumothorax,C0032326,Pneumothorax,Disease or Syndrome,Accumulation of air in the pleural cavity leading to a partially or completely collapsed lung. [https://orcid.org/0000-0002-0736-9199]
+2.5 cm above,,,,
+inferior vena cava,C0042458,Inferior vena cava structure,"Body Part, Organ, or Organ Component","Dolní dutá žíla. Vzniká ze dvou kyčelních žil (vv. iliacae), probíhá vpravo podél aorty a sbírá krev z dolních končetin, pánve, stěny břišní, retroperitonea, jater. (cit. Velký lékařský slovník online, 2019 http://lekarske.slovniky.cz)"
+crosses the lower margin of the image,,,,
+2.3 cm above,,,,
+pneumothorax .,C0032326,Pneumothorax,Disease or Syndrome,Accumulation of air in the pleural cavity leading to a partially or completely collapsed lung. [https://orcid.org/0000-0002-0736-9199]
+intraperitoneal,C0442120,Intraperitoneal,Spatial Concept,Relating to the peritoneal cavity as the intended site of administration.
+recent,C0332185,Recent,Temporal Concept,Near to or not long before the present.
+.,,,,
+long,C0205166,Long,Qualitative Concept,Of relatively great or greater than average spatial extension or temporal duration.
+standing,C0231472,Standing position,Spatial Concept,Human position in which the body is held in an upright orthostatic position and supported only by the feet.
+5 mm,C3840882,5 mm,Finding,
+benign,,,,
+Aspiration,C0349707,Aspiration - action,Therapeutic or Preventive Procedure,Extracción que utiliza presión negativa
+stool,C0015733,Feces,Body Substance,Excretion in semisolid state processed by the intestine.
+loop,C0445022,Loop,Spatial Concept,
+colon,C0009368,Colon structure (body structure),"Body Part, Organ, or Organ Component","The part of the large intestine measured from the cecum to the rectum consisting of ascending, transverse, descending and sigmoid portions. The purpose of the colon is to remove water from digested food prior to excretion."
+splenic,C0037993,Spleen,"Body Part, Organ, or Organ Component","An organ that is part of the hematopoietic and immune systems. It is composed of the white pulp and the red pulp and is surrounded by a capsule. It is located in the left hypochondriac region. Its functions include lymphocyte production, blood cell storage, and blood cell destruction."
+flexure,C1880791,Flexure,Anatomical Structure,An angular or rounded shape made by folding.
+Near - complete,C4489118,Near complete,Finding,
+Interposition,C1533025,Interposition procedure,Therapeutic or Preventive Procedure,
+Slightly,C0750482,Slightly (qualifier value),Qualitative Concept,
+air - filled,,,,
+vague,C0205408,Vague,Qualitative Concept,A term that refers to something not explicit or clear in meaning.
+mid - to - upper,,,,
+on the frontal view only,,,,
+more conspicuous compared with the prior exam,,,,
+artifact,C0085089,Morphologic artifact,Human-caused Phenomenon or Process,"Cualquier resultado visible de un procedimiento que es causado por el propio procedimiento y no por la entidad que está siendo analizada. Ejemplos comunes incluyen las estructuras histológicas que aparecen durante el procesamiento de tejido, imágenes radiográficas de estructuras que no están naturalmente presentes en tejidos vivos, y productos de reacciones químicas que tienen lugar durante el análisis."
+Vague,C0205408,Vague,Qualitative Concept,A term that refers to something not explicit or clear in meaning.
+Port - A - Cath system,C0226901,Implanted venous access device,"Body Part, Organ, or Organ Component",The anteriorly located rigid section of the PALATE.
+MediPort,,,,
+durable,,,,
+exaggerating,C0442801,Exaggerated,Qualitative Concept,
+access,C0444454,Access,Spatial Concept,"The right to obtain or make use of or take advantage of something (as services or membership); the right to enter. Also, an act or means of approaching."
+gaseous,,,,
+placements,C5441440,Dressings and Other Placements,Therapeutic or Preventive Procedure,
+off the field of view,,,,
+Tip,C3872494,Device tip (physical object),Manufactured Object,"The extreme end of something, especially something pointed."
+7 cm above,,,,
+Other lines,,,,
+carinal,,,,
+lordotic,,,,
+Significantly,,,,
+acceleration,C0000894,Acceleration,Phenomenon or Process,"1) Um aumento na taxa de velocidade. 2) Variação da velocidade em função do tempo. Utiliza-se na engenharia sísmica para definir o movimento vibratório do solo ou das estruturas; expressa-se em fração de gravidade (g) (Material II - IDNDR, 1992)"
+concurrent,C0205420,Concurrent,Temporal Concept,<p>A relationship in which the source act's effective time is the same as the target act's effective time.</p><i>UsageNote:</i>This code is reflexive. Therefore its inverse code is itself.
+cancer,C0006826,Malignant Neoplasms,Neoplastic Process,"A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas. Check for ""https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C9305"" active clinical trials using this agent. (""http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C9305"" NCI Thesaurus)"
+areation,,,,
+dissemination,C0205221,Disseminated,Spatial Concept,To scatter widely; spread.
+adenocarcinoma,,,,
+cannot be evaluated,,,,
+disseminated,C0205221,Disseminated,Spatial Concept,To scatter widely; spread.
+similar to prior study,,,,
+Nearly,C3828842,Nearly,Qualitative Concept,Not quite or just short of.
+complete,C0205197,Complete,Qualitative Concept,To possess every necessary or normal part or component or step; having come or been brought to a conclusion.
+increasingly,,,,
+Similar,C2348205,Similarity,Qualitative Concept,The quality of being alike; having characteristics in common.
+pneumothoax,,,,
+Lordotic,,,,
+pseudoarticulation,,,,
+Venous,C0348013,Venous,Spatial Concept,"Of, or pertaining to, or contained in, or performing the function of the veins."
+Cervical,C0205064,Cervical,Spatial Concept,"Relating to a neck, or cervix, in any sense."
+extremity,C0015385,Limb structure,"Body Part, Organ, or Organ Component","cardinal body part, each instance of which has as its constitutional part some appendicular skeleton. Examples: There are only four instances, right upper and lower limbs and left upper and lower limbs."
+transvenous,,,,
+Orphaned,,,,
+atrial,C0018792,Heart Atrium,"Body Part, Organ, or Organ Component","The chambers of the heart, to which the BLOOD returns from the circulation."
+irregular,C0205271,Irregular,Qualitative Concept,Lacking perfect symmetry or evenness.
+interspaces,,,,
+dual - lead,,,,
+hyperdense,,,,
+breast,C0006141,Breast,"Body Part, Organ, or Organ Component","Region of pectoral part of chest, each instance of which is the modified, glandular structure on some anterior chest and which has as its parts some nipple, areola, breast proper."
+One,C0205447,One,Quantitative Concept,"The smallest natural number and quantity it denotes: a single entity, unit, or object."
+one,C0205447,One,Quantitative Concept,"The smallest natural number and quantity it denotes: a single entity, unit, or object."
+detached,C0687118,Detached,Functional Concept,Physically separated or not connected.

@@ -1,0 +1,104 @@
+name,ui,normalized_name,semanticTypes,definition,term,source
+chf,,,,,,
+contusion,C0009938,,Injury or Poisoning,mechanical injury (usually caused by a blow) resulting in hemorrhage beneath unbroken skin; a bruise.,Contusions,CSP
+marker,C5445211,,Qualitative Concept,"A visual indicator of position, place or route.",Marker,NCI
+pectoralis,,,,,,
+muscles,,,,,,
+tissues,,,,,,
+7.4 cm,,,,,,
+clavicular,,,,,,
+end,C0444930,,Spatial Concept,,End,
+presumed,C4684849,,Qualitative Concept,Likely to be true; accepted as true.,Presumed,NCI
+manubrium,,,,,,
+bleed,,,,,,
+5 cm,,,,,,
+healing,,,,,,
+anteriorly,,,,,,
+Lucency,,,,,,
+Healing,,,,,,
+manubrial,,,,,,
+eventration,C0015207,,Anatomical Abnormality,A localized protrusion of a structure into an adjacent structure or cavity.,Eventration,NCI
+Dense,C0439794,,Qualitative Concept,Having high relative density or specific gravity; permitting little if any light to pass through.,Dense,NCI
+pectoral,C1521735,,Qualitative Concept,Of or pertaining to the chest.,Pectoral,NCI
+not well appreciated,,,,,,
+discrepancy,,,,,,
+6.6 cm above,,,,,,
+greater than,C0439093,,Quantitative Concept,A statement about the relative size or order of two objects specifying that an object of interest exceeds another object in quantity or measure or value or status.,Greater Than,NCI
+Widespread,C0205391,,Spatial Concept,Spread throughout a structure or area.,Widespread,NCI
+improve,C0184511,,Finding,Condition changed and/or recovered,Improved,CCC
+deteriorated,,,,,,
+interim,C2827738,,Temporal Concept,"The time between one event, process, or period and another.",Interim,NCI
+entire,C0439751,,Quantitative Concept,Including all components without exception; constituting the full amount or extent or duration; complete.,Entire,NCI
+Pneumothorax,C0032326,,Disease or Syndrome,Accumulation of air in the pleural cavity leading to a partially or completely collapsed lung. [https://orcid.org/0000-0002-0736-9199],Pneumothorax,HPO
+2.5 cm above,,,,,,
+inferior vena cava,,,,,,
+crosses the lower margin of the image,,,,,,
+2.3 cm above,,,,,,
+pneumothorax .,,,,,,
+intraperitoneal,C0442120,,Spatial Concept,Relating to the peritoneal cavity as the intended site of administration.,Intraperitoneal,NCI
+recent,C0332185,,Temporal Concept,Near to or not long before the present.,Recent,NCI
+.,,,,,,
+long,C0205166,,Qualitative Concept,Of relatively great or greater than average spatial extension or temporal duration.,Long,NCI
+standing,,,,,,
+5 mm,C3840882,,Finding,,5 mm,
+benign,C0205183,,Qualitative Concept,"For neoplasms, a non-infiltrating and non-metastasizing neoplastic process that is characterized by the absence of morphologic features associated with malignancy (e.g., severe atypia, nuclear pleomorphism, tumor cell necrosis, and abnormal mitoses). For other conditions, a process that is mild in nature and not dangerous to health.",Benign,NCI
+Aspiration,,,,,,
+stool,,,,,,
+loop,C0445022,,Spatial Concept,,Loop,
+colon,,,,,,
+splenic,,,,,,
+flexure,C1880791,,Anatomical Structure,An angular or rounded shape made by folding.,Flexure,NCI
+Near - complete,C4489118,,Finding,,Near complete,
+Interposition,,,,,,
+Slightly,,,,,,
+air - filled,,,,,,
+vague,C0205408,,Qualitative Concept,A term that refers to something not explicit or clear in meaning.,Vague,NCI
+mid - to - upper,,,,,,
+on the frontal view only,,,,,,
+more conspicuous compared with the prior exam,,,,,,
+artifact,,,,,,
+Vague,C0205408,,Qualitative Concept,A term that refers to something not explicit or clear in meaning.,Vague,NCI
+Port - A - Cath system,,,,,,
+MediPort,,,,,,
+durable,,,,,,
+exaggerating,,,,,,
+access,C0444454,,Spatial Concept,"The right to obtain or make use of or take advantage of something (as services or membership); the right to enter. Also, an act or means of approaching.",Access,NCI
+gaseous,,,,,,
+placements,C1524072,,Qualitative Concept,"Position or arrangement, as of the teeth; the state of being placed or arranged, as the assignment of a person to a appropriate clinical study.",Placement,NCI
+off the field of view,,,,,,
+Tip,C3282898,,Spatial Concept,The pointed end of a linear structure.,Tip,NCI
+7 cm above,,,,,,
+Other lines,,,,,,
+carinal,,,,,,
+lordotic,,,,,,
+Significantly,,,,,,
+acceleration,C0000894,,Phenomenon or Process,"1) Um aumento na taxa de velocidade. 2) Variação da velocidade em função do tempo. Utiliza-se na engenharia sísmica para definir o movimento vibratório do solo ou das estruturas; expressa-se em fração de gravidade (g) (Material II - IDNDR, 1992)",Acceleration,MSHPOR
+concurrent,C0205420,,Temporal Concept,<p>A relationship in which the source act's effective time is the same as the target act's effective time.</p><i>UsageNote:</i>This code is reflexive. Therefore its inverse code is itself.,Concurrent,HL7V3.0
+cancer,,,,,,
+areation,,,,,,
+dissemination,,,,,,
+adenocarcinoma,C0001418,,Neoplastic Process,"Zhoubný nádor ze žlázového epitelu. Může mít v různé míře zachovanou strukturu žlázy a její produkci (např. hlenu). Bývá v tlustém střevě, žaludku, slinivce břišní, plicích aj. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz)",Adenocarcinoma,MSHCZE
+cannot be evaluated,,,,,,
+disseminated,C0205221,,Spatial Concept,To scatter widely; spread.,Disseminated,NCI
+similar to prior study,,,,,,
+Nearly,C3828842,,Qualitative Concept,Not quite or just short of.,Nearly,NCI
+complete,C0205197,,Qualitative Concept,To possess every necessary or normal part or component or step; having come or been brought to a conclusion.,Complete,NCI
+increasingly,,,,,,
+Similar,,,,,,
+pneumothoax,,,,,,
+Lordotic,,,,,,
+pseudoarticulation,,,,,,
+Venous,C0348013,,Spatial Concept,"Of, or pertaining to, or contained in, or performing the function of the veins.",Venous,NCI
+Cervical,C0205064,,Spatial Concept,"Relating to a neck, or cervix, in any sense.",Cervical,NCI
+extremity,,,,,,
+transvenous,,,,,,
+Orphaned,,,,,,
+atrial,,,,,,
+irregular,C0205271,,Qualitative Concept,Lacking perfect symmetry or evenness.,Irregular,NCI
+interspaces,,,,,,
+dual - lead,,,,,,
+hyperdense,,,,,,
+breast,C0006141,,"Body Part, Organ, or Organ Component","Region of pectoral part of chest, each instance of which is the modified, glandular structure on some anterior chest and which has as its parts some nipple, areola, breast proper.",Breast,FMA
+One,C0205447,,Quantitative Concept,"The smallest natural number and quantity it denotes: a single entity, unit, or object.",One,NCI
+one,C0205447,,Quantitative Concept,"The smallest natural number and quantity it denotes: a single entity, unit, or object.",One,NCI
+detached,C0687118,,Functional Concept,Physically separated or not connected.,Detached,NCI
