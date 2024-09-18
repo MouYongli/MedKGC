@@ -39,3 +39,13 @@ jupyter lab --no-browser --port=8888
 ```
 export HF_HOME=~/Data/huggingface
 ```
+
+## Some Concepts
+mention / token: a span of text in a report, which may or may not refer to an entity
+entity: resulf of NER, also a span of text in a report, which be recognized as a named entity
+term: a concept or standard form in a dictionary(e.g. UMLS).
+
+
+## Output
+- Human annotated data as golden data, [dataset](nen/humanReview/reviewed.xlsx)
+
