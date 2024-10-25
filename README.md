@@ -49,3 +49,8 @@ term: a concept or standard form in a dictionary(e.g. UMLS).
 ## Output
 - Human annotated data as golden data, [dataset](nen/humanReview/reviewed.xlsx)
 
+# Project Story
+A automated annotion tool using LLMs to help medical annotators annotate the input radiology reports.  
+
+这个工具涉及了Named Entity Recognition，relation extraction, named entity normalization，最终结果会以知识图谱的形式输出。
+
