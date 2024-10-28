@@ -1,7 +1,7 @@
 # Information Extraction Project
 
 ## Overview
-This project aims to extract named entities and relations from radiology reports, using the RadGraph dataset as input. The goal is to compare the performance of Large Language Models (LLMs) against the ground truth provided by RadGraph.
+This project aims to extract named entities from radiology reports using Large Language Models (LLMs) and compare their performance against the RadGraph dataset ground truth. The system focuses on identifying anatomical structures and medical observations with their presence status.
 
 ## Input Data
 - Dataset: [RadGraph train_dev.json](../resource/radgraph/train_dev.json)
@@ -37,45 +37,88 @@ RadGraph provides entities and relations in the following JSON format:
 }
 ```
 
-## LLM Output Format
-LLMs produce named entities in a dictionary format:
-```python
-{
-    'lungs': 'ANAT-DP',
-    'clear': 'OBS-DP',
-    'focal': 'OBS-DA',
-    // ... more entities
-}
+## Project Structure
 ```
-LLMs may not handle entity offsets well, so additional processing is required.
-
-
-## Key Functions
-
-1. Process RadGraph data:
-   ```python
-   def entities_from_radgraph(json_result):
-   ```
-
-2. Process LLM output:
-   ```python
-   def extends_entities_offset(llm_result, text):
-
-   def entities_from_llm_response(json_result, text):
-   ```
-
-3. Evaluation:
-   ```python
-   def compute_metrics(true_named_entities, pred_named_entities, tags):
-   ```
-
-## Evaluation Input Format
-Both `true_named_entities` and `pred_named_entities` should be lists of `Entity` objects:
-```python
-[
-    Entity(e_type='MISC', start_offset=12, end_offset=12),
-    Entity(e_type='LOC', start_offset=15, end_offset=15),
-    Entity(e_type='PER', start_offset=37, end_offset=39),
-    Entity(e_type='ORG', start_offset=45, end_offset=46)
-]
+ie/
+├── ner.py              # Main evaluation script
+├── utils/
+│   ├── ner.py         # LLM entity extraction implementation
+│   └── ner_eval.py    # Evaluation metrics computation
 ```
+
+## Implementation Details
+
+### LLM Entity Extraction
+The system uses a few-shot learning approach with the following components:
+
+1. System Prompt:
+   - Defines the role as a radiologist
+   - Specifies the task of clinical term extraction
+   - Provides entity type definitions
+   - Defines input/output format
+
+2. Few-shot Examples:
+   - Uses examples from RadGraph training data
+   - Default: 50 examples per inference
+   - Examples include text and corresponding entity annotations
+
+3. Entity Extraction:
+```python
+def extract_entities(text, num_shots=50):
+    """
+    Extract named entities from radiology report text using LLM.
+    Returns entities in format:
+    {
+        "1": {
+            "tokens": "lungs",
+            "label": "ANAT-DP"
+        },
+        ...
+    }
+    """
+```
+
+### Evaluation Pipeline
+The evaluation process consists of the following steps:
+
+1. Load RadGraph dev/test data
+2. For each report:
+   - Extract entities using LLM
+   - Convert LLM output to standardized format
+   - Compare with RadGraph ground truth
+   - Compute precision, recall, and F1 scores
+
+```python
+# Example evaluation code
+text = "Patient's lungs are clear..."
+entities = extract_entities(text, num_shots=50)
+pred = entities_from_llm_response(entities, text)
+y_true = entities_from_radgraph(json_result)
+metrics = compute_metrics(y_true, pred, tags)
+```
+
+## Usage
+1. Ensure you have access to the LLM API endpoint
+2. Run evaluation:
+```bash
+python ie/ner.py
+```
+
+## Data
+- Training data: `resource/radgraph/train.json`
+- Development data: `resource/radgraph/dev.json`
+- Test data: `resource/radgraph/test.json`
+
+## Evaluation Metrics
+The system evaluates entity extraction performance using:
+- Precision
+- Recall
+- F1 Score
+
+Results are computed for each entity type and aggregated for overall performance.
+
+## TODO
+- [ ] Implement relation extraction
+- [ ] Optimize few-shot example selection
+- [ ] Add support for additional LLM models
+- [ ] Improve entity offset detection

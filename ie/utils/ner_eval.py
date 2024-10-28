@@ -12,101 +12,6 @@ logging.basicConfig(
 
 Entity = namedtuple("Entity", "e_type start_offset end_offset")
 
-class Evaluator():
-
-    def __init__(self, true, pred, tags):
-        """
-        """
-
-        if len(true) != len(pred):
-            raise ValueError("Number of predicted documents does not equal true")
-
-        self.true = true
-        self.pred = pred
-        self.tags = tags
-
-        # Setup dict into which metrics will be stored.
-
-        self.metrics_results = {
-            'correct': 0,
-            'incorrect': 0,
-            'partial': 0,
-            'missed': 0,
-            'spurious': 0,
-            'possible': 0,
-            'actual': 0,
-            'precision': 0,
-            'recall': 0,
-        }
-
-        # Copy results dict to cover the four schemes.
-
-        self.results = {
-            'strict': deepcopy(self.metrics_results),
-            'ent_type': deepcopy(self.metrics_results),
-            'partial':deepcopy(self.metrics_results),
-            'exact':deepcopy(self.metrics_results),
-            }
-
-        # Create an accumulator to store results
-
-        self.evaluation_agg_entities_type = {e: deepcopy(self.results) for e in tags}
-
-
-    def evaluate(self):
-
-        logging.info(
-            "Imported %s predictions for %s true examples",
-            len(self.pred), len(self.true)
-        )
-
-        for true_ents, pred_ents in zip(self.true, self.pred):
-
-            # Check that the length of the true and predicted examples are the
-            # same. This must be checked here, because another error may not
-            # be thrown if the lengths do not match.
-
-            if len(true_ents) != len(pred_ents):
-                raise ValueError("Prediction length does not match true example length")
-
-            # Compute results for one message
-
-            tmp_results, tmp_agg_results = compute_metrics(
-                collect_named_entities(true_ents),
-                collect_named_entities(pred_ents),
-                self.tags
-            )
-
-            # Cycle through each result and accumulate
-
-            # TODO: Combine these loops below:
-
-            for eval_schema in self.results:
-
-                for metric in self.results[eval_schema]:
-
-                    self.results[eval_schema][metric] += tmp_results[eval_schema][metric]
-
-            # Calculate global precision and recall
-
-            self.results = compute_precision_recall_wrapper(self.results)
-
-            # Aggregate results by entity type
-
-            for e_type in self.tags:
-
-                for eval_schema in tmp_agg_results[e_type]:
-
-                    for metric in tmp_agg_results[e_type][eval_schema]:
-
-                        self.evaluation_agg_entities_type[e_type][eval_schema][metric] += tmp_agg_results[e_type][eval_schema][metric]
-
-                # Calculate precision recall at the individual entity level
-
-                self.evaluation_agg_entities_type[e_type] = compute_precision_recall_wrapper(self.evaluation_agg_entities_type[e_type])
-
-        return self.results, self.evaluation_agg_entities_type
-
 
 def collect_named_entities(tokens):
     """
@@ -155,7 +60,6 @@ def collect_named_entities(tokens):
 
 
 def compute_metrics(true_named_entities, pred_named_entities, tags):
-
 
     eval_metrics = {'correct': 0, 'incorrect': 0, 'partial': 0, 'missed': 0, 'spurious': 0, 'precision': 0, 'recall': 0}
 
@@ -346,6 +250,7 @@ def compute_metrics(true_named_entities, pred_named_entities, tags):
 
     for eval_type in evaluation:
         evaluation[eval_type] = compute_actual_possible(evaluation[eval_type])
+        evaluation[eval_type] = compute_precision_recall(evaluation[eval_type])
 
     # Compute 'possible', 'actual', and precision and recall on entity level
     # results. Start by cycling through the accumulated results.
@@ -512,3 +417,4 @@ if __name__ == "__main__":
 
     pprint.pprint(results["strict"])
     # print("Evaluation Aggregated by Entity Type:", evaluation_agg_entities_type)
+
