@@ -4,87 +4,76 @@ import pprint
 
 
 # Prepare prompt with instructions
-system_prompt = '''You are a radiologist performing clinical term extraction from the FINDINGS and IMPRESSION sections in the radiology report. Here a clinical term can be either anatomy or observation that is related to a finding or an impression. The anatomy term refers to an anatomical body part such as a 'lung'. The observation terms refer to observations made when referring to the associated radiology image. Observations are associated with visual features, identifiable pathophysiologic processes, or diagnostic disease classifications. For example, an observation could be 'effusion' or description phrases like 'increased'. You also need to assign a label to indicate whether the clinical term is present, absent or uncertain. The labels are:
-- OBS-DP: Observation definitely present
-- ANAT-DP: Anatomy definitely present  
-- OBS-U: Observation uncertain
-- OBS-DA: Observation definitely absent
+system_prompt = '''You are a radiologist performing clinical term extraction from the FINDINGS and IMPRESSION sections 
+    in the radiology report. Here a clinical term can be either anatomy or observation that is related to a finding or an impression. The anatomy term refers to an anatomical body part such as a 'lung'. The observation terms refer to observations made when referring to the associated radiology image. Observations are associated with visual features, identifiable pathophysiologic processes, or diagnostic disease classifications. For example, an observation could be 'effusion' or description phrases like 'increased'. You also need to assign a label to indicate whether the clinical term is present, absent or uncertain. The labels are:
+    - OBS-DP: Observation definitely present
+    - ANAT-DP: Anatomy definitely present  
+    - OBS-U: Observation uncertain
+    - OBS-DA: Observation definitely absent
 
-Given a piece of radiology text input in the format:
+    Given a piece of radiology text input in the format:
 
-<INPUT>
-<text>
-</INPUT>
+    <INPUT>
+    <text>
+    </INPUT>
 
-reply with the following structure:
+    reply with the following structure:
 
-<OUTPUT>
-ANSWER: tuples separated by newlines. Each tuple has the format: (<clinical term text>, <label: observation-present |observation-absent|observation-uncertain|anatomy-present>). If there are no extraction related to findings or impression, return ()
-</OUTPUT>
-'''
+    <OUTPUT>
+    ANSWER: tuples separated by newlines. Each tuple has the format: (<clinical term text>, <label: observation-present |observation-absent|observation-uncertain|anatomy-present>). If there are no extraction related to findings or impression, return ()
+    </OUTPUT>
+    '''
 
 # Create a session object for reuse
 session = requests.Session()
 
 def get_question_prompt(text):
     return f'''<INPUT>
-{text}
-</INPUT> 
+        {text}
+        </INPUT> 
 
-What are the clinical terms and their labels in this text? Discard sections other than FINDINGS and IMPRESSION: eg. INDICATION, HISTORY, TECHNIQUE, COMPARISON sections. If there is no extraction from findings and impression, return (). Please only output the tuples without additional notes or explanations.
+        What are the clinical terms and their labels in this text? Discard sections other than FINDINGS and IMPRESSION: eg. INDICATION, HISTORY, TECHNIQUE, COMPARISON sections. If there is no extraction from findings and impression, return (). Please only output the tuples without additional notes or explanations.
 
-<OUTPUT> ANSWER:
-'''
+        <OUTPUT> ANSWER:
+        '''
 
-def extract_entities(text, num_shots=5):  # 添加num_shots参数，默认值为5
-    """
-    Extract named entities from radiology report text using LLM model.
-    
-    Args:
-        text (str): Input radiology report text
-        shots_path (str): Path to shots file containing examples
-        num_shots (int): Number of few-shot examples to use
+def extract_entities(text, num_shots=5):
+    try:
+        url = 'http://ollama.corinth.informatik.rwth-aachen.de/api/chat'
         
-    Returns:
-        dict: JSON response containing extracted entities and their labels
-    """
-    url = 'http://ollama.corinth.informatik.rwth-aachen.de/api/chat'
+        messages = [{'role': 'system', 'content': system_prompt}]
+        messages = create_messages_with_shots(num_shots, messages)
+        messages.append({'role': 'user', 'content': get_question_prompt(text)})
 
-    # NOTE： 一个example估计400token，llama3.1:8b的context length是128k，所以最多可以处理320 examples
+        data = {
+            "model": "llama3.1:8b",
+            "messages": messages,
+            "stream": False
+        }
 
-    messages = [{'role': 'system', 'content': system_prompt}]
-    messages = create_messages_with_shots(num_shots, messages)
-    messages.append({'role': 'user', 'content': get_question_prompt(text)})
+        response = session.post(url, json=data)
+        response.raise_for_status()  # 检查HTTP错误
+        entities = response.json()['message']['content']
 
-    data = {
-        "model": "llama3.1:8b",
-        "messages": messages,
-        "stream": False
-    }
-
-    print(text)
-    # Make API request
-    response = session.post(url, json=data)
-    entities = response.json()['message']['content']
-    print(entities)
-
-    # Parse response into JSON format
-    result = {}
-    lines = entities.split('\n')
-    for i, line in enumerate(lines):
-        if '(' in line and ')' in line:
-            try:
-                term, label = eval(line.strip())
-                result[str(i+1)] = {
-                    "tokens": term, 
-                    "label": label
-                }
-            except ValueError:
-                # 跳过无法解析的行
-                continue
-    
-    pprint.pprint(result)
-    return result
+        # Parse response into JSON format
+        result = {}
+        lines = entities.split('\n')
+        for i, line in enumerate(lines):
+            if '(' in line and ')' in line:
+                try:
+                    term, label = eval(line.strip())
+                    result[str(i+1)] = {
+                        "tokens": term, 
+                        "label": label
+                    }
+                except (ValueError, SyntaxError):
+                    continue
+        
+        return result
+        
+    except Exception as e:
+        print(f"Error in extract_entities: {str(e)}")
+        return {}
 
 
 def create_messages_with_shots(num_shots, messages):

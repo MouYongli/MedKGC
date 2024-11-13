@@ -12,6 +12,7 @@ Existing Dictionaries
 ```
 conda create --name=medkgc python=3.10
 conda activate medkgc
+pip install -r requirements.txt
 ```
 
 ```
@@ -39,6 +40,19 @@ jupyter lab --no-browser --port=8888
 ```
 export HF_HOME=~/Data/huggingface
 ```
+
+## Run Tests
+Run tests:
+```
+pytest ie/utils/test_ner.py -v
+```
+<details>
+<summary>Detailed Information</summary>
+`-v` - verbose mode, display detailed test output information
+</details>
+
+
+
 
 ## Some Concepts
 mention / token: a span of text in a report, which may or may not refer to an entity
