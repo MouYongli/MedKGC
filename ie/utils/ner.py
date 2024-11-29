@@ -72,8 +72,7 @@ def extract_entities(text, num_shots=5):
         return result
         
     except Exception as e:
-        print(f"Error in extract_entities: {str(e)}")
-        return {}
+        raise e
 
 
 def create_messages_with_shots(num_shots, messages):
