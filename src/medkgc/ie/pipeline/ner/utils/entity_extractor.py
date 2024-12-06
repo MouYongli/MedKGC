@@ -90,7 +90,7 @@ def create_messages_with_shots(num_shots, messages):
         list: 包含few-shot示例的消息列表
     """
     # 加载训练数据
-    with open('/home/hbchen/Projects/MedKGC/resource/radgraph/train.json', 'r') as f:
+    with open('data/radgraph/original/train.json', 'r') as f:
         train_data = json.load(f)
     
     # 获取前num_shots个示例
@@ -133,10 +133,11 @@ def create_messages_with_shots(num_shots, messages):
 
 def main():
     
-    text = "FINAL REPORT INDICATION : ___ - year - old man with change in mental status . COMPARISON : PA and lateral chest radiograph , ___ . PA AND LATERAL CHEST RADIOGRAPH : The cardiac , mediastinal and hilar contours are normal . An opacity projecting over the right mid to upper lung on the frontal view may represent focal consolidation , unchanged from ___ . Interposition of bowel accounts for the lucency below the right hemidiaphragm ."
+    # text = "FINAL REPORT INDICATION : ___ - year - old man with change in mental status . COMPARISON : PA and lateral chest radiograph , ___ . PA AND LATERAL CHEST RADIOGRAPH : The cardiac , mediastinal and hilar contours are normal . An opacity projecting over the right mid to upper lung on the frontal view may represent focal consolidation , unchanged from ___ . Interposition of bowel accounts for the lucency below the right hemidiaphragm ."
     # text = "FINAL REPORT INDICATION : ___ - year - old male with MS and hypotension . COMPARISON : ___ . TECHNIQUE : Single frontal chest radiograph was obtained portably with the patient in a semi - erect position . FINDINGS : There are low lung volumes . No focal consolidation is appreciated on this limited view . A small left pleural effusion would be difficult to exclude . Compared to prior exam , there is decreased prominence of the pulmonary vasculature . There has been interval removal of a left - sided PICC . Exam is otherwise unchanged . Slightly prominent loops of air - filled colon are again noted under the right hemidiaphragm ."
+    text = "FINAL REPORT HISTORY : Fever , to assess for pneumonia . FINDINGS : In comparison with the study of ___ , there is little change and no evidence of acute cardiopulmonary disease . The patient has taken a better inspiration and there is no pneumonia , vascular congestion or pleural effusion . The left central catheter has been removed and the Port - A - Cath tip again lies in the lower portion of the SVC ."
     
-    entities = extract_entities(text, num_shots=10)  # 移除未使用的shots_path参数，添加num_shots参数
+    entities = extract_entities(text, num_shots=100)  # 移除未使用的shots_path参数，添加num_shots参数
     print(entities)
 
 if __name__ == '__main__':

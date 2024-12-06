@@ -1,0 +1,310 @@
+
+Report 1:
+Precision: 0.8421
+Recall: 0.9412
+
+Report 2:
+Precision: 1.0000
+Recall: 0.7647
+
+Report 3:
+Precision: 0.3333
+Recall: 0.0278
+
+Report 4:
+Precision: 0.8571
+Recall: 0.2727
+
+Report 5:
+Precision: 0.2500
+Recall: 0.1277
+
+Report 6:
+Precision: 0.6667
+Recall: 0.5455
+
+Report 7:
+Precision: 0.6000
+Recall: 0.1500
+
+Report 8:
+Precision: 0.4444
+Recall: 0.0851
+
+Report 9:
+Precision: 0.3269
+Recall: 0.4359
+
+Report 10:
+Precision: 0.3091
+Recall: 0.5312
+
+Report 11:
+Precision: 0.3571
+Recall: 0.2679
+
+Report 12:
+Precision: 0.5200
+Recall: 0.2407
+
+Report 13:
+Precision: 0.7500
+Recall: 0.0588
+
+Report 14:
+Precision: 0.0000
+Recall: 0.0000
+
+Report 15:
+Precision: 0.6000
+Recall: 0.6000
+
+Report 16:
+Precision: 0.5455
+Recall: 0.2143
+
+Report 17:
+Precision: 0.0769
+Recall: 0.1250
+
+Report 18:
+Precision: 0.3607
+Recall: 0.6875
+
+Report 19:
+Precision: 0.8276
+Recall: 0.8571
+
+Report 20:
+Precision: 1.0000
+Recall: 0.2500
+
+Report 21:
+Precision: 0.7500
+Recall: 0.5294
+
+Report 22:
+Precision: 0.2000
+Recall: 0.0500
+
+Report 23:
+Precision: 0.7143
+Recall: 0.6250
+
+Report 24:
+Precision: 0.3333
+Recall: 0.0164
+
+Report 25:
+Precision: 0.8333
+Recall: 0.5714
+
+Report 26:
+Precision: 1.0000
+Recall: 0.1765
+
+Report 27:
+Precision: 0.7742
+Recall: 0.6667
+
+Report 28:
+Precision: 0.9444
+Recall: 0.8947
+
+Report 29:
+Precision: 0.7353
+Recall: 0.6757
+
+Report 30:
+Precision: 0.8889
+Recall: 0.5333
+
+Report 31:
+Precision: 0.0000
+Recall: 0.0000
+
+Report 32:
+Precision: 0.5625
+Recall: 0.8182
+
+Report 33:
+Precision: 0.6667
+Recall: 0.3077
+
+Report 34:
+Precision: 1.0000
+Recall: 0.1579
+
+Report 35:
+Precision: 0.5714
+Recall: 0.6667
+
+Report 36:
+Precision: 0.7778
+Recall: 0.3684
+
+Report 37:
+Precision: 0.8462
+Recall: 0.4400
+
+Report 38:
+Precision: 0.6000
+Recall: 0.7941
+
+Report 39:
+Precision: 1.0000
+Recall: 0.0312
+
+Report 40:
+Precision: 0.5000
+Recall: 0.7143
+
+Report 41:
+Precision: 1.0000
+Recall: 0.1852
+
+Report 42:
+Precision: 0.6000
+Recall: 0.3333
+
+Report 43:
+Precision: 0.0000
+Recall: 0.0000
+
+Report 44:
+Precision: 0.1667
+Recall: 0.0417
+
+Report 45:
+Precision: 0.6000
+Recall: 0.3871
+
+Report 46:
+Precision: 0.5000
+Recall: 0.0833
+
+Report 47:
+Precision: 0.0000
+Recall: 0.0000
+
+Report 48:
+Precision: 0.6667
+Recall: 0.6667
+
+Report 49:
+Precision: 0.6333
+Recall: 0.5938
+
+Report 50:
+Precision: 0.5385
+Recall: 0.4375
+
+Report 51:
+Precision: 0.3333
+Recall: 0.0278
+
+Report 52:
+Precision: 1.0000
+Recall: 0.0667
+
+Report 53:
+Precision: 0.2895
+Recall: 0.5000
+
+Report 54:
+Precision: 0.6250
+Recall: 0.2326
+
+Report 55:
+Precision: 0.4091
+Recall: 0.5000
+
+Report 56:
+Precision: 0.0000
+Recall: 0.0000
+
+Report 57:
+Precision: 0.5652
+Recall: 0.3514
+
+Report 58:
+Precision: 0.5172
+Recall: 0.6818
+
+Report 59:
+Precision: 0.7778
+Recall: 0.1167
+
+Report 60:
+Precision: 0.5897
+Recall: 0.6389
+
+Report 61:
+Precision: 0.8182
+Recall: 0.3462
+
+Report 62:
+Precision: 0.4630
+Recall: 0.6410
+
+Report 63:
+Precision: 0.2857
+Recall: 0.0625
+
+Report 64:
+Precision: 0.9000
+Recall: 0.8571
+
+Report 65:
+Precision: 0.8750
+Recall: 0.2692
+
+Report 66:
+Precision: 0.4000
+Recall: 0.1739
+
+Report 67:
+Precision: 0.7778
+Recall: 0.8750
+
+Report 68:
+Precision: 0.7333
+Recall: 0.6875
+
+Report 69:
+Precision: 0.7500
+Recall: 0.7143
+
+Report 70:
+Precision: 0.4500
+Recall: 0.5000
+
+Report 71:
+Precision: 0.7500
+Recall: 0.6667
+
+Report 72:
+Precision: 0.8125
+Recall: 0.6500
+
+Report 73:
+Precision: 0.8462
+Recall: 0.5500
+
+Report 74:
+Precision: 0.0000
+Recall: 0.0000
+
+Report 75:
+Precision: 0.4000
+Recall: 0.0800
+
+==================================================
+Overall Metrics:
+Total Correct: 752
+Total Incorrect: 244
+Total Missed: 1195
+Total Spurious: 314
+Precision: 0.5740
+Recall: 0.3432
+F1 Score: 0.4296

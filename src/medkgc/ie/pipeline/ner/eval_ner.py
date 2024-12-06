@@ -29,23 +29,18 @@ NER评估脚本
 """
 
 import json
-from utils.ner_eval import Entity, compute_metrics, entities_from_radgraph
+from medkgc.ie.pipeline.ner.utils.ner_eval import Entity, compute_metrics, entities_from_radgraph
 import argparse
 import time
 
 def load_dev_data():
     """加载开发集数据"""
-    with open('/home/hbchen/Projects/MedKGC/resource/radgraph/dev.json', 'r') as f:
+    with open('data/radgraph/splits/dev_mimic.json', 'r') as f:
         return json.load(f)
 
 def load_pred_data(shots=50):
-    """
-    加载预测结果
-    
-    Args:
-        shots: int, 数据集大小，如50、200等
-    """
-    with open(f'ie/outputs/ner_pred_{shots}.json', 'r') as f:
+    """加载预测结果"""
+    with open(f'src/medkgc/ie/pipeline/ner/results/ner_pred_{shots}.json', 'r') as f:
         return json.load(f)
 
 def aggregate_metrics(metrics_list):
@@ -110,8 +105,7 @@ def main(num_shots=50):
     all_metrics = []
     
     # 创建结果输出文件
-    timestamp = time.strftime("%Y%m%d_%H%M%S")
-    output_file = f'ie/outputs/ner_pred_result_{num_shots}_{timestamp}.txt'
+    output_file = f'src/medkgc/ie/pipeline/ner/results/ner_pred_result_{num_shots}.txt'
 
     with open(output_file, 'w') as f:
         # 遍历每个预测结果
@@ -166,6 +160,8 @@ def main(num_shots=50):
     print(f"Precision: {total_metrics['precision']:.4f}")
     print(f"Recall: {total_metrics['recall']:.4f}")
     print(f"F1 Score: {total_metrics['f1']:.4f}")
+
+    print(f'评估完成，结果已保存到 {output_file}')
 
 if __name__ == '__main__':
     main(num_shots=10) 

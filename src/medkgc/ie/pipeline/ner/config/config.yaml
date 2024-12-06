@@ -1,0 +1,8 @@
+data:
+  train_path: "resource/radgraph/train.json"
+  dev_path: "resource/radgraph/dev.json"
+  test_path: "resource/radgraph/test.json"
+
+evaluation:
+  metrics: ["precision", "recall", "f1"]
+  output_dir: "outputs/"

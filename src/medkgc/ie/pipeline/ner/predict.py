@@ -24,20 +24,21 @@ NER预测脚本
 - OBS-DA: 确定不存在的观察
 
 使用方法：
-    python ie/ner.py
+    python -m src.medkgc.ie.pipeline.ner.predict --num_shots 100 --start_index 0
 
 输出文件：
-    ie/outputs/ner_pred.json
+    src/medkgc/ie/pipeline/ner/outputs/ner_pred.json
 """
 
 import json
 import sys
 import argparse
 import time
+import os
 from typing import Dict, Any
 
-import utils.ner_eval as ner_eval
-from utils.ner import extract_entities
+from medkgc.ie.pipeline.ner.utils import ner_eval
+from medkgc.ie.pipeline.ner.utils.entity_extractor import extract_entities
 
 def process_sample(text: str, num_shots: int) -> list:
     """处理单个样本，包含重试机制"""
@@ -53,30 +54,45 @@ def process_sample(text: str, num_shots: int) -> list:
                 time.sleep(1)  # 添加短暂延迟，避免立即重试
                 continue
 
-
-def main(start_index: int = 0, num_shots: int = 10):
+def main(args):
     '''predict the radgraph dataset using the llm, then save the result
     
     Args:
-        start_index: 从第几个样本开始处理（从0开始计数）
-        num_shots: few-shot示例的数量
+        args: 解析后的命令行参数
     '''
-    
+
+    # 输出现在开始预测
+    print(f'现在开始预测，使用{args.num_shots}个shots')
+
     # 加载测试数据
-    with open('/home/hbchen/Projects/MedKGC/resource/radgraph/dev.json', 'r') as f:
-        data: Dict[str, Any] = json.load(f)
+    try:
+        with open(args.data_path, 'r') as f:
+            data: Dict[str, Any] = json.load(f)
+    except FileNotFoundError:
+        print(f'错误: 找不到数据文件 {args.data_path}')
+        sys.exit(1)
 
     json_result_list = []
-    file_path = f'ie/outputs/ner_pred_{num_shots}.json'
+    
+    # 创建输出目录
+    output_dir = os.path.join('src/medkgc/ie/pipeline/ner/results')
+    os.makedirs(output_dir, exist_ok=True)
+    
+    file_path = os.path.join(output_dir, f'ner_pred_{args.num_shots}.json')
 
-    # 如果start_index > 0，则先加载已有的结果
-    if start_index > 0:
+    # 如果文件存在，加载已有结果并从最后一个继续
+    start_index = args.start_index
+    if os.path.exists(file_path):
         try:
             with open(file_path, 'r') as f:
                 json_result_list = json.load(f)
-            print(f'已加载{len(json_result_list)}个已处理的结果')
+            # 更新起始索引为已处理的最后一个样本的索引+1
+            start_index = len(json_result_list)
+            print(f'已加载{len(json_result_list)}个已处理的结果，从索引{start_index}继续处理')
         except FileNotFoundError:
             print(f'警告: 未找到已有的结果文件，将从头开始处理')
+    else:
+        print(f'未找到结果文件，将从头开始处理')
 
     # 遍历每个样本进行评估
     for index, (key, value) in enumerate(data.items()):
@@ -87,7 +103,7 @@ def main(start_index: int = 0, num_shots: int = 10):
         
         try:
             # 使用重试机制处理样本
-            entities = process_sample(text, num_shots)
+            entities = process_sample(text, args.num_shots)
             pred = ner_eval.entities_from_llm_response(entities, text)
             
             # 保存结果
@@ -103,15 +119,25 @@ def main(start_index: int = 0, num_shots: int = 10):
             print(f'错误: 样本 {index} 处理失败')
             print(f'错误信息: {str(e)}')
             print(text)
-            print(f'请使用 main({index}, num_shots={num_shots}) 从该样本重新开始处理')
+            print(f'请使用 --start_index {index} 从该样本重新开始处理')
             sys.exit(1)
+    
+    # 输出预测完成
+    print(f'预测完成，结果已保存到 {file_path}')
 
 if __name__ == '__main__':
-    # num_shots = 200
-    num_shots = 100
-    main(start_index = 0, num_shots=num_shots)  # 从第51个样本开始处理，使用200个few-shot示例
+    parser = argparse.ArgumentParser(description='Run NER prediction with specified parameters')
+    parser.add_argument('--num_shots', type=int, default=100,
+                      help='Number of few-shot examples to use (default: 100)')
+    parser.add_argument('--start_index', type=int, default=0,
+                      help='Start processing from this index (default: 0)')
+    parser.add_argument('--data_path', type=str, default='data/radgraph/splits/dev_mimic.json',
+                      help='Path to the input data file (default: data/radgraph/splits/dev_mimic.json)')
+    
+    args = parser.parse_args()
+    
+    main(args)
 
-    print("\n预测完成，开始评估结果...")
-    # 导入并调用eval_ner的main函数
-    from eval_ner import main as eval_main
-    eval_main(num_shots=num_shots)
+    print(f"\n预测完成，开始评估结果...")
+    from medkgc.ie.pipeline.ner.eval_ner import main as eval_main
+    eval_main(num_shots=args.num_shots)
