@@ -4,12 +4,8 @@ import pprint
 
 
 # Prepare prompt with instructions
-system_prompt = '''You are a radiologist performing clinical term extraction from the FINDINGS and IMPRESSION sections 
-    in the radiology report. Here a clinical term can be either anatomy or observation that is related to a finding or an impression. The anatomy term refers to an anatomical body part such as a 'lung'. The observation terms refer to observations made when referring to the associated radiology image. Observations are associated with visual features, identifiable pathophysiologic processes, or diagnostic disease classifications. For example, an observation could be 'effusion' or description phrases like 'increased'. You also need to assign a label to indicate whether the clinical term is present, absent or uncertain. The labels are:
-    - OBS-DP: Observation definitely present
-    - ANAT-DP: Anatomy definitely present  
-    - OBS-U: Observation uncertain
-    - OBS-DA: Observation definitely absent
+system_prompt = '''
+    You are a radiologist performing clinical term extraction from the FINDINGS, PA AND LATERAL CHEST RADIOGRAPH and IMPRESSION sections in the radiology report. Here a clinical term can be either anatomy or observation that is related to a finding or an impression. The anatomy term refers to an anatomical body part such as a 'lung'. The observation terms refer to observations made when referring to the associated radiology image. Observations are associated with visual features, identifiable pathophysiologic processes, or diagnostic disease classifications. For example, an observation could be 'effusion' or description phrases like 'increased'. You also need to assign a label to indicate whether the clinical term is present, absent or uncertain. 
 
     Given a piece of radiology text input in the format:
 
@@ -32,7 +28,7 @@ def get_question_prompt(text):
         {text}
         </INPUT> 
 
-        What are the clinical terms and their labels in this text? Discard sections other than FINDINGS and IMPRESSION: eg. INDICATION, HISTORY, TECHNIQUE, COMPARISON sections. If there is no extraction from findings and impression, return (). Please only output the tuples without additional notes or explanations.
+        What are the clinical terms and their labels in this text? Discard sections other than FINDINGS, PA AND LATERAL CHEST RADIOGRAPH and IMPRESSION: eg. INDICATION, HISTORY, TECHNIQUE, COMPARISON sections. If there is no extraction from findings and impression, return (). Please only output the tuples without additional notes or explanations.
 
         <OUTPUT> ANSWER:
         '''
@@ -69,6 +65,13 @@ def extract_entities(text, num_shots=5):
                 except (ValueError, SyntaxError):
                     continue
         
+        # 如果结果为空，抛出异常
+        if not result:
+            print(f'未能提取到任何实体')
+            raise ValueError("未能提取到任何实体")
+        else:
+            print(f'提取到{len(result)}个实体')
+
         return result
         
     except Exception as e:
@@ -123,20 +126,18 @@ def create_messages_with_shots(num_shots, messages):
         
         shot_count += 1
     
+    # print(messages)
+
     return messages
 
 
 def main():
-    # Load test data
-    with open('/home/hbchen/Projects/MedKGC/resource/radgraph/train.json', 'r') as f:
-        data = json.load(f)
-
-    # Get first example
-    for key, value in data.items():
-        text = value['text']
-        # break
-        entities = extract_entities(text, num_shots=50)  # 移除未使用的shots_path参数，添加num_shots参数
-        
+    
+    text = "FINAL REPORT INDICATION : ___ - year - old man with change in mental status . COMPARISON : PA and lateral chest radiograph , ___ . PA AND LATERAL CHEST RADIOGRAPH : The cardiac , mediastinal and hilar contours are normal . An opacity projecting over the right mid to upper lung on the frontal view may represent focal consolidation , unchanged from ___ . Interposition of bowel accounts for the lucency below the right hemidiaphragm ."
+    # text = "FINAL REPORT INDICATION : ___ - year - old male with MS and hypotension . COMPARISON : ___ . TECHNIQUE : Single frontal chest radiograph was obtained portably with the patient in a semi - erect position . FINDINGS : There are low lung volumes . No focal consolidation is appreciated on this limited view . A small left pleural effusion would be difficult to exclude . Compared to prior exam , there is decreased prominence of the pulmonary vasculature . There has been interval removal of a left - sided PICC . Exam is otherwise unchanged . Slightly prominent loops of air - filled colon are again noted under the right hemidiaphragm ."
+    
+    entities = extract_entities(text, num_shots=10)  # 移除未使用的shots_path参数，添加num_shots参数
+    print(entities)
 
 if __name__ == '__main__':
     main()

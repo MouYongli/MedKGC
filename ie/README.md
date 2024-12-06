@@ -49,20 +49,7 @@ ie/
 ## Implementation Details
 
 ### LLM Entity Extraction
-The system uses a few-shot learning approach with the following components:
-
-1. System Prompt:
-   - Defines the role as a radiologist
-   - Specifies the task of clinical term extraction
-   - Provides entity type definitions
-   - Defines input/output format
-
-2. Few-shot Examples:
-   - Uses examples from RadGraph training data
-   - Default: 50 examples per inference
-   - Examples include text and corresponding entity annotations
-
-3. Entity Extraction:
+The system uses a few-shot learning approach with the following:
 ```python
 def extract_entities(text, num_shots=50):
     """
@@ -79,29 +66,51 @@ def extract_entities(text, num_shots=50):
 ```
 
 ### Evaluation Pipeline
-The evaluation process consists of the following steps:
+评估流程包含以下关键指标的计算：
 
-1. Load RadGraph dev/test data
-2. For each report:
-   - Extract entities using LLM
-   - Convert LLM output to standardized format
-   - Compare with RadGraph ground truth
-   - Compute precision, recall, and F1 scores
+1. 实体匹配评估：
+- Correct Matches: 模型正确识别的实体数量
+- Incorrect Matches: 模型识别错误的实体数量（标签错误）
+- Missed Entities: 模型未能识别的实体数量（假阴性）
+- Spurious Entities: 模型错误预测的额外实体（假阳性）
 
+2. 性能指标计算：
+- Precision (精确率): 
+  - 正确预测的实体数量 / 模型预测的总实体数量
+  - 衡量模型预测的准确性
+- Recall (召回率):
+  - 正确预测的实体数量 / 真实标注的总实体数量
+  - 衡量模型发现实体的完整性
+- F1 Score:
+  - Precision 和 Recall 的调和平均数
+  - 综合评估模型的整体性能
+
+评估代码示例：
 ```python
 # Example evaluation code
 text = "Patient's lungs are clear..."
 entities = extract_entities(text, num_shots=50)
 pred = entities_from_llm_response(entities, text)
+
 y_true = entities_from_radgraph(json_result)
 metrics = compute_metrics(y_true, pred, tags)
+
+# 输出结果示例：
+# Overall Metrics:
+# Total Correct: 464
+# Total Incorrect: 176
+# Total Missed: 1551
+# Total Spurious: 127
+# Precision: 0.6050
+# Recall: 0.2118
+# F1 Score: 0.3137
 ```
 
 ## Usage
 1. Ensure you have access to the LLM API endpoint
 2. Run evaluation:
 ```bash
-python ie/ner.py
+nohup python ie/ner.py > output.log 2>&1 &
 ```
 
 ## Data

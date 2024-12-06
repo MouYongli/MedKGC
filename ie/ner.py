@@ -50,11 +50,11 @@ def process_sample(text: str, num_shots: int) -> list:
         except Exception as e:
             if attempt < max_retries - 1:
                 print(f'第{attempt + 1}次尝试失败: {e}')
+                time.sleep(1)  # 添加短暂延迟，避免立即重试
                 continue
-            else:
-                raise e
 
-def main(start_index: int = 0, num_shots: int = 200):
+
+def main(start_index: int = 0, num_shots: int = 10):
     '''predict the radgraph dataset using the llm, then save the result
     
     Args:
@@ -102,8 +102,16 @@ def main(start_index: int = 0, num_shots: int = 200):
         except Exception as e:
             print(f'错误: 样本 {index} 处理失败')
             print(f'错误信息: {str(e)}')
+            print(text)
             print(f'请使用 main({index}, num_shots={num_shots}) 从该样本重新开始处理')
             sys.exit(1)
 
 if __name__ == '__main__':
-    main(num_shots=200)  # 从第51个样本开始处理，使用200个few-shot示例
+    # num_shots = 200
+    num_shots = 100
+    main(start_index = 0, num_shots=num_shots)  # 从第51个样本开始处理，使用200个few-shot示例
+
+    print("\n预测完成，开始评估结果...")
+    # 导入并调用eval_ner的main函数
+    from eval_ner import main as eval_main
+    eval_main(num_shots=num_shots)

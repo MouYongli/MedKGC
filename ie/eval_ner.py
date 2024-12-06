@@ -30,18 +30,20 @@ NER评估脚本
 
 import json
 from utils.ner_eval import Entity, compute_metrics, entities_from_radgraph
+import argparse
+import time
 
 def load_dev_data():
     """加载开发集数据"""
     with open('/home/hbchen/Projects/MedKGC/resource/radgraph/dev.json', 'r') as f:
         return json.load(f)
 
-def load_pred_data(shots='200'):
+def load_pred_data(shots=50):
     """
     加载预测结果
     
     Args:
-        shots: 数据集大小，如'200'、'500'等
+        shots: int, 数据集大小，如50、200等
     """
     with open(f'ie/outputs/ner_pred_{shots}.json', 'r') as f:
         return json.load(f)
@@ -96,11 +98,10 @@ def convert_pred_to_entities(pred_result):
     
     return entities
 
-def main():
+def main(num_shots=50):
     # 加载数据
-    shots = '50'  # 默认使用200样本
     dev_data = load_dev_data()
-    pred_data = load_pred_data(shots)
+    pred_data = load_pred_data(num_shots)
     
     # 评估标签
     tags = ['OBS-DP', 'ANAT-DP', 'OBS-U', 'OBS-DA']
@@ -109,7 +110,9 @@ def main():
     all_metrics = []
     
     # 创建结果输出文件
-    output_file = f'ie/outputs/ner_pred_result_{shots}.txt'
+    timestamp = time.strftime("%Y%m%d_%H%M%S")
+    output_file = f'ie/outputs/ner_pred_result_{num_shots}_{timestamp}.txt'
+
     with open(output_file, 'w') as f:
         # 遍历每个预测结果
         for i, pred_item in enumerate(pred_data):
@@ -165,4 +168,4 @@ def main():
     print(f"F1 Score: {total_metrics['f1']:.4f}")
 
 if __name__ == '__main__':
-    main() 
+    main(num_shots=10) 
