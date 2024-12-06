@@ -17,3 +17,9 @@ Entities are in 3 different cases: normalized, normalized without definition, un
 | Term              | Code | Description | Examples |
 |-------------------|------|-------------|----------|
 | cardiomediastinal |      |             |          |
+
+<!-- 
+TODO 
+entity_nor 代码。
+llama的方案
+ -->
