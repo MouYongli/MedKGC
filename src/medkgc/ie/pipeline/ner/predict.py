@@ -39,6 +39,7 @@ from typing import Dict, Any
 
 from medkgc.ie.pipeline.ner.utils import ner_eval
 from medkgc.ie.pipeline.ner.utils.entity_extractor import extract_entities
+from medkgc.ie.pipeline.re.re import extract_relations, load_shots, format_shots
 
 def process_sample(text: str, num_shots: int) -> list:
     """处理单个样本，包含重试机制"""
@@ -94,6 +95,10 @@ def main(args):
     else:
         print(f'未找到结果文件，将从头开始处理')
 
+    # 加载few-shot示例
+    shots = load_shots('data/radgraph/original/train.json', num_shots=args.num_shots)
+    formatted_shots = format_shots(shots)
+
     # 遍历每个样本进行评估
     for index, (key, value) in enumerate(data.items()):
         if index < start_index:
@@ -106,8 +111,11 @@ def main(args):
             entities = process_sample(text, args.num_shots)
             pred = ner_eval.entities_from_llm_response(entities, text)
             
+            # 进行关系抽取
+            relations = extract_relations(text, entities, model=None, shots=formatted_shots)
+            
             # 保存结果
-            json_result_list.append({'text': text, 'pred': pred})
+            json_result_list.append({'text': text, 'pred': pred, 'relations': relations})
             
             # 每处理一个样本就保存一次结果
             with open(file_path, 'w') as f:

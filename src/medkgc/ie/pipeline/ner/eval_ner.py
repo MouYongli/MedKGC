@@ -93,6 +93,28 @@ def convert_pred_to_entities(pred_result):
     
     return entities
 
+def convert_pred_to_relations(pred_relations):
+    """
+    将预测的关系转换为标准格式
+    
+    Args:
+        pred_relations: 预测的关系列表
+        
+    Returns:
+        list[Dict]: 转换后的关系列表
+    """
+    relations = []
+    for relation in pred_relations:
+        entity1 = relation[0]
+        relation_type = relation[1]
+        entity2 = relation[2]
+        relations.append({
+            'entity1': entity1,
+            'relation': relation_type,
+            'entity2': entity2
+        })
+    return relations
+
 def main(num_shots=50):
     # 加载数据
     dev_data = load_dev_data()
@@ -112,12 +134,15 @@ def main(num_shots=50):
         for i, pred_item in enumerate(pred_data):
             text = pred_item['text']
             pred_result = pred_item['pred']
+            pred_relations = pred_item.get('relations', [])
             
             # 获取对应的真实标注
             true_entities = None
+            true_relations = None
             for key, value in dev_data.items():
                 if value['text'] == text:
                     true_entities = value['entities']
+                    true_relations = value.get('relations', [])
                     break
             
             if true_entities is None:
@@ -128,14 +153,27 @@ def main(num_shots=50):
             y_true = entities_from_radgraph(true_entities)
             y_pred = convert_pred_to_entities(pred_result)
             
-            # 计算指标
+            # 计算NER指标
             results, _ = compute_metrics(y_true, y_pred, tags)
             all_metrics.append(results['strict'])
             
+            # 转换关系格式
+            y_true_relations = convert_pred_to_relations(true_relations)
+            y_pred_relations = convert_pred_to_relations(pred_relations)
+            
+            # 计算关系抽取指标
+            correct_relations = sum(1 for rel in y_pred_relations if rel in y_true_relations)
+            precision_relations = correct_relations / len(y_pred_relations) if y_pred_relations else 0
+            recall_relations = correct_relations / len(y_true_relations) if y_true_relations else 0
+            f1_relations = 2 * precision_relations * recall_relations / (precision_relations + recall_relations) if precision_relations + recall_relations > 0 else 0
+            
             # 将每个报告的指标写入文件
             f.write(f"\nReport {i+1}:\n")
-            f.write(f"Precision: {results['strict']['precision']:.4f}\n")
-            f.write(f"Recall: {results['strict']['recall']:.4f}\n")
+            f.write(f"NER Precision: {results['strict']['precision']:.4f}\n")
+            f.write(f"NER Recall: {results['strict']['recall']:.4f}\n")
+            f.write(f"Relation Precision: {precision_relations:.4f}\n")
+            f.write(f"Relation Recall: {recall_relations:.4f}\n")
+            f.write(f"Relation F1 Score: {f1_relations:.4f}\n")
         
         # 计算汇总指标
         total_metrics = aggregate_metrics(all_metrics)

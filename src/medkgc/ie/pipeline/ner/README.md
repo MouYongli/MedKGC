@@ -57,12 +57,16 @@ The system generates predictions in JSON format:
     "pred": [
         ["entity_type", start_index, end_index],
         ...
+    ],
+    "relations": [
+        {"entity1": "entity1_text", "relation": "relation_type", "entity2": "entity2_text"},
+        ...
     ]
 }
 ```
 
 ## Evaluation Metrics
-The system evaluates entity extraction performance using:
+The system evaluates entity extraction and relation extraction performance using:
 - Precision: Correct predictions / Total predictions
 - Recall: Correct predictions / Total ground truth entities
 - F1 Score: Harmonic mean of precision and recall
@@ -90,6 +94,34 @@ metrics = compute_metrics(y_true, pred, tags)
 # F1 Score: 0.3137
 ```
 
+## Relation Extraction
+The system also extracts relations between entities using prompts and evaluates the results.
+
+### Relation Extraction Functions
+- `load_shots`: Load few-shot examples from `train.json`
+- `format_shots`: Format examples for prompt
+- `extract_relations`: Use LLM for relation extraction
+- `parse_llm_output`: Parse LLM output into structured relations
+- `evaluate_results`: Compare predicted and true relations
+
+### Example Relation Extraction Code
+```python
+# Example relation extraction code
+text = "Patient's lungs are clear..."
+entities = extract_entities(text, num_shots=50)
+formatted_shots = format_shots(load_shots('data/radgraph/original/train.json', num_shots=3))
+relations = extract_relations(text, entities, model=None, shots=formatted_shots)
+
+# Evaluate relations
+gold_relations = [{"entity1": "lungs", "relation": "clear", "entity2": "lungs"}]
+evaluation = evaluate_results(relations, gold_relations)
+
+# 输出结果示例：
+# Relation Extraction Metrics:
+# Precision: 0.75
+# Recall: 0.60
+# F1 Score: 0.67
+```
 
 ## Dependencies
 - Python 3.10+
@@ -97,7 +129,6 @@ metrics = compute_metrics(y_true, pred, tags)
 - Required Python packages (see requirements.txt)
 
 ## TODO
-- [ ] Implement relation extraction
 - [ ] Optimize few-shot example selection
 - [ ] Add support for additional LLM models
 - [ ] Improve entity offset detection
