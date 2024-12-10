@@ -10,7 +10,19 @@ def get_base_prompt(text: str, entities: str, shots: str) -> str:
     Returns:
         完整的prompt
     """
-    pass
+    prompt = f"""
+    You are a medical expert. Given the following text and entities, identify the relations between the entities.
+
+    Text: {text}
+
+    Entities: {entities}
+
+    Few-shot examples:
+    {shots}
+
+    Please provide the relations in the format: (relation_type, source_entity, target_entity)
+    """
+    return prompt
 
 def get_cot_prompt(text: str, entities: str, shots: str) -> str:
     """
@@ -22,7 +34,19 @@ def get_cot_prompt(text: str, entities: str, shots: str) -> str:
     Returns:
         完整的prompt
     """
-    pass
+    prompt = f"""
+    You are a medical expert. Given the following text and entities, identify the relations between the entities. Use chain-of-thought reasoning to explain your process.
+
+    Text: {text}
+
+    Entities: {entities}
+
+    Few-shot examples:
+    {shots}
+
+    Please provide the relations in the format: (relation_type, source_entity, target_entity) and explain your reasoning.
+    """
+    return prompt
 
 def get_structured_prompt(text: str, entities: str, shots: str) -> str:
     """
@@ -34,4 +58,16 @@ def get_structured_prompt(text: str, entities: str, shots: str) -> str:
     Returns:
         完整的prompt
     """
-    pass
+    prompt = f"""
+    You are a medical expert. Given the following text and entities, identify the relations between the entities. Provide the output in a structured format.
+
+    Text: {text}
+
+    Entities: {entities}
+
+    Few-shot examples:
+    {shots}
+
+    Please provide the relations in the format: (relation_type, source_entity, target_entity) in a structured JSON format.
+    """
+    return prompt
