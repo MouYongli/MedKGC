@@ -91,11 +91,6 @@ metrics = compute_metrics(y_true, pred, tags)
 ```
 
 
-## Dependencies
-- Python 3.10+
-- LLaMA Model API
-- Required Python packages (see requirements.txt)
-
 ## TODO
 - [ ] Implement relation extraction
 - [ ] Optimize few-shot example selection
