@@ -33,9 +33,9 @@ from medkgc.ie.pipeline.ner.utils.ner_eval import Entity, compute_metrics, entit
 import argparse
 import time
 
-def load_dev_data():
+def load_dev_data(label_data_path):
     """加载开发集数据"""
-    with open('data/radgraph/splits/dev_mimic.json', 'r') as f:
+    with open(label_data_path, 'r') as f:
         return json.load(f)
 
 def load_pred_data(shots=50):
@@ -93,9 +93,9 @@ def convert_pred_to_entities(pred_result):
     
     return entities
 
-def main(num_shots=50):
+def main(num_shots=50, label_data_path='data/radgraph/splits/dev_mimic.json'):
     # 加载数据
-    dev_data = load_dev_data()
+    dev_data = load_dev_data(label_data_path)
     pred_data = load_pred_data(num_shots)
     
     # 评估标签
@@ -164,4 +164,4 @@ def main(num_shots=50):
     print(f'评估完成，结果已保存到 {output_file}')
 
 if __name__ == '__main__':
-    main(num_shots=10) 
+    main(num_shots=10, label_data_path='data/radgraph/splits/dev_mimic.json')

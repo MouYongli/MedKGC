@@ -133,6 +133,8 @@ if __name__ == '__main__':
                       help='Start processing from this index (default: 0)')
     parser.add_argument('--data_path', type=str, default='data/radgraph/splits/dev_mimic.json',
                       help='Path to the input data file (default: data/radgraph/splits/dev_mimic.json)')
+    parser.add_argument('--label_data_path', type=str, default='data/radgraph/splits/dev_mimic.json',
+                      help='Path to the labeled data file (default: data/radgraph/splits/dev_mimic.json)')
     
     args = parser.parse_args()
     
@@ -140,4 +142,4 @@ if __name__ == '__main__':
 
     print(f"\n预测完成，开始评估结果...")
     from medkgc.ie.pipeline.ner.eval_ner import main as eval_main
-    eval_main(num_shots=args.num_shots)
+    eval_main(num_shots=args.num_shots, label_data_path=args.label_data_path)
