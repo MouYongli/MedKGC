@@ -2,7 +2,6 @@ import json
 import requests
 import pprint
 
-
 # Prepare prompt with instructions
 system_prompt = '''
     You are a radiologist performing clinical term extraction from the FINDINGS, PA AND LATERAL CHEST RADIOGRAPH and IMPRESSION sections in the radiology report. Here a clinical term can be either anatomy or observation that is related to a finding or an impression. The anatomy term refers to an anatomical body part such as a 'lung'. The observation terms refer to observations made when referring to the associated radiology image. Observations are associated with visual features, identifiable pathophysiologic processes, or diagnostic disease classifications. For example, an observation could be 'effusion' or description phrases like 'increased'. You also need to assign a label to indicate whether the clinical term is present, absent or uncertain. 
@@ -32,51 +31,6 @@ def get_question_prompt(text):
 
         <OUTPUT> ANSWER:
         '''
-
-def extract_entities(text, num_shots=5):
-    try:
-        url = 'http://ollama.corinth.informatik.rwth-aachen.de/api/chat'
-        
-        messages = [{'role': 'system', 'content': system_prompt}]
-        messages = create_messages_with_shots(num_shots, messages)
-        messages.append({'role': 'user', 'content': get_question_prompt(text)})
-
-        data = {
-            "model": "llama3.1:8b",
-            "messages": messages,
-            "stream": False
-        }
-
-        response = session.post(url, json=data)
-        response.raise_for_status()  # 检查HTTP错误
-        entities = response.json()['message']['content']
-
-        # Parse response into JSON format
-        result = {}
-        lines = entities.split('\n')
-        for i, line in enumerate(lines):
-            if '(' in line and ')' in line:
-                try:
-                    term, label = eval(line.strip())
-                    result[str(i+1)] = {
-                        "tokens": term, 
-                        "label": label
-                    }
-                except (ValueError, SyntaxError):
-                    continue
-        
-        # 如果结果为空，抛出异常
-        if not result:
-            print(f'未能提取到任何实体')
-            raise ValueError("未能提取到任何实体")
-        else:
-            print(f'提取到{len(result)}个实体')
-
-        return result
-        
-    except Exception as e:
-        raise e
-
 
 def create_messages_with_shots(num_shots, messages):
     """
@@ -130,15 +84,75 @@ def create_messages_with_shots(num_shots, messages):
 
     return messages
 
+def parse_response(entities):
+    """
+    解析API响应并将其转换为JSON格式
+    
+    Args:
+        entities (str): API响应的实体字符串
+        
+    Returns:
+        dict: 解析后的实体字典
+    """
+    result = {}
+    lines = entities.split('\n')
+    for i, line in enumerate(lines):
+        if '(' in line and ')' in line:
+            try:
+                term, label = eval(line.strip())
+                result[str(i+1)] = {
+                    "tokens": term, 
+                    "label": label
+                }
+            except (ValueError, SyntaxError):
+                continue
+    
+    if not result:
+        print(f'未能提取到任何实体')
+        raise ValueError("未能提取到任何实体")
+    else:
+        print(f'提取到{len(result)}个实体')
 
-def main():
+    return result
+
+def call_api(text, num_shots):
+    url = 'http://ollama.corinth.informatik.rwth-aachen.de/api/chat'
     
-    # text = "FINAL REPORT INDICATION : ___ - year - old man with change in mental status . COMPARISON : PA and lateral chest radiograph , ___ . PA AND LATERAL CHEST RADIOGRAPH : The cardiac , mediastinal and hilar contours are normal . An opacity projecting over the right mid to upper lung on the frontal view may represent focal consolidation , unchanged from ___ . Interposition of bowel accounts for the lucency below the right hemidiaphragm ."
-    # text = "FINAL REPORT INDICATION : ___ - year - old male with MS and hypotension . COMPARISON : ___ . TECHNIQUE : Single frontal chest radiograph was obtained portably with the patient in a semi - erect position . FINDINGS : There are low lung volumes . No focal consolidation is appreciated on this limited view . A small left pleural effusion would be difficult to exclude . Compared to prior exam , there is decreased prominence of the pulmonary vasculature . There has been interval removal of a left - sided PICC . Exam is otherwise unchanged . Slightly prominent loops of air - filled colon are again noted under the right hemidiaphragm ."
-    text = "FINAL REPORT HISTORY : Fever , to assess for pneumonia . FINDINGS : In comparison with the study of ___ , there is little change and no evidence of acute cardiopulmonary disease . The patient has taken a better inspiration and there is no pneumonia , vascular congestion or pleural effusion . The left central catheter has been removed and the Port - A - Cath tip again lies in the lower portion of the SVC ."
+    messages = [{'role': 'system', 'content': system_prompt}]
+    messages = create_messages_with_shots(num_shots, messages)
+    # print(messages)
+    messages.append({'role': 'user', 'content': get_question_prompt(text)})
+
+    data = {
+        "model": "llama3.1:8b",
+        "messages": messages,
+        "stream": False
+    }
+
+    response = session.post(url, json=data)
+    response.raise_for_status()  # 检查HTTP错误
     
-    entities = extract_entities(text, num_shots=100)  # 移除未使用的shots_path参数，添加num_shots参数
-    print(entities)
+    if response.status_code == 200:
+        print(f"API调用成功，状态码: {response.status_code}")
+        return response.json()['message']['content']
+    else:
+        raise Exception(f"API调用失败，状态码: {response.status_code}")
+
+def extract_entities(text, num_shots=5):
+    try:
+        entities = call_api(text, num_shots)
+
+        return parse_response(entities)
+    except Exception as e:
+        raise e
 
 if __name__ == '__main__':
-    main()
+    # text = "FINAL REPORT INDICATION : ___ - year - old man with change in mental status . COMPARISON : PA and lateral chest radiograph , ___ . PA AND LATERAL CHEST RADIOGRAPH : The cardiac , mediastinal and hilar contours are normal . An opacity projecting over the right mid to upper lung on the frontal view may represent focal consolidation , unchanged from ___ . Interposition of bowel accounts for the lucency below the right hemidiaphragm ."
+    # text = "FINAL REPORT INDICATION : ___ - year - old male with MS and hypotension . COMPARISON : ___ . TECHNIQUE : Single frontal chest radiograph was obtained portably with the patient in a semi - erect position . FINDINGS : There are low lung volumes . No focal consolidation is appreciated on this limited view . A small left pleural effusion would be difficult to exclude . Compared to prior exam , there is decreased prominence of the pulmonary vasculature . There has been interval removal of a left - sided PICC . Exam is otherwise unchanged . Slightly prominent loops of air - filled colon are again noted under the right hemidiaphragm ."
+    # text = "FINAL REPORT HISTORY : Fever , to assess for pneumonia . FINDINGS : In comparison with the study of ___ , there is little change and no evidence of acute cardiopulmonary disease . The patient has taken a better inspiration and there is no pneumonia , vascular congestion or pleural effusion . The left central catheter has been removed and the Port - A - Cath tip again lies in the lower portion of the SVC ."
+
+    # chexpert 29
+    text = "narrative : chest 2 views : 02/03 / 2007 history : male , 45 years old , post transplant . comparison : 09/18 / 06 and prior impression : unchanged right tunneled central venous catheter with tip overlying the cavoatrial junction . normal heart size and pulmonary vascularity . no focal consolidation , pleural effusion , or pneumothorax . bones are unremarkable . summary : 2 - abnormal , previously reported accession number : 645666774 this report has been anonymized . all dates are offset from the actual dates by a fixed interval associated with the patient ."
+    
+    entities = extract_entities(text, num_shots=100)  
+    print(entities)
