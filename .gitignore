@@ -162,5 +162,4 @@ cython_debug/
 # .DS_Store files
 .DS_Store
 nohup.out
-nohup.out
-nohup.out
+output.txt
