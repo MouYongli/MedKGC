@@ -49,7 +49,7 @@ def split_by_source(input_file, output_dir):
         
     return len(chexpert_data), len(mimic_data)
 
-def main():
+if __name__ == '__main__':
     # 设置基础路径
     base_dir = os.path.join('resource', 'radgraph')
     input_files = ['train.json', 'dev.json', 'test.json']
@@ -62,6 +62,3 @@ def main():
         print(f'- CheXpert数据条数: {chexpert_count}')
         print(f'- MIMIC数据条数: {mimic_count}')
         print()
-
-if __name__ == '__main__':
-    main()
