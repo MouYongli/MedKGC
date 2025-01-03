@@ -64,15 +64,16 @@ The system generates predictions in JSON format:
 ## Token Estimation
 https://platform.openai.com/tokenizer  
 
-每个system promt有250 tokens  
-每个user message大概有100 tokens
-每个input text大概有50 - 150 tokens
+- 每个system promt有250 tokens  
+- message大概有100 tokens
+- 每个input text大概有50 - 150 tokens
 ```
 "FINAL REPORT HISTORY : Fever , to assess for pneumonia . FINDINGS : In comparison with the study of ___ , there is little change and no evidence of acute cardiopulmonary disease . The patient has taken a better inspiration and there is no pneumonia , vascular congestion or pleural effusion . The left central catheter has been removed and the Port - A - Cath tip again lies in the lower portion of the SVC ."
 ```
 （4 sentences，100 tokens）
-每个shot(user message, input text, assitance)大概有500 tokens  
-每个输出大概有 250 tokens （17个entities 350）  
+- 每个shot(user message, input text, assitance)大概有500 tokens  
+- 每个输出大概有 250 tokens （17个entities 350）
+  
 Total Tokens = System Prompt Tokens + (Number of Shots * Tokens per Shot) + User Message Tokens + Input Text Tokens + Output Tokens  
 Total Tokens = 250 + (shots * 500) + 100 + 100 + 250
 
