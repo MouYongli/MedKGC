@@ -378,29 +378,7 @@ def entities_from_radgraph(json_result):
     return entities
 
 
-def entities_from_llm_response(json_result, text) -> list[Entity]:
-    entities = []
-    words = text.split()
-    word_index = 0
-    
-    for key, value in json_result.items():
-        token = value['tokens']
-        e_type = value['label']
 
-        # Find the start and end word offsets of the token in the text
-        while word_index < len(words):
-            if words[word_index] == token:
-                start_offset = word_index
-                end_offset = word_index
-
-                entities.append(Entity(e_type=e_type, start_offset=start_offset, 
-                end_offset=end_offset))
-                
-                word_index += 1
-                break
-            word_index += 1
-    
-    return entities
 
 if __name__ == "__main__":
     true = [Entity(e_type='MISC', start_offset=12, end_offset=12),

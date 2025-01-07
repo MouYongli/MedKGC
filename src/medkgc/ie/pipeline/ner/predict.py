@@ -31,16 +31,15 @@ import time
 import os
 from typing import Dict, Any
 
-from medkgc.ie.pipeline.ner.utils import ner_eval
-from medkgc.ie.pipeline.ner.utils.entity_extractor import extract_entities
+from medkgc.ie.pipeline.ner.utils.entity_extractor import extract_entities, entities_from_llm_response  
 
-def process_sample(text: str, num_shots: int) -> list:
+def process_sample(text: str, num_shots: int, model:str) -> list:
     """处理单个样本，包含重试机制"""
     max_retries = 3
 
     for attempt in range(max_retries):
         try:
-            entities = extract_entities(text, num_shots)
+            entities = extract_entities(text, num_shots, model)
             return entities
         except Exception as e:
             if attempt < max_retries - 1:
@@ -76,7 +75,7 @@ def load_existing_results(file_path: str) -> dict:
             print(f'警告: 未找到已有的结果文件，将从头开始处理')
     return {}
 
-def process_samples(data: Dict[str, Any], num_shots: int, file_path: str):
+def process_samples(data: Dict[str, Any], num_shots: int, file_path: str, model:str):
     """处理所有样本"""
     json_result_dict = load_existing_results(file_path)
 
@@ -86,9 +85,9 @@ def process_samples(data: Dict[str, Any], num_shots: int, file_path: str):
 
         text = value['text']
         try:
-            entities = process_sample(text, num_shots)
+            entities = process_sample(text, num_shots, model)
             
-            json_result_dict[key] = ner_eval.entities_from_llm_response(entities, text)
+            json_result_dict[key] = entities_from_llm_response(entities, text)
 
             save_results(file_path, json_result_dict)
 
@@ -102,11 +101,15 @@ def process_samples(data: Dict[str, Any], num_shots: int, file_path: str):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Run NER prediction with specified parameters')
+
     parser.add_argument('--num_shots', type=int, default=100,
                         help='Number of few-shot examples to use (default: 100)')
     parser.add_argument('--data_path', type=str, default='data/radgraph/splits/dev_mimic.json',
                         help='Path to the input data file (default: data/radgraph/splits/dev_mimic.json)')
-
+    parser.add_argument('--output_dir', type=str, default='src/medkgc/ie/pipeline/ner/results',
+                        help='Directory to save the output results (default: src/medkgc/ie/pipeline/ner/results)')
+    parser.add_argument('--model_name', type=str, required=True,
+                        help='Name of the model used for prediction')
     
     args = parser.parse_args()
 
@@ -114,11 +117,10 @@ if __name__ == '__main__':
 
     data = load_data(args.data_path)
 
-    output_dir = os.path.join('src/medkgc/ie/pipeline/ner/results')
-    create_output_dir(output_dir)
-    file_path = os.path.join(output_dir, f'ner_pred_{args.num_shots}.json')
+    create_output_dir(args.output_dir)
+    file_path = os.path.join(args.output_dir, f'ner_pred_{args.model_name}_{args.num_shots}.json')
 
-    process_samples(data, args.num_shots, file_path)
+    process_samples(data, args.num_shots, file_path, args.model_name)
 
     print(f'预测完成，结果已保存到 {file_path}')
     print(f"\n预测完成，开始评估结果...")
