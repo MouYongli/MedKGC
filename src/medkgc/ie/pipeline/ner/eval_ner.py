@@ -161,8 +161,13 @@ def setup_evaluation(args):
     pred_data = load_json_data(args.prediction_path)
     target_data = load_json_data(args.target_path)
     
+    # 从prediction_path提取模型名称和shots数
+    pred_filename = os.path.basename(args.prediction_path)  # ner_pred_llama_10.json
+    model = pred_filename.split('_')[2]  # llama
+    shots = pred_filename.split('_')[3].split('.')[0]  # 10
+    
     # 生成输出文件路径
-    output_file = os.path.join(args.output_dir, 'ner_eval_result.txt')
+    output_file = os.path.join(args.output_dir, f'ner_eval_result_{model}_{shots}.txt')
     
     return target_data, pred_data, output_file
 
