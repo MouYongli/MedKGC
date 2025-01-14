@@ -378,8 +378,6 @@ def entities_from_radgraph(json_result):
     return entities
 
 
-
-
 if __name__ == "__main__":
     true = [Entity(e_type='MISC', start_offset=12, end_offset=12),
             Entity(e_type='LOC', start_offset=15, end_offset=15),

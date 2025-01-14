@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from openai import AzureOpenAI
 from collections import namedtuple
 
+from .ner_metrics import Entity
 
 # Load environment variables from .env file
 load_dotenv()
@@ -180,8 +181,6 @@ def extract_entities(text, num_shots=5, model='llama'):
         return parse_response(entities)
     except Exception as e:
         raise e
-
-Entity = namedtuple("Entity", "e_type start_offset end_offset")
 
 def entities_from_llm_response(json_result, text) -> list:
     entities = []

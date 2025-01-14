@@ -77,6 +77,7 @@ def load_existing_results(file_path: str) -> dict:
 
 def process_samples(data: Dict[str, Any], num_shots: int, file_path: str, model:str):
     """处理所有样本"""
+    # !TODO 添加id到结果，目前只有id。 之前是text
     json_result_dict = load_existing_results(file_path)
 
     for key, value in data.items():
