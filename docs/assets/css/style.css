@@ -1,0 +1,33 @@
+/* docs/assets/css/styles.css */
+
+/* 自定义导航栏样式 */
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+/* 自定义页脚链接颜色 */
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* 主页头部样式 */
+header {
+    background-image: url('../images/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+header .btn-primary {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+header .btn-primary:hover {
+    background-color: #005cbf;
+    border-color: #0056b3;
+}

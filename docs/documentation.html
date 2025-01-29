@@ -1,0 +1,122 @@
+<!-- docs/documentation.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文档 - Project MedKGC</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="MedKGC Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Project MedKGC
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">主页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">关于我们</a></li>
+                    <li class="nav-item"><a class="nav-link" href="features.html">功能</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="documentation.html">文档</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主体内容 -->
+    <section class="py-5">
+        <div class="container">
+            <h1>文档</h1>
+            <p>欢迎阅读 Project MedKGC 的文档。以下是一些有用的资源和指南，帮助您更好地了解和使用我们的项目。</p>
+
+            <h2>快速开始</h2>
+            <p>快速入门指南，帮助您在几分钟内开始使用 MedKGC。</p>
+            <ul>
+                <li><a href="#installation">安装</a></li>
+                <li><a href="#usage">使用方法</a></li>
+                <li><a href="#api">API 文档</a></li>
+            </ul>
+
+            <h2 id="installation">安装</h2>
+            <p>按照以下步骤安装 Project MedKGC：</p>
+            <ol>
+                <li>克隆仓库：<code>git clone https://github.com/yourusername/MedKGC.git</code></li>
+                <li>进入项目目录：<code>cd MedKGC</code></li>
+                <li>安装依赖项：<code>npm install</code></li>
+                <li>启动项目：<code>npm start</code></li>
+            </ol>
+
+            <h2 id="usage">使用方法</h2>
+            <p>如何使用 Project MedKGC 进行医学知识图谱的构建和查询。</p>
+            <ul>
+                <li>数据导入：<code>npm run import-data</code></li>
+                <li>启动推理引擎：<code>npm run start-inference</code></li>
+                <li>访问可视化界面：<a href="http://localhost:3000">http://localhost:3000</a></li>
+            </ul>
+
+            <h2 id="api">API 文档</h2>
+            <p>详细的 API 接口说明，帮助开发者集成和扩展 MedKGC 的功能。</p>
+            <ul>
+                <li><a href="#get-entities">获取实体</a></li>
+                <li><a href="#get-relations">获取关系</a></li>
+                <li><a href="#add-entity">添加实体</a></li>
+                <li><a href="#add-relation">添加关系</a></li>
+            </ul>
+
+            <h3 id="get-entities">获取实体</h3>
+            <p>获取知识图谱中的所有实体。</p>
+            <pre><code>GET /api/entities</code></pre>
+
+            <h3 id="get-relations">获取关系</h3>
+            <p>获取知识图谱中的所有关系。</p>
+            <pre><code>GET /api/relations</code></pre>
+
+            <h3 id="add-entity">添加实体</h3>
+            <p>向知识图谱中添加新的实体。</p>
+            <pre><code>POST /api/entities
+Content-Type: application/json
+
+{
+    "name": "实体名称",
+    "type": "实体类型"
+}</code></pre>
+
+            <h3 id="add-relation">添加关系</h3>
+            <p>在知识图谱中创建实体之间的关系。</p>
+            <pre><code>POST /api/relations
+Content-Type: application/json
+
+{
+    "from": "实体ID1",
+    "to": "实体ID2",
+    "relation": "关系类型"
+}</code></pre>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-primary text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Project MedKGC. 保留所有权利。</p>
+            <p>
+                <a href="https://github.com/yourusername/MedKGC" class="text-white me-3">GitHub</a>
+                <a href="https://twitter.com/yourusername" class="text-white">Twitter</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS 和依赖项 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
