@@ -10,15 +10,27 @@ The project is organized as follows:
 ```
 MedKGC/
 ├── data/                   # Directory for storing datasets
-│   └── radgraph/           # RadGraph dataset and related files
+│   ├── radgraph/          # RadGraph dataset and related files
+│   └── radlex/            # RadLex terminology files
+├── docs/                   # Project documentation
+│   ├── index.html         # Documentation homepage
+│   ├── ...               # 其他文档页面
+│   └── assets/            # Static assets for documentation
 ├── notebooks/              # Jupyter notebooks for experiments and analysis
 ├── src/                    # Source code for the project
-│   ├── medkgc/             # Main package for the project
-│   │   ├── ie/             # Information extraction related code
-│   │   │   ├── pipeline/   # Pipeline for NER, normalization, and relation extraction
-│   │   │   └── utils/      # Utility functions and scripts
-│   └── tests/              # Unit tests for the project
+│   └── medkgc/             # Main package for the project
+│       ├── ie/             # Information extraction related code
+│       │   ├── pipeline/   # Pipeline for NER, normalization, and relation extraction
+│       │   │   ├── ner/    # Named Entity Recognition
+│       │   │   ├── re/     # Relation Extraction
+│       │   │   └── nen/    # Named Entity Normalization
+│       │   └── utils/      # Utility functions and scripts
+│       └── nen/            # Named Entity Normalization specific code
+│           ├── resource/   # Resources for normalization
+│           └── notebooks/  # NEN analysis notebooks
+├── tests/                  # Unit tests for the project
 ├── requirements.txt        # Python dependencies
+├── setup.py                # Package installation configuration
 └── README.md               # Project documentation
 ```
 
