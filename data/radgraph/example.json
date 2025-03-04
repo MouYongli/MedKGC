@@ -1,0 +1,38 @@
+{
+    "p10/p10003412/s59172281.txt": {
+        "text": "FINAL REPORT EXAMINATION : ...",
+        "entities": {
+            "1": {
+                "tokens": "lungs",
+                "label": "ANAT-DP",
+                "start_ix": 35,
+                "end_ix": 35,
+                "relations": []
+            },
+            "2": {},
+            "3": {},
+            "...": {}
+        },
+        "data_source": "MIMIC-CXR",
+        "data_split": "dev"
+    },
+    "...": {}
+    ,
+    "p18/p18001816/s54309228.txt": {
+        "text": "FINAL REPORT INDICATION : ...",
+        "entities": {
+            "1": {
+                "tokens": "Lung",
+                "label": "ANAT-DP",
+                "start_ix": 22,
+                "end_ix": 22,
+                "relations": []
+            },
+            "2": {},
+            "3": {},
+            "...": {}
+        },
+        "data_source": "MIMIC-CXR",
+        "data_split": "dev"
+    }
+}

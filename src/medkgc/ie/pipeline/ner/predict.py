@@ -124,4 +124,3 @@ if __name__ == '__main__':
     process_samples(data, args.num_shots, file_path, args.model_name)
 
     print(f'预测完成，结果已保存到 {file_path}')
-    print(f"\n预测完成，开始评估结果...")

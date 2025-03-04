@@ -21,12 +21,14 @@ NER评估脚本
    - F1分数
 
 使用方法：
+    # 测试请指定prediction_path和target_path
     python -m src.medkgc.ie.pipeline.ner.eval_ner \
-        --prediction_path src/medkgc/ie/pipeline/ner/results/ner_pred_gpt4_100.json \
-        --target_path data/radgraph/splits/dev_mimic.json
+        --prediction_path src/medkgc/ie/pipeline/ner/results/test/ner_pred_llama_5.json \
+        --target_path data/radgraph/splits/test_mimic.json \
+        --output_dir src/medkgc/ie/pipeline/ner/results/test
 
 输出文件：
-    src/medkgc/ie/pipeline/ner/results/ner_eval_result.txt
+    src/medkgc/ie/pipeline/ner/results/xxx/xxx.txt
 """
 
 import json
@@ -166,8 +168,12 @@ def setup_evaluation(args):
     model = pred_filename.split('_')[2]  # llama
     shots = pred_filename.split('_')[3].split('.')[0]  # 10
     
-    # 生成输出文件路径
-    output_file = os.path.join(args.output_dir, f'ner_eval_result_{model}_{shots}.txt')
+    # 从target_path提取数据集名称
+    target_filename = os.path.basename(args.target_path)  # test_chexpert.json
+    dataset_name = target_filename.split('.')[0]  # test_chexpert
+    
+    # 生成输出文件路径，包含数据集名称
+    output_file = os.path.join(args.output_dir, f'ner_eval_result_{model}_{shots}_{dataset_name}.txt')
     
     return target_data, pred_data, output_file
 

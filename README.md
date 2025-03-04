@@ -49,9 +49,13 @@ pip install -r requirements.txt
 ```
 
 2. enviroment variables
+设置huggingface的home目录。
 ```
 export HF_HOME=~/Data/huggingface
 ```
+3. 项目环境参数
+
+设置项目环境参数在[.env](.env)文件中。
 
 ## Usage
 提供了.sh文件，可以直接运行。  
@@ -77,11 +81,10 @@ pytest ie/utils/test_ner.py -v
 
 
 
-
 ## Some Concepts
-mention / token: a span of text in a report, which may or may not refer to an entity
-entity: resulf of NER, also a span of text in a report, which be recognized as a named entity
-term: a concept or standard form in a dictionary(e.g. UMLS).
+**mention / token**: a span of text in a report, which may or may not refer to an entity  
+**entity**: resulf of NER, also a span of text in a report, which be recognized as a named entity  
+**term**: a concept or standard form in a dictionary(e.g. UMLS).  
 
 
 ## Output

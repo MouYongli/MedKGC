@@ -43,7 +43,7 @@ RadGraph数据集包含了放射学报告的标注数据，主要包含实体(en
 ```
 
 ## test 数据格式
-测试集中每个报告包含两位专家标注者(labeler_1和labeler_2)的标注:
+测试集中每个报告包含**两位专家标注者**(labeler_1和labeler_2)的标注:
 ```json
 {
     "report_id": {
@@ -125,3 +125,4 @@ entities = report["entities"]
 for entity_id, entity in entities.items():
     relations = entity["relations"]
 ```
+
