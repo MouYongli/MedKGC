@@ -77,7 +77,6 @@ def load_existing_results(file_path: str) -> dict:
 
 def process_samples(data: Dict[str, Any], num_shots: int, file_path: str, model:str):
     """处理所有样本"""
-    # !TODO 添加id到结果，目前只有id。 之前是text
     json_result_dict = load_existing_results(file_path)
 
     for key, value in data.items():
@@ -124,3 +123,4 @@ if __name__ == '__main__':
     process_samples(data, args.num_shots, file_path, args.model_name)
 
     print(f'预测完成，结果已保存到 {file_path}')
+    print(f"\n预测完成，开始评估结果...")
