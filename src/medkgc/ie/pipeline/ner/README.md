@@ -7,12 +7,7 @@ This project aims to extract named entities from radiology reports using Large L
 ```
 MedKGC/
 ├── data/
-│   └── radgraph/
-│       ├── original/
-│       │   └── train.json       # Original training data
-│       ├── splits/
-│       │   └── dev_mimic.json   # Development set
-│       └── dev_mimic.json       # Ground truth for evaluation
+│   └── radgraph/                  # RadGraph dataset
 ├── src/
 │   └── medkgc/
 │       └── ie/
@@ -32,6 +27,7 @@ MedKGC/
 
 ### Command Line Arguments
 ```bash
+conda activate medkgc
 python -m src.medkgc.ie.pipeline.ner.predict \
     --num_shots 100 \            # Number of few-shot examples
     --start_index 0 \           # Start processing from this index
@@ -42,6 +38,17 @@ python -m src.medkgc.ie.pipeline.ner.predict \
 ```bash
 ./ner.sh
 ```
+
+## Data Processing Pipeline
+```mermaid
+flowchart LR
+    DB[(Database)] -->|report| B(LLM Entity Extraction)
+    B --> |"(entity, entity_type) Tuples"| D[Data Formatting]
+    D --> |JSON| F[Evaluation]
+    DB2[(RadGraph)] --> |JSON| F
+    F -->|output| G[Results]
+```
+
 
 ## Entity Types
 - OBS-DP: Definite Positive Observations

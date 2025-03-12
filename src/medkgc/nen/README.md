@@ -1,4 +1,7 @@
-# File Structure
+# NEN
+## File Structure
+ [Dataset](resource/unique_entities_set.json) is a json file, contains the **unique entities** extracted from the RadGraph training dataset, has 1250 unique entities.
+
 
 [evaluation](evaluation.ipynb) folder contains the evaluation method of the NEN dataset.  
 [output](resource/simple/output.csv) show the preliminary results from the simple morphological matching method.  
@@ -23,3 +26,13 @@ TODO
 entity_nor 代码。
 llama的方案
  -->
+
+
+## Data Processing Pipeline
+```mermaid
+flowchart LR
+    DB[(Database)] -->|Entity| API[UMLS API]
+    API -->|Extract Results| RES[Top n Seclection]
+    RES -->|Top N candidates| LLMS[LLMS Selection]
+    LLMS -->|output| R[Results]
+```

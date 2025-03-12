@@ -1,4 +1,5 @@
 #!/bin/bash
+conda activate medkgc
 echo "开始评估命名实体识别结果..."
 
 # 运行评估脚本
@@ -13,4 +14,4 @@ if [ $? -eq 0 ]; then
 else
     echo "NER评估失败!"
     exit 1
-fi 
+fi
