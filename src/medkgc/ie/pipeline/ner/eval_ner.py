@@ -34,47 +34,25 @@ NER评估脚本
 import json
 import argparse
 import os
-from medkgc.ie.pipeline.ner.utils.ner_metrics import Entity, compute_metrics, entities_from_radgraph
-import sys
+from typing import Dict, Any, List, Tuple
 
-def load_json_data(file_path: str) -> dict:
-    """加载ner的结果文件，predict.JSON数据文件"""
-    try:
-        with open(file_path, 'r') as f:
-            return json.load(f)
-    except FileNotFoundError:
-        print(f'错误: 找不到数据文件 {file_path}')
-        sys.exit(1)
-
-def get_entities_from_data(data_item: dict) -> list:
-    """
-    根据数据格式返回entities列表
-    
-    Args:
-        data_item: 数据项，可能包含单个entities或多个labeler的entities
-        
-    Returns:
-        list: 包含一个或多个entities列表
-    """
-    if 'entities' in data_item:
-        return [data_item['entities']]
-    elif 'labeler_1' in data_item and 'labeler_2' in data_item:
-        return [data_item['labeler_1']['entities'], 
-                data_item['labeler_2']['entities']]
-    else:
-        raise ValueError("未知的数据格式：既没有entities也没有labeler标注")
+from medkgc.ie.pipeline.ner.utils.data_loader import (
+    load_json_data, 
+    get_entities_from_data,
+    extract_metadata_from_paths
+)
+from medkgc.ie.pipeline.ner.utils.data_formatter import (
+    convert_pred_to_entities,
+    format_total_metrics
+)
+from medkgc.ie.pipeline.ner.utils.ner_metrics import (
+    Entity,
+    compute_metrics,
+    entities_from_radgraph
+)
 
 def aggregate_metrics(metrics_list: list, is_multi_labeler: bool = False) -> dict:
-    """
-    汇总评估指标
-    
-    Args:
-        metrics_list: 指标列表
-        is_multi_labeler: 是否多标注者
-        
-    Returns:
-        dict: 汇总的指标
-    """
+    """汇总评估指标"""
     if not is_multi_labeler:
         return aggregate_single_metrics(metrics_list)
     
@@ -94,7 +72,7 @@ def aggregate_metrics(metrics_list: list, is_multi_labeler: bool = False) -> dic
     }
 
 def aggregate_single_metrics(metrics_list: list) -> dict:
-    """原来的aggregate_metrics函数逻辑"""
+    """汇总单个标注者的指标"""
     total = {
         'correct': sum(m['correct'] for m in metrics_list),
         'incorrect': sum(m['incorrect'] for m in metrics_list),
@@ -115,113 +93,8 @@ def aggregate_single_metrics(metrics_list: list) -> dict:
 
     return total
 
-def convert_pred_to_entities(pred_result: list) -> list:
-    """
-    将预测结果转换为Entity格式
-    
-    Args:
-        pred_result: 格式为 [[label, start, end], ...] 的预测结果
-        
-    Returns:
-        list[Entity]: 转换后的Entity列表
-    """
-    entities = []
-    
-    # 遍历每个预测结果
-    for item in pred_result:
-        entity = Entity(e_type=item[0], 
-                      start_offset=item[1], 
-                      end_offset=item[2])
-        entities.append(entity)
-        
-    return entities
-
-def write_metrics(f, metrics: dict, prefix: str = ''):
-    """写入评估指标到文件"""
-    f.write(f"{prefix}正确预测数: {metrics['correct']}\n")
-    f.write(f"{prefix}错误预测数: {metrics['incorrect']}\n")
-    f.write(f"{prefix}未预测数: {metrics['missed']}\n")
-    f.write(f"{prefix}多余预测数: {metrics['spurious']}\n")
-    f.write(f"{prefix}精确率: {metrics['precision']:.4f}\n")
-    f.write(f"{prefix}召回率: {metrics['recall']:.4f}\n")
-    f.write(f"{prefix}F1分数: {metrics['f1']:.4f}\n")
-
-def setup_evaluation(args):
-    """
-    设置评估环境并加载数据
-    
-    Args:
-        args: 解析的命令行参数
-        
-    Returns:
-        tuple: (target_data, pred_data, output_file)
-    """
-    # 创建输出目录
-    os.makedirs(args.output_dir, exist_ok=True)
-    
-    # 加载数据
-    pred_data = load_json_data(args.prediction_path)
-    target_data = load_json_data(args.target_path)
-    
-    # 从prediction_path提取模型名称和shots数
-    pred_filename = os.path.basename(args.prediction_path)  # ner_pred_llama_10.json
-    model = pred_filename.split('_')[2]  # llama
-    shots = pred_filename.split('_')[3].split('.')[0]  # 10
-    
-    # 从target_path提取数据集名称
-    target_filename = os.path.basename(args.target_path)  # test_chexpert.json
-    dataset_name = target_filename.split('.')[0]  # test_chexpert
-    
-    # 生成输出文件路径，包含数据集名称
-    output_file = os.path.join(args.output_dir, f'ner_eval_result_{model}_{shots}_{dataset_name}.txt')
-    
-    return target_data, pred_data, output_file
-
-def evaluate_all_predictions(pred_data: dict, target_data: dict, output_file: str):
-    """
-    评估所有预测结果并计算总体指标
-    
-    Args:
-        pred_data: 预测结果字典 {report_id: [[label, start, end], ...]}
-        target_data: 目标数据字典
-        output_file: 输出文件路径
-        
-    Returns:
-        tuple: (total_metrics, is_multi_labeler)
-    """
-    all_metrics = []
-    is_multi_labeler = False
-    
-    # 遍历每个预测结果
-    for report_id, pred_entities in pred_data.items():
-        metrics, curr_multi_labeler = evaluate_prediction(
-            report_id, 
-            pred_entities, 
-            target_data
-        )
-        
-        if metrics is not None:
-            is_multi_labeler = curr_multi_labeler
-            all_metrics.append(metrics)
-    
-    # 计算总体指标
-    total_metrics = aggregate_metrics(all_metrics, is_multi_labeler)
-    
-    # 将总体指标写入文件
-    with open(output_file, 'w') as f:
-        write_total_metrics(f, total_metrics, is_multi_labeler)
-    
-    return total_metrics, is_multi_labeler
-
 def evaluate_prediction(report_id: str, pred_entities: list, target_data: dict) -> tuple:
-    """
-    评估单个报告的预测结果
-
-    Returns:
-        tuple: (metrics_list, is_multi_labeler)
-        - metrics_list: 评估指标列表，可能包含多个标注者的指标
-        - is_multi_labeler: 是否为多标注者数据
-    """
+    """评估单个报告的预测结果"""
     # 获取真实数据
     true_data = target_data.get(report_id)
     if true_data is None:
@@ -243,36 +116,29 @@ def evaluate_prediction(report_id: str, pred_entities: list, target_data: dict) 
         
     return metrics_list, is_multi_labeler
 
-def write_total_metrics(f, total_metrics, is_multi_labeler):
-    """
-    写入总体评估指标
-    """
-    f.write("总体评估指标:\n")
+def evaluate_all_predictions(pred_data: dict, target_data: dict) -> Tuple[dict, bool]:
+    """评估所有预测结果并计算总体指标"""
+    all_metrics = []
+    is_multi_labeler = False
     
-    if is_multi_labeler:
-        f.write("\n标注者 1 结果:\n")
-        write_metrics(f, total_metrics['labeler_1'])
-        f.write("\n标注者 2 结果:\n")
-        write_metrics(f, total_metrics['labeler_2'])
-        f.write(f"\n平均F1分数: {total_metrics['avg_f1']:.4f}\n")
-    else:
-        write_metrics(f, total_metrics)
+    # 遍历每个预测结果
+    for report_id, pred_entities in pred_data.items():
+        metrics, curr_multi_labeler = evaluate_prediction(
+            report_id, 
+            pred_entities, 
+            target_data
+        )
+        
+        if metrics is not None:
+            is_multi_labeler = curr_multi_labeler
+            all_metrics.append(metrics)
+    
+    # 计算总体指标
+    total_metrics = aggregate_metrics(all_metrics, is_multi_labeler)
+    
+    return total_metrics, is_multi_labeler
 
-def print_total_metrics(total_metrics, is_multi_labeler):
-    """
-    在终端打印总体评估指标
-    """
-    print("\n总体评估指标:")
-    if is_multi_labeler:
-        print("\n标注者 1 结果:")
-        write_metrics(sys.stdout, total_metrics['labeler_1'])
-        print("\n标注者 2 结果:")
-        write_metrics(sys.stdout, total_metrics['labeler_2'])
-        print(f"\n平均F1分数: {total_metrics['avg_f1']:.4f}")
-    else:
-        write_metrics(sys.stdout, total_metrics)
-
-if __name__ == '__main__':
+def main():
     # 解析命令行参数
     parser = argparse.ArgumentParser(description='Evaluate NER predictions against ground truth')
     parser.add_argument('--prediction_path', type=str, required=True,
@@ -285,16 +151,39 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     # 评估标签
+    global tags
     tags = ['OBS-DP', 'ANAT-DP', 'OBS-U', 'OBS-DA']
     
-    # 设置评估环境并加载数据
-    target_data, pred_data, output_file = setup_evaluation(args)
+    # 加载数据
+    pred_data_json = load_json_data(args.prediction_path)
+    target_data_json = load_json_data(args.target_path)
     
-    # 执行评估并获取结果
-    total_metrics, is_multi_labeler = evaluate_all_predictions(
-        pred_data, target_data, output_file)
+    # 创建输出目录
+    os.makedirs(args.output_dir, exist_ok=True)
     
-    # 在终端显示结果
-    print_total_metrics(total_metrics, is_multi_labeler)
-
+    # 从文件路径提取元数据
+    model, shots, dataset_name = extract_metadata_from_paths(
+        args.prediction_path, args.target_path)
+    
+    # 生成输出文件路径
+    output_file = os.path.join(
+        args.output_dir, 
+        f'ner_eval_result_{model}_{shots}_{dataset_name}.txt'
+    )
+    
+    # 执行评估
+    total_metrics, is_multi_labeler = evaluate_all_predictions(pred_data_json, target_data_json)
+    
+    # 格式化并保存结果
+    result_str = format_total_metrics(total_metrics, is_multi_labeler)
+    
+    # 保存到文件
+    with open(output_file, 'w') as f:
+        f.write(result_str)
+    
+    # 打印结果
+    print(result_str)
     print(f'\n评估完成，结果已保存到 {output_file}')
+
+if __name__ == '__main__':
+    main()

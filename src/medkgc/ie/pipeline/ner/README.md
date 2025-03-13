@@ -116,6 +116,11 @@ metrics = compute_metrics(y_true, pred, tags)
 
 ## TODO
 - [ ] Implement relation extraction
-- [ ] Optimize few-shot example selection
+- [ ] Optimize few-shot example selection, like select according to the similarity
 - [ ] Add support for additional LLM models
-- [ ] Improve entity offset detection
+
+
+
+## Bug or Disccusion
+- 有时候会遇到，一个report无法处理。经过多次重复，很可能超过5次后，会得出一个答案。
+- radiologist 使用不同的 report 结构，导致 LLM 无法处理。

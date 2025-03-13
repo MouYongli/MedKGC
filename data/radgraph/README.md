@@ -105,24 +105,6 @@ RadGraph数据集包含了放射学报告的标注数据，主要包含实体(en
 - CheXpert
 
 ## 特殊说明
-1. test 数据可能包含多个标注者(labeler)的标注
+1. test 数据包含2个标注者(labeler)的标注
 2. 实体的位置使用token级别的start_ix和end_ix标注, not character级别的
 3. 关系是有向的，主动的，从源实体指向目标实体
-
-## 使用示例
-```python
-import json
-
-# 读取数据
-with open('dev.json', 'r') as f:
-    dev_data = json.load(f)
-
-# 访问一个报告的实体
-report = dev_data["report_id"]
-entities = report["entities"]
-
-# 访问实体的关系
-for entity_id, entity in entities.items():
-    relations = entity["relations"]
-```
-

@@ -1,3 +1,9 @@
+"""
+实体抽取工具
+
+这个模块提供了使用LLM进行实体抽取的函数。
+"""
+
 import json
 import requests
 import pprint 
@@ -5,6 +11,7 @@ import os
 from dotenv import load_dotenv
 from openai import AzureOpenAI
 from collections import namedtuple
+from typing import Dict, List, Any, Tuple
 
 from .ner_metrics import Entity
 
@@ -41,16 +48,15 @@ def get_question_prompt(text):
         <OUTPUT> ANSWER:
         '''
 
-def create_messages_with_shots(num_shots, messages):
-    """
-    从train.json创建few-shot示例消息列表
+def create_llm_messages_with_shots(num_shots: int, messages: List[Dict[str, str]]) -> List[Dict[str, str]]:
+    """从train.json创建LLM的few-shot示例消息列表
     
     Args:
-        num_shots (int): 需要的few-shot示例数量
-        messages (list): 现有的消息列表
+        num_shots: 需要的few-shot示例数量
+        messages: 现有的消息列表
         
     Returns:
-        list: 包含few-shot示例的消息列表
+        List[Dict[str, str]]: 包含few-shot示例的消息列表
     """
     # 加载训练数据
     with open('data/radgraph/original/train.json', 'r') as f:
@@ -93,18 +99,17 @@ def create_messages_with_shots(num_shots, messages):
 
     return messages
 
-def parse_response(entities):
-    """
-    解析API响应并将其转换为JSON格式
+def parse_llm_response_to_json(llm_response: str) -> Dict[str, Dict[str, str]]:
+    """解析LLM的响应文本并将其转换为JSON格式
     
     Args:
-        entities (str): API响应的实体字符串
+        llm_response: LLM响应的实体字符串
         
     Returns:
-        dict: 解析后的实体字典
+        Dict[str, Dict[str, str]]: 解析后的实体字典，格式为 {id: {tokens: str, label: str}}
     """
     result = {}
-    lines = entities.split('\n')
+    lines = llm_response.split('\n')
     for i, line in enumerate(lines):
         if '(' in line and ')' in line:
             try:
@@ -124,12 +129,20 @@ def parse_response(entities):
 
     return result
 
-
-def call_ollama_api(text, num_shots):
+def call_llm_ollama_api(text: str, num_shots: int) -> str:
+    """调用Ollama API进行实体抽取
+    
+    Args:
+        text: 输入文本
+        num_shots: few-shot示例数量
+        
+    Returns:
+        str: LLM的响应文本
+    """
     model = "llama3.1:70b"
 
     messages = [{'role': 'system', 'content': system_prompt}]
-    messages = create_messages_with_shots(num_shots, messages)
+    messages = create_llm_messages_with_shots(num_shots, messages)
     messages.append({'role': 'user', 'content': get_question_prompt(text)})
 
     data = {
@@ -139,7 +152,7 @@ def call_ollama_api(text, num_shots):
     }
 
     response = session.post(os.getenv('OLLAMA_API_URL'), json=data)
-    response.raise_for_status()  # 检查HTTP错误
+    response.raise_for_status()
     
     if response.status_code == 200:
         print(f"API调用成功，状态码: {response.status_code}")
@@ -147,7 +160,16 @@ def call_ollama_api(text, num_shots):
     else:
         raise Exception(f"API调用失败，状态码: {response.status_code}")
 
-def call_azure_openai_api(text, num_shots):
+def call_llm_azure_openai_api(text: str, num_shots: int) -> str:
+    """调用Azure OpenAI API进行实体抽取
+    
+    Args:
+        text: 输入文本
+        num_shots: few-shot示例数量
+        
+    Returns:
+        str: LLM的响应文本
+    """
     model = "gpt-4o"
 
     client = AzureOpenAI(
@@ -157,7 +179,7 @@ def call_azure_openai_api(text, num_shots):
     )
 
     messages = [{'role': 'system', 'content': system_prompt}]
-    messages = create_messages_with_shots(num_shots, messages)
+    messages = create_llm_messages_with_shots(num_shots, messages)
     messages.append({'role': 'user', 'content': get_question_prompt(text)})
 
     response = client.chat.completions.create(
@@ -167,44 +189,65 @@ def call_azure_openai_api(text, num_shots):
 
     return response.choices[0].message.content
 
-def extract_entities(text, num_shots=5, model='llama'):
+def extract_entities_with_llm(text: str, num_shots: int = 5, model: str = 'llama') -> Dict[str, Dict[str, str]]:
+    """使用LLM从文本中抽取实体
+    
+    Args:
+        text: 输入文本
+        num_shots: few-shot示例数量
+        model: 使用的模型名称
+        
+    Returns:
+        Dict[str, Dict[str, str]]: 抽取的实体字典
+    """
     try:
         if model == 'llama':
-            entities = call_ollama_api(text, num_shots)
+            llm_response = call_llm_ollama_api(text, num_shots)
         elif model == 'gpt4o':
-            entities = call_azure_openai_api(text, num_shots)
+            llm_response = call_llm_azure_openai_api(text, num_shots)
         else:
             raise ValueError("Unsupported model type")
 
-        print(entities)
-
-        return parse_response(entities)
+        print(llm_response)
+        return parse_llm_response_to_json(llm_response)
     except Exception as e:
         raise e
 
-def entities_from_llm_response(json_result, text) -> list:
-    entities = []
-    words = text.split()
+def convert_tuples_to_json(entity_json: Dict[str, Dict[str, str]], source_text: str) -> List[Entity]:
+    """将JSON格式的实体数据转换为Entity对象列表，并计算位置信息
+    
+    Args:
+        entity_json: JSON格式的实体数据，格式为 {id: {tokens: str, label: str}}
+        source_text: 原始输入文本，用于计算实体位置
+        
+    Returns:
+        List[Entity]: Entity对象列表，每个对象包含类型和位置信息
+    """
+    entity_list = []
+    words = source_text.split()
     word_index = 0
     
-    for key, value in json_result.items():
+    for key, value in entity_json.items():
         token = value['tokens']
-        e_type = value['label']
+        entity_type = value['label']
 
-        # Find the start and end word offsets of the token in the text
+        # 在文本中查找实体的起始和结束位置
         while word_index < len(words):
             if words[word_index] == token:
                 start_offset = word_index
                 end_offset = word_index
 
-                entities.append(Entity(e_type=e_type, start_offset=start_offset, 
-                end_offset=end_offset))
+                entity_list.append(Entity(
+                    e_type=entity_type, 
+                    start_offset=start_offset, 
+                    end_offset=end_offset
+                ))
                 
                 word_index += 1
                 break
             word_index += 1
     
-    return entities
+    return entity_list
 
 if __name__ == '__main__':
     # text = "FINAL REPORT INDICATION : ___ - year - old man with change in mental status . COMPARISON : PA and lateral chest radiograph , ___ . PA AND LATERAL CHEST RADIOGRAPH : The cardiac , mediastinal and hilar contours are normal . An opacity projecting over the right mid to upper lung on the frontal view may represent focal consolidation , unchanged from ___ . Interposition of bowel accounts for the lucency below the right hemidiaphragm ."
@@ -214,7 +257,7 @@ if __name__ == '__main__':
     # chexpert 29
     # text = "narrative : chest 2 views : 02/03 / 2007 history : male , 45 years old , post transplant . comparison : 09/18 / 06 and prior impression : unchanged right tunneled central venous catheter with tip overlying the cavoatrial junction . normal heart size and pulmonary vascularity . no focal consolidation , pleural effusion , or pneumothorax . bones are unremarkable . summary : 2 - abnormal , previously reported accession number : 645666774 this report has been anonymized . all dates are offset from the actual dates by a fixed interval associated with the patient ."
     
-    entities = extract_entities(text, num_shots=10)
+    entities = extract_entities_with_llm(text, num_shots=10)
     # entities = extract_entities(text, num_shots=100, model='azure_openai')  
 
 
