@@ -1,18 +1,14 @@
-from setuptools import find_packages, setup
+from setuptools import setup, find_packages
 
 setup(
-    name = "MedKGC",
-    version = "0.1.0",
-    author = "Mou YongLi, Hanbin Chen, Stefan Decker",
-    author_email = "mou@dbis.rwth-aachen.de",
-    description = ("Biomedical and Medical Knowledge Graph Construction"),
-    license = "MIT",
-    url = "https://github.com/MouYongli/MedKGC.git",
+    name="medkgc",
+    version="0.1.0",
+    packages=find_packages(where="src"),
     package_dir={"": "src"},
-    packages=find_packages("src"),
-    classifiers=[
-        "Development Status :: 1 - Alpha",
-        "Topic :: Named Entity Recognition, Named Entity Normalization, Relation Extraction",
-        "License :: OSI Approved :: MIT License",
+    install_requires=[
+        # 在这里添加项目依赖
     ],
+    author="hbchen",
+    description="Medical Knowledge Graph Construction Tools",
+    python_requires=">=3.6",
 )
