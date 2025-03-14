@@ -93,10 +93,10 @@ def aggregate_single_metrics(metrics_list: list) -> dict:
 
     return total
 
-def evaluate_prediction(report_id: str, pred_entities: list, target_data: dict) -> tuple:
+def evaluate_prediction(report_id: str, pred_entities: list, target_data_json: dict) -> tuple:
     """评估单个报告的预测结果"""
     # 获取真实数据
-    true_data = target_data.get(report_id)
+    true_data = target_data_json.get(report_id)
     if true_data is None:
         return None, False
         
@@ -116,17 +116,17 @@ def evaluate_prediction(report_id: str, pred_entities: list, target_data: dict) 
         
     return metrics_list, is_multi_labeler
 
-def evaluate_all_predictions(pred_data: dict, target_data: dict) -> Tuple[dict, bool]:
+def evaluate_all_predictions(pred_data_json: dict, target_data_json: dict) -> Tuple[dict, bool]:
     """评估所有预测结果并计算总体指标"""
     all_metrics = []
     is_multi_labeler = False
     
     # 遍历每个预测结果
-    for report_id, pred_entities in pred_data.items():
+    for report_id, pred_entities in pred_data_json.items():
         metrics, curr_multi_labeler = evaluate_prediction(
             report_id, 
             pred_entities, 
-            target_data
+            target_data_json
         )
         
         if metrics is not None:

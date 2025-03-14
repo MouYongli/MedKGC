@@ -12,14 +12,15 @@ from dotenv import load_dotenv
 from openai import AzureOpenAI
 from collections import namedtuple
 from typing import Dict, List, Any, Tuple
+import time
 
 from .ner_metrics import Entity
 
 # Load environment variables from .env file
 load_dotenv()
 
-# Prepare prompt with instructions
-system_prompt = '''
+# 将 system_prompt 改为常量
+SYSTEM_PROMPT = '''
     You are a radiologist performing clinical term extraction from the FINDINGS, PA AND LATERAL CHEST RADIOGRAPH and IMPRESSION sections in the radiology report. Here a clinical term can be either anatomy or observation that is related to a finding or an impression. The anatomy term refers to an anatomical body part such as a 'lung'. The observation terms refer to observations made when referring to the associated radiology image. Observations are associated with visual features, identifiable pathophysiologic processes, or diagnostic disease classifications. For example, an observation could be 'effusion' or description phrases like 'increased'. You also need to assign a label to indicate whether the clinical term is present, absent or uncertain. 
 
     Given a piece of radiology text input in the format:
@@ -141,7 +142,7 @@ def call_llm_ollama_api(text: str, num_shots: int) -> str:
     """
     model = "llama3.1:70b"
 
-    messages = [{'role': 'system', 'content': system_prompt}]
+    messages = [{'role': 'system', 'content': SYSTEM_PROMPT}]  # 修改处
     messages = create_llm_messages_with_shots(num_shots, messages)
     messages.append({'role': 'user', 'content': get_question_prompt(text)})
 
@@ -178,7 +179,7 @@ def call_llm_azure_openai_api(text: str, num_shots: int) -> str:
         azure_endpoint=os.getenv("AZURE_ENDPOINT")
     )
 
-    messages = [{'role': 'system', 'content': system_prompt}]
+    messages = [{'role': 'system', 'content': SYSTEM_PROMPT}]  # 修改处
     messages = create_llm_messages_with_shots(num_shots, messages)
     messages.append({'role': 'user', 'content': get_question_prompt(text)})
 
@@ -188,6 +189,29 @@ def call_llm_azure_openai_api(text: str, num_shots: int) -> str:
     )
 
     return response.choices[0].message.content
+
+def extract_entities_with_llm_with_retry(text_str: str, num_shots: int, model_name: str) -> Dict[str, Dict[str, str]]:
+    """使用重试机制从文本中抽取实体
+    
+    Args:
+        text_str: 输入文本
+        num_shots: few-shot示例数量
+        model_name: 使用的模型名称
+        
+    Returns:
+        Dict[str, Dict[str, str]]: 抽取的实体字典
+    """
+    max_retries = 3
+
+    for attempt_idx in range(max_retries):
+        try:
+            entity_json = extract_entities_with_llm(text_str, num_shots, model_name)
+            return entity_json
+        except Exception as error:
+            if attempt_idx < max_retries - 1:
+                print(f'第{attempt_idx + 1}次尝试失败: {error}')
+                time.sleep(1)
+                continue
 
 def extract_entities_with_llm(text: str, num_shots: int = 5, model: str = 'llama') -> Dict[str, Dict[str, str]]:
     """使用LLM从文本中抽取实体

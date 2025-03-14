@@ -33,40 +33,10 @@ from typing import Dict, Any, List, Tuple
 
 from medkgc.ie.pipeline.ner.utils.entity_extractor import (
     extract_entities_with_llm, 
-    convert_tuples_to_json
+    convert_tuples_to_json,
+    extract_entities_with_llm_with_retry
 )
 from medkgc.ie.pipeline.ner.utils.data_loader import load_json_data
-
-def extract_entities_with_llm_with_retry(text_str: str, num_shots: int, model_name: str) -> Dict[str, Dict[str, str]]:
-    """使用重试机制从文本中抽取实体
-    
-    Args:
-        text_str: 输入文本
-        num_shots: few-shot示例数量
-        model_name: 使用的模型名称
-        
-    Returns:
-        Dict[str, Dict[str, str]]: 抽取的实体字典
-    """
-    max_retries = 3
-
-    for attempt_idx in range(max_retries):
-        try:
-            entity_json = extract_entities_with_llm(text_str, num_shots, model_name)
-            return entity_json
-        except Exception as error:
-            if attempt_idx < max_retries - 1:
-                print(f'第{attempt_idx + 1}次尝试失败: {error}')
-                time.sleep(1)
-                continue
-
-def ensure_output_dir_exists(output_dir_path: str):
-    """确保输出目录存在，如不存在则创建
-    
-    Args:
-        output_dir_path: 输出目录路径
-    """
-    os.makedirs(output_dir_path, exist_ok=True)
 
 def load_prediction_results(json_path: str) -> Dict[str, List[Tuple[str, int, int]]]:
     """加载已有的预测结果文件
@@ -95,6 +65,7 @@ def extract_entities_from_reports(data_dict: Dict[str, Any], num_shots: int, out
         model_name: 使用的模型名称
     """
 
+    # 加载已有的预测结果，如果存在则跳过，避免重复预测
     result_dict = load_prediction_results(output_path)
 
     for report_id, report_data in data_dict.items():
@@ -140,8 +111,8 @@ def main():
     # 加载数据
     data_dict = load_json_data(args.data_path)
 
-    # 创建输出目录
-    ensure_output_dir_exists(args.output_dir)
+    # 确保输出目录存在，如不存在则创建
+    os.makedirs(args.output_dir, exist_ok=True)
     output_path = os.path.join(args.output_dir, f'ner_pred_{args.model_name}_{args.num_shots}.json')
 
     # 处理样本

@@ -3,6 +3,7 @@ import Levenshtein
 from openai import OpenAI
 import json
 import os
+from .llm_utils import normalize_entity_gpt  # 新增导入
 
 # Constants
 API_KEY = "751b12fd-192a-4a6d-985d-9b094c99d3c8"
@@ -121,36 +122,9 @@ def umls_id2definition(id, version="current"):
         print(f"Query umls_id2definition failed: {id}, Status code: {response.status_code}")
         return None, None
 
-def normalize_entity_gpt(entity, results, myModel = "gpt-4"):
-    # Initialize the OpenAI client
-    api_key = os.environ.get("OPENAI_API_KEY")
-    client = OpenAI(api_key=api_key)
-
-    # Convert results to a string format that can be easily parsed by the model
-    results_str = json.dumps(results, indent=2)
-
-    # Prepare the messages for the API call
-    messages = [
-        {"role": "system", "content": "You are an expert in named entity normalization for medical terms using the UMLS ontology. Your task is to analyze the given entity and search results, then select the most appropriate normalized form or the most likely UMLS concept."},
-        {"role": "user", "content": f"Entity: {entity}\n\nSearch Results:\n{results_str}\n\nBased on these results, provide the most appropriate UI and name for this entity. If the entity is unlikely to be normalized, return ('unnormalizable', 'unnormalizable'). Respond in the format: (ui, name)"}
-    ]
-
-    # Make the API call
-    completion = client.chat.completions.create(
-        model = myModel,
-        messages=messages
-    )
-
-    # Extract and process the response
-    response = completion.choices[0].message.content.strip()
-
-    try:
-        ui, name = eval(response)
-    except:
-        ui, name = None, None
-
-    return ui, name
-
+# 将 llm 调用相关的函数移除，原函数已提取到 llm_utils 中
+# def normalize_entity_gpt(entity, results, myModel = "gpt-4"):
+#     ...existing code...
 
 # return metadata of the entity
 def nomralize_entity_with_umls(entity):
