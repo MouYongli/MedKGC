@@ -36,14 +36,15 @@ flowchart LR
 
         subgraph Retrival
             direction TB
-            A@{ shape: lean-r, label: "Entity" } --> API[UMLS API]
-            API -->|Extract Results| RES[Top n Selection]
+            A@{ shape: lean-r, label: "Entity" } --> API(UMLS API)
+            API -->|Extract Results| RES(Top n Selection)
         end
-        Retrival -->|Top N candidates| LLMS[LLMS Selection]
+
+        Retrival -->|Top N| LLMS(LLMS Selector)
     end
 
-    LLMS -->|Data Formatting| DF[Dateformatter]
-    DF -->|CSV| E[Evaluation]
+    LLMS -->|json| DF(Formatter)
+    DF -->|CSV| E(Evaluation)
     DB2[(RadLink)] --> |CSV| E
     E -->|output| G@{ shape: lean-r, label: "Results" }
 ```
