@@ -37,7 +37,7 @@ flowchart LR
         subgraph Retrieval
             direction TB
             A@{ shape: lean-r, label: "Entity" } --> API(UMLS API)
-            API -->|Extract Results| RES(Top n Selection)
+            API --> RES@{ shape: diamond, label: "select Top N" }
         end
 
         Retrieval -->|Top N| LLMS(LLMS Selector)
