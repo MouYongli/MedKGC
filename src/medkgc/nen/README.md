@@ -33,7 +33,10 @@ llama的方案
 ```mermaid
 flowchart LR
     DB[(Database)] -->|Entity| API[UMLS API]
-    API -->|Extract Results| RES[Top n Seclection]
+    API -->|Extract Results| RES[Top n Selection]
     RES -->|Top N candidates| LLMS[LLMS Selection]
-    LLMS -->|output| R[Results]
+    LLMS -->|Data Formatting| DF[Dateformatter]
+    DF -->|CSV| E[Evaluation]
+    DB2[(RadLink)] --> |CSV| E
+    E -->|output| G[Results]
 ```
