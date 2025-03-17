@@ -34,13 +34,13 @@ llama的方案
 flowchart LR
     subgraph RAG
 
-        subgraph Retrival
+        subgraph Retrieval
             direction TB
             A@{ shape: lean-r, label: "Entity" } --> API(UMLS API)
             API -->|Extract Results| RES(Top n Selection)
         end
 
-        Retrival -->|Top N| LLMS(LLMS Selector)
+        Retrieval -->|Top N| LLMS(LLMS Selector)
     end
 
     LLMS -->|json| DF(Formatter)
