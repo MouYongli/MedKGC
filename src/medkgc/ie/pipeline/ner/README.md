@@ -42,9 +42,9 @@ python -m src.medkgc.ie.pipeline.ner.predict \
 ## Data Processing Pipeline
 ```mermaid
 flowchart LR
-    DB[(Database)] -->|report| B(LLM Entity Extraction)
-    B --> |"(entity, entity_type) Tuples"| D[Data Formatting]
-    D --> |JSON| F[Evaluation]
+    DB[(Database)] -->|report| B(LLM Extractor)
+    B --> |"(entity, label) Tuples"| D(Formatter)
+    D --> |JSON| F(Evaluation)
     DB2[(RadGraph)] --> |JSON| F
     F -->|output| G[Results]
 ```
