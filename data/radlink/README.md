@@ -67,12 +67,13 @@ TODO: 需要检查，数量不对。重新跑一下 1353 的数据，
 1250个entity。
 
 ## reviews.csv
-| name | ui | normalized_name |
-| --- | --- | --- |
-| Lungs | C0024109 | Lungs |
-| clear | C2963144 | clear |
-| Normal | C0205307 | Normal |
-| cardiomediastinal | | |
-| ... | ... | ... |
+| name               | ui        | normalized_name | semanticTypes                                     |
+|--------------------|-----------|-----------------|---------------------------------------------------|
+| Lungs              | C0024109  | Lungs           | Body Part, Organ, or Organ Component              |
+| clear              | C2963144  | clear           | Qualitative Concept                               |
+| Normal             | C0205307  | Normal          | Qualitative Concept                               |
+| cardiomediastinal  |     -     |       -         |               -                                   |
+| ...                | ...       | ...             |                                                   |
 
-1250个entity。
+
+This dataset contains a total of 1250 entities.

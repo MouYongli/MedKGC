@@ -1,0 +1,149 @@
+{
+    "p1/mock001/s00001.txt": {
+        "text": "FINAL REPORT EXAMINATION : Mild cardiomegaly with no evidence of pulmonary edema. No focal consolidation, pleural effusion, or pneumothorax.",
+        "entities": {
+            "1": {
+                "tokens": "cardiomegaly",
+                "label": "OBS-DP",
+                "start_ix": 5,
+                "end_ix": 5,
+                "relations": []
+            },
+            "2": {
+                "tokens": "pulmonary edema",
+                "label": "OBS-DA",
+                "start_ix": 11,
+                "end_ix": 12,
+                "relations": []
+            },
+            "3": {
+                "tokens": "focal consolidation",
+                "label": "OBS-DA",
+                "start_ix": 15,
+                "end_ix": 16,
+                "relations": []
+            },
+            "4": {
+                "tokens": "pleural effusion",
+                "label": "OBS-DA",
+                "start_ix": 18,
+                "end_ix": 19,
+                "relations": []
+            },
+            "5": {
+                "tokens": "pneumothorax",
+                "label": "OBS-DA",
+                "start_ix": 21,
+                "end_ix": 21,
+                "relations": []
+            }
+        },
+        "data_source": "mock",
+        "data_split": "-"
+    },
+    "p2/mock002/s00002.txt": {
+        "text": "FINAL REPORT EXAMINATION : Right lower lobe consolidation consistent with pneumonia. Mild right-sided pleural effusion noted. Heart size within normal limits.",
+        "entities": {
+            "1": {
+                "tokens": "Right lower lobe",
+                "label": "ANAT-DP",
+                "start_ix": 5,
+                "end_ix": 7,
+                "relations": []
+            },
+            "2": {
+                "tokens": "consolidation",
+                "label": "OBS-DP",
+                "start_ix": 8,
+                "end_ix": 8,
+                "relations": []
+            },
+            "3": {
+                "tokens": "pneumonia",
+                "label": "OBS-DP",
+                "start_ix": 11,
+                "end_ix": 11,
+                "relations": []
+            },
+            "4": {
+                "tokens": "right-sided",
+                "label": "ANAT-DP",
+                "start_ix": 14,
+                "end_ix": 14,
+                "relations": []
+            },
+            "5": {
+                "tokens": "pleural effusion",
+                "label": "OBS-DP",
+                "start_ix": 15,
+                "end_ix": 16,
+                "relations": []
+            },
+            "6": {
+                "tokens": "Heart",
+                "label": "ANAT-DP",
+                "start_ix": 18,
+                "end_ix": 18,
+                "relations": []
+            }
+        },
+        "data_source": "mock",
+        "data_split": "-"
+    },
+    "p3/mock003/s00003.txt": {
+        "text": "FINAL REPORT EXAMINATION : Hyperinflated lungs suggestive of COPD. No acute infiltrate or pleural effusion. Mild degenerative changes in the thoracic spine.",
+        "entities": {
+            "1": {
+                "tokens": "Hyperinflated",
+                "label": "OBS-DP",
+                "start_ix": 5,
+                "end_ix": 5,
+                "relations": []
+            },
+            "2": {
+                "tokens": "lungs",
+                "label": "ANAT-DP",
+                "start_ix": 6,
+                "end_ix": 6,
+                "relations": []
+            },
+            "3": {
+                "tokens": "COPD",
+                "label": "OBS-DP",
+                "start_ix": 9,
+                "end_ix": 9,
+                "relations": []
+            },
+            "4": {
+                "tokens": "acute infiltrate",
+                "label": "OBS-DA",
+                "start_ix": 12,
+                "end_ix": 13,
+                "relations": []
+            },
+            "5": {
+                "tokens": "pleural effusion",
+                "label": "OBS-DA",
+                "start_ix": 15,
+                "end_ix": 16,
+                "relations": []
+            },
+            "6": {
+                "tokens": "thoracic spine",
+                "label": "ANAT-DP",
+                "start_ix": 23,
+                "end_ix": 24,
+                "relations": []
+            },
+            "7": {
+                "tokens": "degenerative changes",
+                "label": "OBS-DP",
+                "start_ix": 19,
+                "end_ix": 20,
+                "relations": []
+            }
+        },
+        "data_source": "mock",
+        "data_split": "-"
+    }
+}
