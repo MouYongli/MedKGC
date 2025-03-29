@@ -90,3 +90,5 @@ pytest ie/utils/test_ner.py -v
 ## Output
 - Human annotated data as golden data, [dataset](nen/humanReview/reviewed.xlsx)
 
+## Demo
+![medkgc](medkgc.png)
