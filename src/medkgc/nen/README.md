@@ -21,12 +21,32 @@ Entities are in 3 different cases: normalized, normalized without definition, un
 |-------------------|------|-------------|----------|
 | cardiomediastinal |      |             |          |
 
-<!-- 
-TODO 
-entity_nor 代码。
-llama的方案
- -->
+## Technical Implementation
 
+### Transformer Models
+We used various Hugging Face Transformer models for entity recognition and processing, including OpenAI GPT-4o, Llama 3, and other models.
+
+### API Integration
+- **UMLS REST API**: Used for querying medical terminology and concepts
+
+### Interactive Interface
+- **Streamlit Application**: Provides an intuitive user interface for uploading medical reports and visualizing knowledge graphs
+
+### Data Processing Pipeline
+- Data cleaning: Removing noise and standardizing formats
+- Feature engineering: Extracting features for medical terminology
+- Format conversion: Tool functions for JSON/CSV/Excel interconversion
+
+### RAG Architecture
+Our retrieval-augmented generation system combines LLM with UMLS:
+- Knowledge retrieval module: Obtains relevant concepts from UMLS
+- Result ranking and filtering: Based on relevance scores
+- Context enhancement: Integrates retrieved knowledge into the entity normalization process
+
+## Dataset Publication
+Our annotated dataset has been published on the Hugging Face platform:
+- [MedKGC Dataset](https://huggingface.co/datasets/WestAI-SC/RadLink)
+- Contains 1,250 manually annotated medical entities mapped to UMLS concepts
 
 ## Data Processing Pipeline
 
