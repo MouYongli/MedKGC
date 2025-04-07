@@ -1,4 +1,9 @@
 # Biomedical and Medical Knowledge Graph Construction - Named Entity Recognition & Normalization and Relation Extraction 
+## Badges
+[![GitHub](https://img.shields.io/badge/GitHub-MedKGC-blue?style=flat&logo=github)](https://github.com/MouYongli/MedKGC)
+[![Hugging Face](https://img.shields.io/badge/🤗_Hugging_Face-medKGC-yellow)](https://huggingface.co/spaces/hanbinChen/medKGC)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 
 Access our online demo deployed on Hugging Face Spaces:  
 [MedKGC Demo](https://huggingface.co/spaces/username/medkgc-demo)
@@ -98,20 +103,20 @@ The project utilizes the following key technologies and tools:
 
 ## Methods
 
-本项目实现了一个完整的医学知识提取流程：
+This project implements a complete medical knowledge extraction pipeline:
 
-1. **端到端的医学知识提取流程**
-   - 利用大型语言模型和**Hugging Face**库从放射学报告中提取医学知识
-   - 构建了完整的处理管道，从原始文本到结构化知识图谱
+1. **End-to-end Medical Knowledge Extraction Process**
+   - Utilizing large language models and **Hugging Face** libraries to extract medical knowledge from radiology reports
+   - Building a complete processing pipeline, from raw text to structured knowledge graphs
    
-2. **命名实体识别实现**
-   - 使用**GPT-4o和Llama3**进行高精度医学实体识别
-   - 采用创新的**RAG方法**集成UMLS医学术语知识
-   - 实现了传统方法与大模型方法的结合，显著提升了性能
+2. **Named Entity Recognition Implementation**
+   - Using **GPT-4o and Llama3** for high-precision medical entity recognition
+   - Adopting innovative **RAG methods** to integrate UMLS medical terminology knowledge
+   - Implementing a combination of traditional methods and large model approaches, significantly improving performance
 
-3. **知识整合与规范化**
-   - 将识别出的实体与医学标准术语进行对齐
-   - 构建结构化的医学知识图谱，支持临床应用
+3. **Knowledge Integration and Normalization**
+   - Aligning identified entities with medical standard terminology
+   - Building structured medical knowledge graphs to support clinical applications
 
 ## Output
 - Human annotated data as golden data, [dataset](nen/humanReview/reviewed.xlsx)
@@ -120,21 +125,21 @@ The project utilizes the following key technologies and tools:
 ## Experimental Results
 
 ### NER Task Results
-我用 Llama 和 GPT-4o 在 NER 任务上做了实验，然后通过 entity-level 的 evaluation 得出了一系列实验结果:
+I conducted experiments with Llama and GPT-4o on the NER task, and obtained a series of experimental results through entity-level evaluation:
 
 ![NER Results](nerResult.png)
 
-上图展示了不同模型在实体识别任务上的性能对比，包括精确率、召回率和F1值等衡量指标。
+The above figure shows the performance comparison of different models on the entity recognition task, including precision, recall, F1 score and other metrics.
 
 ### Few-shot Prompting Experiments
 
-我们进行了**少样本提示**实验，以评估大语言模型在放射学文本上的性能：
+We conducted **few-shot prompting** experiments to evaluate the performance of large language models on radiological texts:
 
-- 测试了不同数量的示例对模型性能的影响
-- 比较了不同提示策略的效果
-- 分析了模型在医学领域专业术语上的理解能力
+- Tested the impact of different numbers of examples on model performance
+- Compared the effects of different prompting strategies
+- Analyzed the models' understanding capacity of professional terminology in the medical domain
 
-这些实验结果为临床环境中的模型选择和提示工程提供了重要见解，特别是在处理放射学文本这类专业医学内容时。
+These experimental results provide important insights for model selection and prompt engineering in clinical environments, especially when dealing with professional medical content such as radiological texts.
 
 ## Conclusions & Contributions
 
